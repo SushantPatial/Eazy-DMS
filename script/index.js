@@ -10,7 +10,7 @@ $(window).bind('scroll', function () {
 });
 
 $(window).bind('scroll', function () {
-  if ($(window).scrollTop() > 2400) {
+  if ($(window).scrollTop() > 2300) {
     $('.nav').show();
   } else {
     $('.nav').hide();
