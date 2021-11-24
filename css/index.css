@@ -17,7 +17,7 @@ body {
   font-weight: 500;
   color: #333333;
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
 }
 .index-section-heading p {
   color: #777777;
@@ -231,21 +231,21 @@ body {
 	border-left: 1px solid rgba(250,250,250,0.3);
 }
 
-.sub-header ul.right-icons li a .fab {
+.fab {
 	color: #fff;
 	transition: all 0.3s ease;
 }
 
-.sub-header ul.right-icons li a .fa-facebook-f:hover {
+.fa-facebook-f:hover {
 	color: #4064AC;
 }
-.sub-header ul.right-icons li a .fa-twitter:hover {
+.fa-twitter:hover {
 	color: #4DA6E9;
 }
-.sub-header ul.right-icons li a .fa-linkedin:hover {
+.fa-linkedin:hover {
 	color: #2464AD;
 }
-.sub-header ul.right-icons li a .fa-youtube:hover {
+.fa-youtube:hover {
 	color: #F60000;
 }
 
@@ -1043,6 +1043,11 @@ header .navbar .navbar-brand img{
 }
 .footer-section .links-col ul li i {
   color: rgb(45, 144, 224)
+}
+.footer-section .links-col .social-links a {
+  font-size: 24px;
+  margin: 0 10px 10px 12px;
+  color: white;
 }
 
 .footer-section .partners-col .link-image img {

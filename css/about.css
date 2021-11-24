@@ -5,6 +5,38 @@ body {
   overflow-x: hidden;
 }
 
+.about-section-heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+.about-section-heading h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  font-size: 38px;
+}
+.about-section-heading p {
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+}
+.about-section-heading-underline {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid rgb(17, 68, 177);
+  margin-bottom: 40px;
+}
+.about-section-heading h2 span {
+  color: rgb(15, 79, 153);
+}
+.live {
+  width: 140px;
+  position: relative;
+  bottom: 17.5px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
 
 /* Sub Header Style */
 
@@ -54,21 +86,21 @@ body {
 	border-left: 1px solid rgba(250,250,250,0.3);
 }
 
-.sub-header ul.right-icons li a .fab {
+.fab {
 	color: #fff;
 	transition: all 0.3s ease;
 }
 
-.sub-header ul.right-icons li a .fa-facebook-f:hover {
+.fa-facebook-f:hover {
 	color: #4064AC;
 }
-.sub-header ul.right-icons li a .fa-twitter:hover {
+.fa-twitter:hover {
 	color: #4DA6E9;
 }
-.sub-header ul.right-icons li a .fa-linkedin:hover {
+.fa-linkedin:hover {
 	color: #2464AD;
 }
-.sub-header ul.right-icons li a .fa-youtube:hover {
+.fa-youtube:hover {
 	color: #F60000;
 }
 
@@ -252,43 +284,17 @@ header .navbar .navbar-brand img{
 -------------------- */
 
 .hybrid-dms-section {
-  margin-top: 10px;
-  width: 85%;
+  margin-top: 20px;
   text-align: center;
   color: #555;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+  background-color: rgb(233, 241, 245);
 }
-.hybrid-dms-section h1 {
-  font-weight: 700;
-  color: #222;
-}
-.hybrid-dms-section h1 span {
-  color: rgb(15, 79, 153);
-}
-.hybrid-dms-section h1 img {
-  width: 140px;
-  margin-top: -12px;
-  margin-right: -5px;
-}
-
-/* --------------------
-    Why HDMS Section 
--------------------- */
-
-.why-hybrid-dms-section {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 85%;
-  text-align: center;
-  color: #555;
-}
-.why-hybrid-dms-section h1 {
-  font-weight: 700;
-  color: #222;
-}
-.why-hybrid-dms-section h1 span {
-  color: rgb(15, 79, 153);
-}
-
 .hybrid-dms-cards {
   margin-top: 30px;
 }
@@ -298,6 +304,36 @@ header .navbar .navbar-brand img{
 .hybrid-dms-image img {
   width: 100%;
 }
+.hybrid-dms-image h6 {
+  font-weight: 700;
+  color: rgb(248, 248, 248);
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: left;
+}
+.hybrid-dms-image .hybrid-dms-head {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  background-color: rgba(54, 109, 211, 0.76);
+  padding-right: 30px;
+  clip-path: 
+  polygon(
+    0% 0%,     /* top left */
+    0% 0%,     /* top left */
+    88% 0%,    /* top right */
+    100% 54%,   /* top right */
+    88% 100%,  /* bottom right */
+    88% 100%,  /* bottom right */
+    0% 100%,   /* bottom left */
+    0 100%      /* bottom left */
+  );
+  
+}
 
 .hybrid-dms-text {
   background-color: white;
@@ -305,6 +341,7 @@ header .navbar .navbar-brand img{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: left;
   position: absolute;
   top: 0px;
@@ -337,17 +374,51 @@ header .navbar .navbar-brand img{
   transform: translate3d(0, 0, 0);
 }
 
-.hybrid-dms-head {
-  display: flex;
-}
-.hybrid-dms-head h6 {
-  font-weight: 700;
-  color: rgb(54, 109, 211);
-}
 .hybrid-dms-text p {
   font-size: 14px;
   font-weight: 600;
 }
+.hybrid-dms-text i {
+  font-size: 26px;
+}
+
+
+/* --------------------
+    Why HDMS Section 
+-------------------- */
+
+.why-hybrid-dms-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 85%;
+  text-align: center;
+}
+.why-hybrid-dms-section .why-dms {
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.why-hybrid-dms-section .why-dms .fal {
+  color:rgb(17, 68, 177);
+  font-size: 40px;
+  margin-right: 10px;
+  transition: 0.7s ease;
+}
+.why-hybrid-dms-section .why-dms-text h6 {
+  color: #444;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  min-height: 20px;
+}
+.why-hybrid-dms-section .why-dms-text p {
+  color: #666;
+  font-size: 14px;
+}
+.why-hybrid-dms-section .why-dms:hover .fal {
+  transform: translateY(30px);
+}
+
 
 /* --------------------
     Footer Section 
@@ -405,6 +476,11 @@ header .navbar .navbar-brand img{
 .footer-section .links-col ul li i {
   color: rgb(45, 144, 224)
 }
+.footer-section .links-col .social-links a {
+  font-size: 24px;
+  margin: 0 10px 10px 12px;
+  color: white;
+}
 
 .footer-section .partners-col .link-image img {
   width: 100%;
@@ -436,6 +512,9 @@ header .navbar .navbar-brand img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-section .links-col h5:nth-child(3) {
     margin-top: 20px;
   }
 }
