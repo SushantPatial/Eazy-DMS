@@ -1,0 +1,65 @@
+body {
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.company-section-heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+.company-section-heading h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  font-size: 38px;
+}
+.company-section-heading p {
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+}
+.company-section-heading-underline {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid rgb(17, 68, 177);
+  margin-bottom: 40px;
+}
+.company-section-heading h2 span {
+  color: rgb(15, 79, 153);
+}
+.live {
+  width: 140px;
+  position: relative;
+  bottom: 17.5px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* --------------------
+    Customers Hero 
+-------------------- */
+.company-hero {
+  height: 60vh;
+  background-image: url(../images/company.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.company-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.company-hero p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* --------------------
+    Company Section 
+-------------------- */

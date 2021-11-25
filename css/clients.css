@@ -1,0 +1,354 @@
+body {
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.customer-section-heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+.customer-section-heading h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  font-size: 38px;
+}
+.customer-section-heading p {
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+}
+.customer-section-heading-underline {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid rgb(17, 68, 177);
+  margin-bottom: 40px;
+}
+.customer-section-heading h2 span {
+  color: rgb(15, 79, 153);
+}
+.live {
+  width: 140px;
+  position: relative;
+  bottom: 17.5px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* --------------------
+    Customers Hero 
+-------------------- */
+.customers-hero {
+  height: 60vh;
+  background-image: url(../images/customers.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.customers-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.customers-hero p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* --------------------
+    Customers Section 
+-------------------- */
+.customers .customers-row {
+  min-height: 300px;
+}
+.customers .customers-row:nth-child(even) {
+  background-color: #eee;
+}
+.customers .customers-text-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2% 0 6%;
+}
+.customers .customers-images-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6% 0 2%;
+}
+.customers .customers-text-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6% 0 2%;
+}
+.customers .customers-images-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2% 0 6%;
+}
+.customers .customers-images-1 img, .customers .customers-images-2 img {
+  margin: 10px 0;
+}
+.customers .customers-text-1 h3, .customers .customers-text-2 h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+.customers .customers-text-1 h3 span, .customers .customers-text-2 h3 span {
+  font-size: 26px;
+}
+
+/* --------------------
+    Client Wins Section 
+-------------------- */
+.customer-videos {
+  margin: 0 auto;
+  width: 85%;
+  margin: 0px auto;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vid-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --angle: 0deg;
+  border: 7px solid;
+  /* This will work but yield a wrong result: */
+  border-image: linear-gradient(var(--angle), rgb(47, 188, 253), rgb(8, 66, 151), rgb(47, 188, 253), rgb(8, 66, 151)) 1;
+  animation: 10s rotate linear infinite;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+
+#video-scrollbar {
+  width: 100%;
+  position: relative; 
+  padding-right: 32px; 
+  padding-left: 32px; 
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+.swiper-custom-next, .swiper-custom-prev {
+  font-size: 24px;
+  color: rgb(39, 39, 39);
+  position: absolute; 
+  padding: 10px 2px; 
+  z-index: 2;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.swiper-custom-next {
+  right: 4px;
+  top: 32%; 
+}
+.swiper-custom-next:hover {
+  right: 2px;
+  color: rgb(207, 40, 40);
+}
+
+.swiper-custom-prev { 
+  left: 4px; 
+  top: 33%; 
+}
+.swiper-custom-prev:hover {
+  left: 2px;
+  color: rgb(207, 40, 40);
+}
+
+.swiper-custom-next.swiper-button-disabled,
+.swiper-custom-prev.swiper-button-disabled
+{
+  opacity: 0.2;
+}
+.swiper-custom-next.swiper-button-disabled:hover {
+  right: 4px;
+}
+.swiper-custom-prev.swiper-button-disabled:hover {
+  left: 4px;
+}
+
+
+.swiper-container-videos .swiper-slide {
+  width: 223px;
+}
+
+.swiper-container-videos .swiper-slide a .desc {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+.vid-thumb {
+  display: block;
+  margin-top: 10px;
+}
+
+.vid-thumb img {
+  height: auto;
+  width: 100%;
+  display: block;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.vid-thumb:hover img {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.swiper-container-videos .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  position: relative;
+  top: 0px;
+}
+.swiper-container-videos .swiper-slide a .desc {
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+}
+.swiper-container-videos  .selected.swiper-slide a .desc {
+  color: #025282;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+    background: #013870;
+}
+.swiper-pagination-bullet-active:hover {
+    background: #002c57;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .vid-container iframe {
+    width: 500px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .vid-container iframe {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+  }
+}
+
+/* ==================
+    Testimonials
+   ================== */
+
+.testimonials {
+  width: 100%;
+  padding: 50px 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(204, 222, 235);
+}
+.col-lg-4 {
+  margin: 40px auto;
+}
+.testimonials .profile {
+  background-color: white;
+  padding: 70px 10px 10px;
+  min-height: 380px;
+}
+
+.testimonials h2:before {
+  border-bottom:3px solid rgb(117, 161, 202);
+}
+
+.testimonials .profile .testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 60px);
+  border: 10px solid rgb(204, 222, 235);
+}
+
+.testimonials .profile h4 {
+
+}
+
+.testimonials .profile h6 {
+
+}
+
+.testimonials .profile i {
+
+}
+
+.testimonials .profile blockquote {
+  
+}
+
+.testimonials .profile blockquote .more {
+  display: none;
+}
+
+.moreless-button {
+  background-color: #1263af;
+  color: white;
+  width: 110px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.moreless-button:hover {
+  background-color: #0e579b;
+}
+.moreless-button:focus {
+  outline: none;
+  border: none;
+}
+#moretext1 {
+  display: none;
+}
+#moretext2 {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .testimonials .profile {
+    min-height: 270px;
+  }
+}
+

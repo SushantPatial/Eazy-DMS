@@ -1,0 +1,104 @@
+/* --------------------
+    Footer Section 
+-------------------- */
+
+.footer-section {
+  padding-top: 70px;
+  background-color: #1F305D;
+  width: 100%;
+  color: #fff;
+}
+.footer-section .contact-col .address, .footer-section .contact-col ul li, .footer-section .contact-col ul li a, .footer-section .links-col ul li a {
+  color: #bbb;
+  transition: 0.5s ease;
+}
+.footer-section .contact-col .address:hover, .footer-section .contact-col ul li:hover, .footer-section .contact-col ul li a:hover {
+  color: #fff;
+  
+}
+.footer-section .links-col ul li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+} 
+
+.footer-section h5 {
+  font-size: 24px;
+}
+.footer-section ul {
+  margin-left: -38px;
+}
+.footer-section ul li {
+  list-style: none;
+}
+.footer-section .contact-col ul li, .footer-section .contact-col .address {
+  display: flex;
+}
+.footer-section .contact-col ul li:hover .contact-icon .ci {
+  backface-visibility: hidden;
+  animation: wiggle 1s infinite;
+}
+.footer-section .contact-col .address:hover .contact-icon .ci {
+  backface-visibility: hidden;
+  animation: wiggle 1s infinite;
+}
+.footer-section .contact-col i {
+  font-size: 17px;
+}
+.footer-section .contact-col ul li {
+  margin: 10px 0;
+}
+
+.footer-section .links-col ul li {
+  margin: 5px 0 15px 0;
+}
+.footer-section .links-col ul li i {
+  color: rgb(45, 144, 224)
+}
+.footer-section .links-col .social-links a {
+  font-size: 24px;
+  margin: 0 10px 10px 12px;
+  color: white;
+}
+
+.footer-section .partners-col .link-image img {
+  width: 100%;
+  margin: 10px 0;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.footer-section .partners-col .link-image img:hover {
+  filter: grayscale(0%);
+}
+
+.footer-section .footer-inner-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14234d;
+  height: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-section .partners-col .link-image img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section .contact-col, .footer-section .contact-col ul, .footer-section .links-col, .footer-section .partners-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  12% { transform: rotate(7deg); }
+  38% { transform: rotate(-7deg); }
+  64% { transform: rotate(7deg); }
+  90% { transform: rotate(-7deg); }
+  100% { transform: rotate(0deg); }
+}

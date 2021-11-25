@@ -1,0 +1,135 @@
+body {
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.resources-section-heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+.resources-section-heading h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  font-size: 38px;
+}
+.resources-section-heading p {
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+}
+.resources-section-heading-underline {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid rgb(17, 68, 177);
+  margin-bottom: 40px;
+}
+.resources-section-heading h2 span {
+  color: rgb(15, 79, 153);
+}
+.live {
+  width: 140px;
+  position: relative;
+  bottom: 17.5px;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* --------------------
+    Customers Hero 
+-------------------- */
+.resources-hero {
+  height: 60vh;
+  background-image: url(../images/resources.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.resources-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.resources-hero p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+.blogs{
+  height: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-posts{
+  width: min(1200px, 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.post{
+  width: calc(33% - 10px);
+  overflow: hidden;
+}
+
+.post-img{
+  width: 100%;
+  border-radius: 6px;
+  transition: .3s linear;
+}
+
+.post-content{
+  background-color: #eeed;
+  margin: 0 20px;
+  padding: 30px;
+  border-radius: 6px;
+  transform: translateY(-60px);
+  transition: .3s linear;
+}
+
+.post-content h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.post-content h6{
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.date{
+  font-size: 15px;
+  font-style: italic;
+  color: #e77f67;
+}
+
+.post:hover .post-img{
+  transform: translateY(20px);
+}
+
+.post:hover .post-content{
+  transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px){
+  .blog-posts{
+    justify-content: center;
+  }
+  .post{
+    width: min(600px, 100%);
+  }
+}
