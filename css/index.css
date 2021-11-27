@@ -3,12 +3,16 @@ html {
 }
 
 body {
-  background:#04325B none repeat scroll 0 0;
+  background:#032a4d none repeat scroll 0 0;
   font-family: "Open Sans",sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   height: 100% !important;
+}
+
+#skrollr-body {
+  width: 100%;
 }
 
 .index-section-heading {
@@ -50,7 +54,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/center.png);
+  background-image: url(../images/index.png);
 }
 #hero-img1 {
   width: 200px;
@@ -62,7 +66,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/iphoneup.png);
+  background-image: url(../images/index-1.png);
 }
 #hero-img2 {
   width: 600px;
@@ -74,7 +78,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/laptop.png);
+  background-image: url(../images/index-2.png);
 }
 #hero-img3 {
   width: 500px;
@@ -86,7 +90,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/tablet.png);
+  background-image: url(../images/index-3.png);
 }
 #hero-img4 {
   width: 200px;
@@ -99,20 +103,21 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/iphoneup.png);
+  background-image: url(../images/index-4.png);
 }
 
 .hero-head {
   display: flex;
   align-items: center;
   justify-content: center;
-  position:relative; 
-  top: 2585px;
-  width: 65%;
+  position: absolute; 
+  top: -270px;
+  width: 45%;
+  z-index: 10;
 }
 .hero-head h1 {
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color: #bbb;
   font-size: 40px;
   text-align: center;
   font-weight: 500;
@@ -147,10 +152,10 @@ body {
     height: 650px;
     margin-top: -50px;
   }
-  .head {
-    top: 2505px !important;
+  .hero-head {
+    top: -370px !important;
   }
-  .head h1{
+  .hero-head h1{
     font-size: 32px !important;
   }
 }
@@ -189,7 +194,7 @@ body {
 ------------------*/
 .main-section {
   position:relative; 
-  top: 2750px;
+  top: 2850px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -38,7 +38,7 @@ body {
 }
 
 /* --------------------
-    Customers Hero 
+    Resources Hero 
 -------------------- */
 .resources-hero {
   height: 60vh;
@@ -60,37 +60,39 @@ body {
   text-transform: uppercase;
 }
 
-
-
-.blogs{
+/* --------------------
+    Blogs Section 
+-------------------- */
+.blogs {
   height: 100%;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.blog-posts{
+.blogs .blog-posts {
   width: min(1200px, 100%);
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   cursor: pointer;
 }
 
-.post{
+.blogs .blog-posts .post {
   width: calc(33% - 10px);
   overflow: hidden;
 }
 
-.post-img{
+.blogs .blog-posts .post-img {
   width: 100%;
   border-radius: 6px;
   transition: .3s linear;
 }
 
-.post-content{
+.blogs .blog-posts .post-content {
   background-color: #eeed;
   margin: 0 20px;
   padding: 30px;
@@ -99,37 +101,124 @@ body {
   transition: .3s linear;
 }
 
-.post-content h4{
+.blogs .blog-posts .post-content h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #222;
 }
 
-.post-content h6{
+.blogs .blog-posts .post-content h6 {
   font-size: 16px;
   margin-bottom: 10px;
   color: #666;
 }
 
-.date{
+.blogs .blog-posts .date {
   font-size: 15px;
   font-style: italic;
   color: #e77f67;
 }
 
-.post:hover .post-img{
+.blogs .blog-posts .post:hover .post-img {
   transform: translateY(20px);
+  transition: 0.5s ease;
 }
 
-.post:hover .post-content{
+.blogs .blog-posts .post:hover .post-content {
   transform: translateY(-80px);
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 1200px){
-  .blog-posts{
+  .blogs .blog-posts{
     justify-content: center;
   }
-  .post{
+  .blogs .blog-posts .post{
     width: min(600px, 100%);
+  }
+}
+
+/* --------------------
+    Newsroom Section 
+-------------------- */
+#newsroom-carousel {
+  
+}
+#newsroom-carousel img {
+  width: 100%;
+}
+
+.news-row {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-row .news-card {
+  margin: 10px 10px;
+  max-width: 570px;
+}
+.news-row .news-card img {
+  width: 100%;
+}
+.news-row .news-card .col-7 {
+  background-color: #eeed;
+  display: flex;
+  padding-top: 15px;
+}
+.news-row .news-card .col-7 p {
+  font-size: 14px;
+}
+.news-row .news-card .col-7 .horizontal-line {
+  border-top: 1px solid rgb(184, 184, 184);
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+}
+.news-row .news-card .col-7 .learn-more {
+  position: absolute;
+  bottom: 10px;;
+  color: rgb(40, 146, 216);
+  text-decoration: none;
+}
+.news-row .news-card .col-7 .learn-more i {
+  transition: 0.5s ease;
+}
+.news-row .news-card .col-7 .learn-more:hover i {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .news-row .news-card {
+    max-width: 700px;
+  }
+  .news-row .col-xl-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .news-row .news-card {
+    max-width: 500px;
+  }
+  .news-desc-remove-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  .news-row .news-card {
+    max-width: 400px;
+  }
+  .news-row .news-card h4 {
+    font-size: 20px;
+  }
+  .news-row .news-card p {
+    font-size: 12px;
+  }
+  .news-desc-remove-2 {
+    display: none;
   }
 }

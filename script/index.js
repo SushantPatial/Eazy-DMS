@@ -2,6 +2,9 @@ $(document).ready(function() {
   var s = skrollr.init();
 });
 
+  AOS.init();
+  AOS.init({disable: 'mobile'});
+  skrollr.init({forceHeight: false}); 
 // Detect scroll to div
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();

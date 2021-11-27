@@ -126,6 +126,7 @@ header .navbar {
 header .navbar .navbar-brand img{
   width: 120px;
   padding: 10px 0;
+  margin-left: 30px;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -172,6 +173,15 @@ header .navbar .navbar-brand img{
   transform-origin: bottom left;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    display: inline-flex;
+  }
+  .navbar ul{
+    padding-bottom: 30px;
+  }
+}
+
 
 
 
@@ -185,14 +195,15 @@ header .navbar .navbar-brand img{
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+	background-color: transparent;
+  font-size: 36px;	
+  color: #fff;
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
 	position: absolute;
 	right: 30px;
-	top: 20px;
+	top: 28px;
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
