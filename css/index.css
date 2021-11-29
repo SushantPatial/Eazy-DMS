@@ -298,6 +298,7 @@ body {
   overflow: hidden;
   width: 90%;
   padding: 50px 0;
+  margin-top: 30px;
 }
 .logo-div {
   display: flex;
@@ -343,6 +344,24 @@ body {
 .slide img:hover {
   transform: scale(0.95);
 }
+
+/*------------------
+    FvT Section
+------------------*/
+.fusionvstally-section {
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.fusionvstally-section .table thead tr {
+  background-color: rgb(74, 150, 212);
+  color: white;
+  text-align: center;
+}
+.fusionvstally-section .table tbody tr:nth-child(even) {
+  background-color: rgb(220, 239, 247);
+}
+
 
 /*------------------
     Testimonials Section
