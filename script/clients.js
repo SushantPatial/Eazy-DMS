@@ -1,3 +1,6 @@
+
+AOS.init({disable: 'mobile'});
+
 // Video Swiper
 var mySwiper = new Swiper(".swiper-container-videos", {
   loop: false,

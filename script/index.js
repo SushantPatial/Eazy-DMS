@@ -14,6 +14,10 @@ function isScrolledIntoView(elem) {
     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+$('.modal').on('touchstart touchmove touchend', function(e) {
+  e.stopPropagation();
+});
+
 $(window).scroll(function() {    
   if(isScrolledIntoView($('#stats-box'))) {
     $('.counting').each(function() {

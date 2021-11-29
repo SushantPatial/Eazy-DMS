@@ -3,16 +3,16 @@ AOS.init();
 
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 47) {
-    $('.navbar').addClass('sticky');
+    $('.navbar').addClass('navbar-fixed');
   } else {
-    $('.navbar').removeClass('sticky');
+    $('.navbar').removeClass('navbar-fixed');
   }
 });
 
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 2300) {
-    $('.nav').fadeIn();
+    $('.nav-index').fadeIn();
   } else {
-    $('.nav').fadeOut();
+    $('.nav-index').fadeOut();
   }
 });

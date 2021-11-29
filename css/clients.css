@@ -3,38 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-.customer-section-heading {
-  font-family: 'Poppins', sans-serif;
-  margin: 0 auto;
-}
-.customer-section-heading h2 {
-  font-weight: 500;
-  color: #333333;
-  text-align: center;
-  font-size: 38px;
-}
-.customer-section-heading p {
-  color: #777777;
-  text-align: center;
-  font-size: 15px;
-}
-.customer-section-heading-underline {
-  margin: 0 auto;
-  width: 100px;
-  border-bottom: 3px solid rgb(17, 68, 177);
-  margin-bottom: 40px;
-}
-.customer-section-heading h2 span {
-  color: rgb(15, 79, 153);
-}
-.live {
-  width: 140px;
-  position: relative;
-  bottom: 17.5px;
-  margin-right: -10px;
-  margin-left: -10px;
+  
 }
 
 /* --------------------
@@ -95,6 +64,7 @@ body {
 }
 .customers .customers-images-1 img, .customers .customers-images-2 img {
   margin: 10px 0;
+  width: 100%
 }
 .customers .customers-text-1 h3, .customers .customers-text-2 h3 {
   text-transform: uppercase;

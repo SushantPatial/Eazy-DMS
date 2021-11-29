@@ -5,38 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-.contact-section-heading {
-  font-family: 'Poppins', sans-serif;
-  margin: 0 auto;
-}
-.contact-section-heading h2 {
-  font-weight: 500;
-  color: #333333;
-  text-align: center;
-  font-size: 38px;
-}
-.contact-section-heading p {
-  color: #777777;
-  text-align: center;
-  font-size: 15px;
-}
-.contact-section-heading-underline {
-  margin: 0 auto;
-  width: 100px;
-  border-bottom: 3px solid rgb(17, 68, 177);
-  margin-bottom: 40px;
-}
-.contact-section-heading h2 span {
-  color: rgb(15, 79, 153);
-}
-.live {
-  width: 140px;
-  position: relative;
-  bottom: 17.5px;
-  margin-right: -10px;
-  margin-left: -10px;
-}
-
 /* --------------------
     Contact Hero 
 -------------------- */
@@ -73,7 +41,7 @@ body {
 .contact-section .contact .left-sec {
   width: 45%;
   height: 100%;
-  background-color: rgb(10, 53, 172);
+  background: linear-gradient(to top, #041b5c9a, #041b5c9a), url(../images/contact-bg.jpg) center no-repeat;
   margin: 10px;
   padding: 20px 0;
   color: white;

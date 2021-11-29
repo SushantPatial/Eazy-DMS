@@ -1,3 +1,28 @@
+.section-heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+.section-heading h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  font-size: 38px;
+}
+.section-heading p {
+  color: #777777;
+  text-align: center;
+  font-size: 15px;
+}
+.section-heading-underline {
+  margin: 0 auto;
+  width: 100px;
+  border-bottom: 3px solid rgb(17, 68, 177);
+  margin-bottom: 40px;
+}
+.section-heading h2 span {
+  color: rgb(15, 79, 153);
+}
+
 /* Sub Header Style */
 
 .sub-header {
@@ -46,21 +71,21 @@
 	border-left: 1px solid rgba(250,250,250,0.3);
 }
 
-.fab {
+.sub-header .fab {
 	color: #fff;
 	transition: all 0.3s ease;
 }
 
-.fa-facebook-f:hover {
+.sub-header .fa-facebook-f:hover {
 	color: #4064AC;
 }
-.fa-twitter:hover {
+.sub-header .fa-twitter:hover {
 	color: #4DA6E9;
 }
-.fa-linkedin:hover {
+.sub-header .fa-linkedin:hover {
 	color: #2464AD;
 }
-.fa-youtube:hover {
+.sub-header .fa-youtube:hover {
 	color: #F60000;
 }
 
@@ -96,12 +121,12 @@
   }
 }
 
-.nav {
+.nav-index {
   display: none;
 }
 
 /* Header Style */
-.sticky {
+.navbar-fixed {
   position: fixed;
   top: 0px;
   width: 100%;
