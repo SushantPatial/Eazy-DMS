@@ -1,5 +1,18 @@
+$( window ).resize(function() {
+  if ($(window).width() < 576) {
+    $(".customers-text-1").attr("data-aos","fade-up");
+    $(".customers-images-1").attr("data-aos","fade-up");
+    $(".customers-text-2").attr("data-aos","fade-up");
+    $(".customers-images-2").attr("data-aos","fade-up");
+  }
+  else {
+    $(".customers-text-1").attr("data-aos","fade-right");
+    $(".customers-images-1").attr("data-aos","fade-left");
+    $(".customers-text-2").attr("data-aos","fade-left");
+    $(".customers-images-2").attr("data-aos","fade-right");
+  }
+});
 
-AOS.init({disable: 'mobile'});
 
 // Video Swiper
 var mySwiper = new Swiper(".swiper-container-videos", {
@@ -50,3 +63,4 @@ $('#moreless-button2').click(function() {
   }
   $(".dots2").toggle();
 });
+

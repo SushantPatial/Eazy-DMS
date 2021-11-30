@@ -238,3 +238,92 @@ body {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 462px) {
+  .contact-section .contact .left-sec h4 {
+    height: 100px;
+  }
+}
+
+/* --------------------
+    Offices Section 
+-------------------- */
+.offices-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.offices-section .offices-map img {
+  width: 100%;
+  padding: 0 30px;
+}
+.offices-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+  text-align: center;
+}
+.offices-section .head-office .office-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.offices-section .office-card .col-8 {
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.651);
+  padding: 10px;
+}
+.offices-section .office-card .col-lg-6 {
+  overflow: hidden !important;
+}
+.offices-section .office-card img {
+  width: 100%;
+  min-height: 300px;
+}
+.offices-section .office-card h4 {
+  font-size: 26px;
+  font-weight: 700;
+  color:rgb(82, 82, 82);
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+}
+.offices-section .office-card {
+  font-size: 14px;
+  color: #555;
+}
+.offices-section .office-card .office-details {
+  display: flex;
+}
+.offices-section .office-card .office-details i {
+  margin-top: 2px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgb(21, 43, 143);
+}
+.offices-section .office-card .office-details a {
+  color: #555;
+}
+.offices-section .office-card .office-details a:hover {
+  text-decoration: none;
+}
+.offices-section .office-card .card-col {
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.651);
+  padding: 10px;
+  margin: 10px;
+}
+.offices-section .branch-offices .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offices-section .branch-offices .row .card-col {
+  max-width: 45%;
+}
+@media screen and (max-width: 992px) {
+  .offices-section .branch-offices .row .col-md-12 {
+    max-width: 67.5%;
+  }
+}
