@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: "Open Sans",sans-serif;
   margin: 0;
   padding: 0;
@@ -254,10 +254,12 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .offices-section .offices-map img {
   width: 100%;
   padding: 0 30px;
 }
+
 .offices-section h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -276,12 +278,15 @@ body {
   box-shadow: 0 0 15px rgba(128, 128, 128, 0.651);
   padding: 10px;
 }
-.offices-section .office-card .col-lg-6 {
-  overflow: hidden !important;
-}
 .offices-section .office-card img {
   width: 100%;
-  min-height: 300px;
+  min-height: 270px;
+  filter: grayscale(50%);
+  transition: 0.5s ease;
+}
+.offices-section .office-card .office-card-body:hover img{
+  transform: scale(1.02);
+  filter: grayscale(0%);
 }
 .offices-section .office-card h4 {
   font-size: 26px;
@@ -289,6 +294,7 @@ body {
   color:rgb(82, 82, 82);
   font-family: 'Poppins';
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .offices-section .office-card {
   font-size: 14px;
@@ -314,16 +320,42 @@ body {
   padding: 10px;
   margin: 10px;
 }
+.offices-section .branch-offices {
+  margin-bottom: 50px;
+}
 .offices-section .branch-offices .row {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .offices-section .branch-offices .row .card-col {
   max-width: 45%;
 }
+
 @media screen and (max-width: 992px) {
   .offices-section .branch-offices .row .col-md-12 {
     max-width: 67.5%;
+  }
+  .offices-section .row .col-lg-6:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .offices-section .row .col-lg-6:nth-child(2) .office-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .offices-section .row .col-lg-6:nth-child(2) .office-details i {
+    font-size: 24px
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offices-section .office-card img {
+    width: 100%;
+    min-height: 100%;
   }
 }

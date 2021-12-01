@@ -28,6 +28,48 @@ html, body {
   text-transform: uppercase;
 }
 
+
+
+/* --------------------
+    Main Resources
+-------------------- */
+.main-section-resources .container {
+  max-width: 100%;
+  padding: 0;
+}
+.main-section-resources .nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.main-section-resources .nav-tabs .nav-item {
+  margin: 0 20px;
+}
+.main-section-resources .nav-tabs .nav-link {
+  border: none;
+  transition: 0.5s ease;
+  color: #444;
+  font-weight: bold;
+}
+.main-section-resources .nav-tabs .nav-link:hover {
+  border: none;
+  box-shadow: 0 3px 0 #2793ec;
+  color: #2793ec;
+}
+.main-section-resources .nav-tabs .nav-item .active {
+  border: none;
+  box-shadow: 0 3px 0 #2793ec;
+  color: #2793ec;
+}
+.main-section-resources .tab-content .tab-pane {
+  text-align: center;
+}
+.main-section-resources .section-heading {
+  width: 90%;
+}
+
 /* --------------------
     Blogs Section 
 -------------------- */
@@ -41,11 +83,12 @@ html, body {
 }
 
 .blogs .blog-posts {
-  width: min(1200px, 100%);
+  width: 90%;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -109,8 +152,8 @@ html, body {
 /* --------------------
     Newsroom Section 
 -------------------- */
-#newsroom-carousel {
-  
+.newsroom {
+  margin-top: 40px;
 }
 #newsroom-carousel img {
   width: 100%;
@@ -122,6 +165,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 .news-row .news-card {
   margin: 10px 10px;
@@ -189,4 +233,19 @@ html, body {
   .news-desc-remove-2 {
     display: none;
   }
+}
+@media screen and (max-width: 400px) {
+  .news-row .news-card {
+    max-width: 350px;
+  }
+  .news-desc-remove-3 {
+    display: none;
+  }
+}
+
+/* --------------------
+    Catalogue Section 
+-------------------- */
+.catalogue {
+  margin-top: 40px;
 }

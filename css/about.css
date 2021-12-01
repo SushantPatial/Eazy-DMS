@@ -200,3 +200,245 @@ html, body {
 .why-hybrid-dms-section .why-dms:hover .fal {
   transform: translateY(10px);
 }
+
+/* --------------------
+    About Features Section 
+-------------------- */
+.about-features-section {
+  width: 100%;
+}
+.about-features-section .not-sure {
+  background: url(../images/not-sure.jpg);
+  background-size: cover;
+  min-height: 260px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+}
+.about-features-section .not-sure h3 {
+  width: 90%;
+}
+.about-features-section .not-sure span {
+  color: rgb(214, 16, 16);
+}
+.about-features-section .not-sure h5 {
+  font-weight: 600;
+  margin-top: 5px;
+  width: 90%;
+}
+.about-features-section .not-sure button {
+  background-color: rgb(214, 16, 16);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.about-features-section .not-sure button:hover {
+  cursor: pointer;
+  background-color: rgb(192, 16, 16);
+}
+@media screen and (max-width: 768px) {
+  .about-features-section .not-sure h3 {
+    font-size: 22px;
+  }
+  .about-features-section .not-sure h5 {
+    font-size: 18px;
+  }
+}
+
+
+.about-features-section .benefits .col-lg-7, .about-features-section .benefits .col-lg-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-features-section .benefits .col-lg-7 {
+  
+  padding: 30px 0;
+  padding-left: 5%;
+}
+.about-features-section .benefits .col-lg-7 h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #444;
+  margin-left: 40px;
+}
+.about-features-section .benefits .col-lg-7 ul {
+  color: #555;
+  list-style: none;
+  margin-top: 5px;
+  
+}
+.about-features-section .benefits .col-lg-7 ul li {
+  line-height: 27px;
+}
+.about-features-section .benefits .col-lg-7 ul li i{
+  color: rgb(214, 16, 16);
+}
+.about-features-section .benefits .col-lg-5 {
+  align-items: center;
+}
+.about-features-section .benefits .col-lg-5 img {
+  width: 80%;
+}
+@media screen and (max-width: 992px) {
+  .about-features-section .benefits .col-lg-7 {
+    align-items: center;
+  }
+  .about-features-section .benefits .col-lg-5 img {
+    width: 70%;
+    padding-bottom: 30px;
+  }
+}
+
+.about-features-section .models .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.about-features-section .models .card {
+  background: linear-gradient(to bottom, #276ace, #5565f7);
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  width: 450px;
+  height: 520px;
+  margin: 30px;
+  border: none;
+  border-radius: 20px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  box-shadow: 0 15px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.24);
+  overflow: hidden;
+}
+
+.about-features-section .models .card::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -40%;
+  padding: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+  transform: rotate(35deg);
+  pointer-events: none;
+  filter: blur(5px);
+}
+
+.about-features-section .models .card .icon {
+  position: relative;
+  left: 150px;
+  width: 140px;
+  height: 120px;
+  background: #ffffff;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0 15px 0 rgba(0, 0, 0, 0.1),
+          inset 0 -8px 0 #fff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-features-section .models .card .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-right-radius: 50px;
+  box-shadow: 15px -15px 0 15px #ffffff;
+}
+
+.about-features-section .models .card .icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-top-left-radius: 50px;
+  box-shadow: -15px -15px 0 15px #ffffff;
+}
+
+.about-features-section .models .card .icon ion-icon {
+  color: rgb(56, 56, 56);
+  position: relative;
+  font-size: 6em;
+  z-index: 1000;
+  --ionicon-stroke-width: 24px;
+}
+
+
+.about-features-section .models .card .content {
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.about-features-section .models .card .content h2 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-features-section .models .card .content p {
+  color: #fff;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .about-features-section .models .card {
+    width: 450px;
+    height: 580px;
+  }
+  .about-features-section .models .card .icon {
+    left: 135px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-features-section .models .card {
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    height: 560px
+  }
+  .about-features-section .models .card .content h2 {
+    font-size: 1.2em;
+  }
+  .about-features-section .models .card .content p {
+    font-size: 14px;
+  }
+  .about-features-section .models .card .icon {
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-features-section .models .card {
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    height: 640px
+  }
+
+}
