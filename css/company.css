@@ -285,13 +285,19 @@ height: 100%;
     Career Section
 -------------------- */
 .career {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+}
+.career .container {
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
 }
 .career .nav-tabs {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .career .nav-tabs .nav-item {
   margin: 0 20px;
@@ -313,6 +319,408 @@ height: 100%;
   box-shadow: 0 0px 0 #f02828;
   color: #fcfcfc;
 }
+
 .career .tab-content .tab-pane {
   text-align: center;
+}
+.career .tab-content .spikes {
+  position: relative;
+  background: #f02828;
+  height: 100%;
+  margin: 0 auto; 
+  color: white;
+  padding: 100px 0;
+  bottom: 25px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;;
+}
+.career .tab-content .spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -9%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 60px;
+  background-size: 60px 100%;
+  background-image: linear-gradient(135deg, #f02828 25%, transparent 25%), linear-gradient(225deg, #f02828 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.career .tab-content .tab-text {
+  width: 90%;
+  margin: 0 auto;
+}
+.career .tab-content .tab-text span {
+  color: #2867f0;
+}
+.career .tab-content .tab-text p {
+  font-size: 15px;
+}
+.career .tab-content .tab-text h5 {
+  font-weight: 600;
+  color: #444;
+}
+#training h4 {
+  font-size: 30px;
+  width: 120%;
+  margin-left: -10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  color: #ccc;
+  background-image: url(../images/training-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.career .tab-content .tab-text h2 {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: wavy underline #f02828;
+  text-underline-offset: 7px;
+  margin: 30px 0 30px 0;
+  color: #333;
+  line-height: 3rem;
+}
+.career .tab-content .tab-text .career-background {
+  background-color: #1c86dd2f;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 10px 0px 10px 0;
+}
+.career .tab-content .tab-text ul {
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.career .tab-content .tab-text ul li {
+  margin-bottom: 5px;
+  color: #444;
+}
+.career .tab-content .tab-text ul li i {
+  color: #f02828;
+}
+#course .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#course .row a {
+  color: #444;
+}
+#course ul li i {
+  color: #2885f0;
+}
+#course .row .col-sm-4 {
+  padding-left: 9%;
+  font-size: 15px;
+}
+#course .row .col-12 {
+  padding-left: 40%;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  #course .row .col-sm-4 {
+    margin: 0 !important;
+    padding-left: 10%;
+  }
+  #course .row .col-12 {
+    padding-left: 10%;
+  }
+  #course .row {
+    margin: 20px 0;
+  }
+}
+
+
+#jobs .panel-default>.panel-heading {
+  background-color: rgb(28, 83, 165);
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#jobs .panel-default>.panel-heading a {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+#jobs .panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+#jobs .panel-default>.panel-heading a[aria-expanded="true"] {
+  background-color: rgb(15, 66, 141)
+}
+
+#jobs .panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\00d7";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#jobs .panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#jobs .panel-default>.panel-heading a span {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  right: 19%;
+  margin-top: 4px;
+  float: right;
+}
+
+@media screen and (max-width: 992px) {
+  #jobs .panel-default>.panel-heading a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+  }
+  #jobs .panel-default>.panel-heading a span {
+    display: none;
+  }
+}
+
+
+#apply .reasons {
+  margin: 0 5% 0 10%;
+}
+
+#apply .reasons h1 {
+  font-weight: 700;
+  text-align: left;
+  font-size: 34px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#apply .reasons h1 span {
+  color: rgb(67, 133, 233);
+}
+#apply .reasons ul  {
+  padding-left: 5%;
+}
+#apply .reasons ul li {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+#apply .reasons ul li i {
+  color:rgb(67, 133, 233);
+  width: 40px;
+  text-align: center;
+  margin-right: 5px;
+}
+#apply .reasons .know-more {
+  background-color: rgb(67, 133, 233);
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  border-left: 1px solid rgb(49, 110, 201);
+  border-right: 1px solid rgb(49, 110, 201);
+  border-bottom: 5px solid rgb(49, 110, 201);
+  transition: 0.3s ease;
+  box-shadow: 0 4px 0px rgb(182, 182, 182);
+  margin-bottom: 30px;
+}
+#apply .reasons .know-more:hover {
+  transform: translateY(4px);
+  border-bottom: 1px solid rgb(49, 110, 201);
+}
+
+#apply .box {
+  background-color: rgb(67, 133, 233);
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 0 10% 0 2%;
+}
+#apply .box .form-control {
+  margin: 15px 0;
+  height: 50px;
+  border: none;
+}
+#apply .box .btn {
+  background-color: #0d4eb1;
+  padding: 12px 25px;
+  border: 1px solid #0d4eb1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease;
+}
+#apply .box .btn:hover {
+  background-color: #0c469e;
+  border: 1px solid #0c469e;
+  transform: scale(1.05);
+}
+
+
+.file-upload {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: rgb(67, 133, 233);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid rgb(67, 133, 233);
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: rgb(67, 133, 233);
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed rgb(67, 133, 233);
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: rgb(67, 133, 233);
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.drag-text i {
+  font-size: 40px;
+  color: rgb(67, 133, 233);
+}
+
+.drag-text h3 {
+  margin-top: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: rgb(67, 133, 233);
+}
+.image-dropping, .image-upload-wrap:hover h3, .image-dropping, .image-upload-wrap:hover i {
+  color: #fff;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  margin-top: 20px;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.image-title {
+  color: rgb(65, 65, 65) !important;
+}
+
+@media screen and (max-width: 768px) {
+  #apply .reasons {
+    margin: 0 5%;
+  }
+  #apply .reasons h1{
+    text-align: center;
+  }
+  #apply .box {
+    margin: 0 5%;
+  }
 }
