@@ -11,7 +11,7 @@ html, body {
 -------------------- */
 .about-hero {
   height: 60vh;
-  background-image: url(../images/about.png);
+  background-image: url(../images/about.jpg);
   background-position: center;
   background-size: cover;
   display: flex;

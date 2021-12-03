@@ -10,7 +10,7 @@ html, body {
 -------------------- */
 .contact-hero {
   height: 60vh;
-  background-image: url(../images/contact.png);
+  background-image: url(../images/contact.jpg);
   background-position: center;
   background-size: cover;
   display: flex;

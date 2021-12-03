@@ -406,7 +406,7 @@ body {
   width: 50%;
   height: 660px;
   color: #fff;
-  background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/s31.jpg) no-repeat center;
+  background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/index-text.jpg) no-repeat center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -491,7 +491,7 @@ body {
   padding: 50px 0;
   margin-top: 30px;
 }
-.logo-div {
+.logo-section .logo-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,21 +499,21 @@ body {
   width: 100%;
   background: rgb(255, 255, 255);
 }
-.brand-carousel {
+.logo-section .brand-carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
 }
-.slide {
+.logo-section .slide {
   width: 150px;
 }
-.owl-stage {
+.logo-section .owl-stage {
   display: flex;
   align-items: center;
   cursor:grab;
 }
-.fade-left {
+.logo-section .fade-left {
   background-image: linear-gradient(to right, white, transparent);
   position: absolute;
   z-index: 99;
@@ -521,7 +521,7 @@ body {
   height: 105px;
   width: 10%;
 }
-.fade-right {
+.logo-section .fade-right {
   background-image: linear-gradient(to left, white, transparent);
   position: absolute;
   z-index: 99;
@@ -529,10 +529,10 @@ body {
   height: 105px;
   width: 10%
 }
-.slide img {
+.logo-section .slide img {
   transition: all 0.5s;
 }
-.slide img:hover {
+.logo-section .slide img:hover {
   transform: scale(0.95);
 }
 

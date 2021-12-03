@@ -10,7 +10,7 @@ html, body {
 -------------------- */
 .resources-hero {
   height: 60vh;
-  background-image: url(../images/resources.png);
+  background-image: url(../images/resources.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
