@@ -1,5 +1,19 @@
 $(document).ready(function() {
   var s = skrollr.init();
+  if (s.isMobile()) {
+    s.destroy();
+    $(".header").hide();
+    $(".hero-head").hide();
+    $(".header-mobile").show();
+    $("html").css("overflow-x", "hidden");
+    $(".main-section").addClass("main-section-mobile");
+  }
+  else {
+    $(".header").show();
+    $(".hero-head").show();
+    $(".header-mobile").hide();
+    $(".main-section").removeClass("main-section-mobile");
+  }
 });
 
   AOS.init();
