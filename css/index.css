@@ -28,7 +28,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index.png);
+  background-image: url(../images/index.webp);
 }
 #hero-img1 {
   width: 200px;
@@ -40,7 +40,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index-1.png);
+  background-image: url(../images/index-1.webp);
 }
 #hero-img2 {
   width: 600px;
@@ -53,7 +53,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index-2.png);
+  background-image: url(../images/index-2.webp);
 }
 #hero-img3 {
   width: 500px;
@@ -65,7 +65,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index-3.png);
+  background-image: url(../images/index-3.webp);
 }
 #hero-img4 {
   width: 200px;
@@ -78,7 +78,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index-4.png);
+  background-image: url(../images/index-4.webp);
 }
 
 .hero-head {
