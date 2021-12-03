@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
   AOS.init();
-  AOS.init({disable: 'mobile'});
+  
   skrollr.init({forceHeight: false}); 
 // Detect scroll to div
 function isScrolledIntoView(elem) {
