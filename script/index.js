@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
   AOS.init();
-  
+
   skrollr.init({forceHeight: false}); 
 // Detect scroll to div
 function isScrolledIntoView(elem) {
@@ -83,3 +83,6 @@ $(document).ready(function() {
   });
   
 });
+
+
+

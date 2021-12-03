@@ -25,3 +25,8 @@ else
 }
 
 
+$(window).on("load",function() {
+  $(".loader-wrapper").fadeOut("slow");
+  $(".navbar").fadeIn("slow");
+});
+
