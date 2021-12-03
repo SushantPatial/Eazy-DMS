@@ -402,9 +402,8 @@ body {
   justify-content: center;
 }
 .testimonials-section .card .member-img {
-  border-radius: 50%;
-  width: 100%;
-  box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.644);
+  margin-left: 10%;
+  width: 110%;
 }
 .testimonials-section .card .card-body {
   font-family: 'Open Sans', sans-serif;

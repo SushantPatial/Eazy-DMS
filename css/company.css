@@ -724,3 +724,16 @@ height: 100%;
     margin: 0 5%;
   }
 }
+
+#it-freshers .tab-text .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#it-freshers .tab-text .career-background {
+  width: 60%;
+  margin:10px;
+}
+#it-freshers .tab-text .career-background h4 {
+  color: #444;
+}
