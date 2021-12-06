@@ -63,3 +63,24 @@ $('#moreless-button2').click(function() {
   $(".dots2").toggle();
 });
 
+$('#moreless-button3').click(function() {
+  $('#moretext3').slideToggle();
+  if ($('#moreless-button3').text() == "Read More") {
+    $(this).text("Read Less");
+  } else {
+    $(this).text("Read More");
+  }
+  $(".dots3").toggle();
+});
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

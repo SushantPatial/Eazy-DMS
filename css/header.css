@@ -156,7 +156,7 @@ header .navbar .navbar-brand img{
 }
 
 .navbar .navbar-nav .nav-item {
-	margin: 0px 15px;
+	margin: 0px 12px;
 }
 .navbar .navbar-nav a.nav-link {
 	text-transform: capitalize;
@@ -197,6 +197,24 @@ header .navbar .navbar-brand img{
 .navbar .navbar-nav .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.navbar .navbar-nav button a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .navbar-nav button {
+  margin: 6px 20px 0 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #EC1C24;
+  border: none;
+  outline: none;
+  width: 150px;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.navbar .navbar-nav button:hover {
+  background-color: #da1a20;
 }
 
 @media screen and (max-width: 992px) {

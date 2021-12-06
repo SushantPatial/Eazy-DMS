@@ -1,57 +1,33 @@
-/** Easy selector helper function **/
- const select = (el, all = false) => {
-  el = el.trim()
-  if (all) {
-    return [...document.querySelectorAll(el)]
-  } else {
-    return document.querySelector(el)
-  }
-}
+$(document).ready(function() {
+  
+  let $grid = $('.portfolio-container');
 
- /** Easy event listener function **/
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-/** Porfolio isotope and filter **/
- window.addEventListener('load', () => {
-  let portfolioContainer = select('.portfolio-container');
-  if (portfolioContainer) {
-    let portfolioIsotope = new Isotope(portfolioContainer, {
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
+     $grid.isotope({
       itemSelector: '.portfolio-item',
+      filter: '.filter-festive',
       layoutMode: 'masonry'
     });
+  });
 
-    let portfolioFilters = select('#portfolio-flters li', true);
+ 
+    
+  $('#portfolio-flters').on('click', 'li', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    $('#portfolio-flters li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+  });
 
-    on('click', '#portfolio-flters li', function(e) {
-      e.preventDefault();
-      portfolioFilters.forEach(function(el) {
-        el.classList.remove('filter-active');
-      });
-      this.classList.add('filter-active');
+})
 
-      portfolioIsotope.arrange({
-        filter: this.getAttribute('data-filter')
-      });
-      portfolioIsotope.on('arrangeComplete', function() {
-        AOS.refresh()
-      });
-    }, true);
-  }
-});
+
+
 
 /** Initiate portfolio lightbox **/
 const portfolioLightbox = GLightbox({
   selector: '.portfolio-lightbox'
 });
-
 
 
 function readURL(input) {

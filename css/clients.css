@@ -78,14 +78,14 @@ html, body {
   width: 100%
 }
 .customers .customers-text-1 h3, .customers .customers-text-2 h3 {
-  text-transform: uppercase;
+  color: #444;
   letter-spacing: 2px;
-  font-size: 22px;
-}
-.customers .customers-text-1 h3 span, .customers .customers-text-2 h3 span {
   font-size: 26px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
-
+.customers .customers-text-1 p, .customers .customers-text-2 p {
+  color: #666;
+}
 
 .customers .customers-row-1 img {
   width: 90%;
@@ -145,7 +145,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    min-height: 500px;
   }
   .customers .customers-row-1, .customers .customers-row-3, .customers .customers-row-5 {
     flex-direction: column;
@@ -455,6 +455,9 @@ html, body {
   display: none;
 }
 #moretext2 {
+  display: none;
+}
+#moretext3 {
   display: none;
 }
 

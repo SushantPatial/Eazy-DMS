@@ -2,7 +2,7 @@ html, body {
   font-family: "Open Sans",sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
 }
 
 /* --------------------
@@ -10,7 +10,7 @@ html, body {
 -------------------- */
 .company-hero {
   height: 60vh;
-  background-image: url(../images/company.jpg);
+  background-image: url(../images/company.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -31,29 +31,26 @@ html, body {
 /* --------------------
     Journey Section 
 -------------------- */
-.journey {
-  margin-bottom: 40px;
-}
-.journey .nav-tabs {
+.nav-tabs {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.journey .nav-tabs .nav-item {
+.journey .nav-item {
   margin: 0 20px;
 }
-.journey .nav-tabs .nav-link {
+.journey .nav-link {
   border: none;
   transition: 0.5s ease;
   color: #444;
   font-weight: bold;
 }
-.journey .nav-tabs .nav-link:hover {
+.journey .nav-link:hover {
   border: none;
   box-shadow: 0 3px 0 #2793ec;
   color: #2793ec;
 }
-.journey .nav-tabs .nav-item .active {
+.journey .nav-item .active {
   border: none;
   box-shadow: 0 3px 0 #2793ec;
   color: #2793ec;
@@ -198,6 +195,10 @@ height: 100%;
 /* --------------------
     Life at Eazy Section 
 -------------------- */
+.portfolio {
+  overflow-y: hidden;
+  margin: 40px 0;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -284,43 +285,48 @@ height: 100%;
 /* --------------------
     Career Section
 -------------------- */
-.career {
+#career {
   width: 100%;
   margin: 0 auto;
+
 }
-.career .container {
+#career .container {
   width: 100%;
   padding: 0;
   max-width: 100%;
 }
-.career .nav-tabs {
+#career .nav-tabs1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-bottom: 10px;
 }
-.career .nav-tabs .nav-item {
+#career .nav-tabs1 .nav-item1 {
   margin: 0 20px;
 }
-.career .nav-tabs .nav-link {
+#career .nav-tabs1 .nav-link1 {
   border: none;
   transition: 0.5s ease;
   color: #444;
   font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-decoration: none;
 }
-.career .nav-tabs .nav-link:hover {
+#career .nav-tabs1 .nav-link1:hover {
   border: none;
   box-shadow: 0 3px 0 #f02828;
   color: #f02828;
 }
-.career .nav-tabs .nav-item .active {
+#career .nav-tabs1 .nav-item1 .active {
   background-color: #f02828;
   border-bottom: 1px solid #f02828;
   box-shadow: 0 0px 0 #f02828;
   color: #fcfcfc;
 }
 
-.career .tab-content .tab-pane {
+#career .tab-content .tab-pane {
   text-align: center;
 }
 .career .tab-content .spikes {
