@@ -415,6 +415,9 @@ body {
   left: 0;
   z-index: 1;
 }
+.eazy-dms4 .eazy-dms4-sec1 p {
+  font-size: 18px;
+}
 
 .eazy-dms4 .eazy-dms4-sec2 {
   float: right;
@@ -446,13 +449,6 @@ body {
   .eazy-dms4 .eazy-dms4-sec1 {
     width: 80%;
     height: 660px;
-    color: #fff;
-    background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/s31.jpg) no-repeat center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 10%;
-    position: absolute;
     right: 0;
     z-index: 1;
   }
@@ -460,10 +456,6 @@ body {
   .eazy-dms4 .eazy-dms4-sec2 {
     width: 80%;
     height: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
     margin-top: 580px;
     padding: 0 10% 0 10%;
     background: rgb(3, 5, 26);

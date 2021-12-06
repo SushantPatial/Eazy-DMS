@@ -73,6 +73,7 @@ html, body {
 /* --------------------
     Blogs Section 
 -------------------- */
+
 .blogs {
   height: 100%;
   margin-top: 40px;
@@ -105,6 +106,7 @@ html, body {
 
 .blogs .blog-posts .post-content {
   background-color: #eeed;
+  min-height: 230px;
   margin: 0 20px;
   padding: 30px;
   border-radius: 6px;
@@ -152,12 +154,74 @@ html, body {
 /* --------------------
     Newsroom Section 
 -------------------- */
-.newsroom {
-  margin-top: 40px;
+
+.newsroom .featured-wrapper {
+  background-color: #111;
 }
-#newsroom-carousel img {
+.newsroom .featured-news {
+  color: white;
+  text-align: left;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 0 50px 0;
+}
+.newsroom .featured-news h3 {
+  margin-left: 15px;
+  font-weight: 700;
+}
+.newsroom .featured-news .featured {
+  margin: 30px auto 0 auto;
+}
+.newsroom .featured-news .featured a {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(#111, #111), linear-gradient(#111,#111), linear-gradient(#fff, #fff);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+.newsroom .featured-news .featured .big-headline:hover a {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+.newsroom .featured-news .featured .col-md-6:hover a {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+.newsroom .featured-news img {
   width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
+.newsroom .featured-news .featured .col-md-6 {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .newsroom .featured-news {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .newsroom .featured-news {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .newsroom .featured-news .featured .col-md-6 {
+    margin-bottom: 30px;
+  }
+  .newsroom .featured-news .featured h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .newsroom .featured-news {
+    margin: 0 30px;
+  }
+}
+
 
 .news-row {
   width: 100%;
