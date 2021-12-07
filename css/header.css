@@ -139,7 +139,6 @@ header {
 	position: absolute;
 	z-index: 99999;
 	width: 100%;
-	background-color: transparent;
 	height: 80px;
 }
 header .navbar {

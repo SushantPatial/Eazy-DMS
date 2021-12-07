@@ -380,7 +380,7 @@ body {
   color: white;
 }
 .triple-c-section .row {
-  background-color: #516CA9;
+  background-color: #032a4d;
   margin-top: -100px;
   padding: 8% 6% 0 6%;
 }
@@ -404,7 +404,7 @@ body {
 ------------------*/
 .eazy-dms4 .eazy-dms4-sec1 {
   width: 50%;
-  height: 660px;
+  height: 560px;
   color: #fff;
   background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/index-text.jpg) no-repeat center;
   display: flex;
@@ -422,7 +422,7 @@ body {
 .eazy-dms4 .eazy-dms4-sec2 {
   float: right;
   width: 70%;
-  height: 660px;
+  height: 560px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -536,15 +536,138 @@ body {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-.fusionvstally-section .table thead tr {
-  background-color: rgb(74, 150, 212);
-  color: white;
+.fusionvstally-section .wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.fusionvstally-section .wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: rgb(26, 104, 206);
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.fusionvstally-section .wrapper .row{
+  display: flex;
+}
+.fusionvstally-section .wrapper .row-1{
+  justify-content: flex-start;
+}
+.fusionvstally-section .wrapper .row-2{
+  justify-content: flex-end;
+}
+.fusionvstally-section .wrapper .row section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.514);
+}
+.fusionvstally-section .wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.fusionvstally-section .row-1 section::before{
+  right: -7px;
+}
+.fusionvstally-section .row-2 section::before{
+  left: -7px;
+}
+.fusionvstally-section .row section .icon,
+.fusionvstally-section .center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
   text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(26, 104, 206);
+  font-size: 17px;
+  box-shadow: 0 0 0 4px rgb(26, 104, 206), inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
-.fusionvstally-section .table tbody tr:nth-child(even) {
-  background-color: rgb(220, 239, 247);
+.fusionvstally-section .center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
 }
-
+.fusionvstally-section .row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.fusionvstally-section .row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.fusionvstally-section .row section .details,
+.fusionvstally-section .row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fusionvstally-section .row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(26, 104, 206);
+}
+.fusionvstally-section .row section p{
+  margin: 10px 0 17px 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+.fusionvstally-section .row section .bottom a{
+  text-decoration: none;
+  background: #ff7979;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.fusionvstally-section .row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .fusionvstally-section .wrapper .center-line{
+    left: 40px;
+  }
+  .fusionvstally-section .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .fusionvstally-section .wrapper .row section{
+    width: 100%;
+  }
+  .fusionvstally-section .row-1 section::before{
+    left: -7px;
+  }
+  .fusionvstally-section .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .fusionvstally-section .wrapper .center-line,
+  .fusionvstally-section .row section::before,
+  .fusionvstally-section .row section .icon{
+    display: none;
+  }
+  .fusionvstally-section .wrapper .row{
+    margin: 10px 0;
+  }
+}
 
 /*------------------
     Testimonials Section

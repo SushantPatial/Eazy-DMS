@@ -84,6 +84,7 @@ html, body {
   overflow: hidden;
   position: relative;
   border-bottom: 5px solid #00325a;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.486);
 }
 .our-team:hover{
   border-bottom: 5px solid #2f2f2f;
@@ -93,7 +94,7 @@ html, body {
   display: inline-block;
   width: 130px;
   height: 130px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   z-index: 1;
   position: relative;
 }
@@ -157,8 +158,14 @@ height: 100%;
 .our-team .post{
   display: block;
   font-size: 15px;
+  font-weight: 600;
   color: #4e5052;
   text-transform:capitalize;
+}
+.our-team .team-content p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #696969;
 }
 .our-team .social{
   width: 100%;
@@ -201,7 +208,11 @@ height: 100%;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  transform:translate3d(0,0,0);
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
 }
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -316,13 +327,13 @@ height: 100%;
 }
 #career .nav-tabs1 .nav-link1:hover {
   border: none;
-  box-shadow: 0 3px 0 #f02828;
-  color: #f02828;
+  box-shadow: 0 3px 0 #e03a3c;
+  color: #e03a3c;
 }
 #career .nav-tabs1 .nav-item1 .active {
-  background-color: #f02828;
-  border-bottom: 1px solid #f02828;
-  box-shadow: 0 0px 0 #f02828;
+  background-color: #e03a3c;
+  border-bottom: 1px solid #e03a3c;
+  box-shadow: 0 0px 0 #e03a3c;
   color: #fcfcfc;
 }
 
@@ -331,7 +342,7 @@ height: 100%;
 }
 .career .tab-content .spikes {
   position: relative;
-  background: #f02828;
+  background: #e03a3c;
   height: 100%;
   margin: 0 auto; 
   color: white;
@@ -351,7 +362,7 @@ height: 100%;
   display: block;
   height: 60px;
   background-size: 60px 100%;
-  background-image: linear-gradient(135deg, #f02828 25%, transparent 25%), linear-gradient(225deg, #f02828 25%, transparent 25%);
+  background-image: linear-gradient(135deg, #e03a3c 25%, transparent 25%), linear-gradient(225deg, #e03a3c 25%, transparent 25%);
   background-position: 0 0;
 }
 
@@ -512,6 +523,71 @@ height: 100%;
   #jobs .panel-default>.panel-heading a span {
     display: none;
   }
+}
+
+#jobs .panel-collapse {
+  margin: 30px 0;
+  color: #444;
+}
+#jobs .panel-group .panel-body .col-lg-8 {
+  text-align: left;
+}
+#jobs .panel-group .panel-body .col-lg-8 ul li {
+  margin-left: -40px;
+  line-height: 20px;
+}
+#jobs .panel-group h4 {
+  text-transform: uppercase;
+  color: #333;
+}
+#jobs .panel-group .panel-body tr th {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+#jobs .panel-group .panel-body tr th i {
+  font-size: 20px;
+  color: #1C53A5;
+  margin-top: 2px;
+}
+
+#jobs .panel-group .panel-body .apply-btn {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  background: #1C53A5;
+  color: #fff;
+  border: 2px solid #1C53A5;
+  padding: 0.45em 0.75em;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#jobs .panel-group .panel-body .apply-btn:hover {
+  color: #1C53A5;
+}
+#jobs .panel-group .panel-body .apply-btn::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+  transition: 0.5s ease;
+}
+#jobs .panel-group .panel-body .grow_skew_forward::after {
+  left: -40%;
+  right: -40%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+}
+#jobs .panel-group .panel-body .grow_skew_forward:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
 }
 
 

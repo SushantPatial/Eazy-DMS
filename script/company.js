@@ -2,12 +2,12 @@ $(document).ready(function() {
   
   let $grid = $('.portfolio-container');
 
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function () {
-     $grid.isotope({
-      itemSelector: '.portfolio-item',
-      filter: '.filter-festive',
-      layoutMode: 'masonry'
-    });
+  
+
+  $grid.isotope({
+    itemSelector: '.portfolio-item',
+    filter: '.filter-awards',
+    layoutMode: 'masonry'
   });
 
  
