@@ -47,7 +47,7 @@ html, body {
   justify-content: center;
 }
 .customers .customers-row:nth-child(even) {
-  background-color: #eee;
+  background-color: #eeeeeeff;
 }
 .customers .customers-text-1 {
   display: flex;
@@ -388,7 +388,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(204, 222, 235);
+  background-color: rgb(233, 241, 245);
 }
 .col-lg-4 {
   margin: 40px auto;

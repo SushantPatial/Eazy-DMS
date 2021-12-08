@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 #hero-bg {
-  width: 1000px;
+  width: 900px;
   height: 650px;
   display: block;
   position: fixed;
@@ -86,7 +86,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute; 
-  top: -270px;
+  top: -170px;
   width: 45%;
   z-index: 10;
 }
@@ -154,6 +154,32 @@ body {
     width: 120px;
   }
   
+}
+
+.header .scroll-down-arrow {
+  position: fixed;
+  top: 88%;
+  font-size: 40px;
+  z-index: 9999;
+  animation: 1.5s infinite scroll-down;
+}
+.header .scroll-down-arrow a {
+  color: white;
+}
+.scroll-down-arrow-absolute {
+  position: absolute !important;
+  top: 2670px !important;
+}
+@keyframes scroll-down {
+  0%, 100% {
+    top: 88%;
+  }
+  50%, 70% {
+    top: 90%;
+  }
+  60% {
+    top: 89%;
+  }
 }
 
 
@@ -368,6 +394,8 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: white;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 .main-section-mobile {
   top: 200px !important;

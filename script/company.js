@@ -30,6 +30,20 @@ const portfolioLightbox = GLightbox({
 });
 
 
+
+$(".apply-btn").on("click", function() {
+  $(".job-tab-button").removeClass("active");
+  $("#jobs").removeClass("show");
+  $("#jobs").removeClass("active");
+  
+  $(".apply-tab-button").addClass("active");
+  $("#apply").addClass("show");
+  $("#apply").addClass("active");
+})
+
+
+
+
 function readURL(input) {
   if (input.files && input.files[0]) {
 

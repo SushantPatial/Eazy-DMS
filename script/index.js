@@ -16,6 +16,17 @@ $(document).ready(function() {
   }
 });
 
+
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 2110) {
+    $(".scroll-down-arrow").addClass("scroll-down-arrow-absolute")
+  } else {
+    $('.scroll-down-arrow').removeClass('scroll-down-arrow-absolute');
+  }
+});
+
+
+
   AOS.init();
 
   skrollr.init({forceHeight: false}); 

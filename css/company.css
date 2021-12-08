@@ -31,34 +31,97 @@ html, body {
 /* --------------------
     Journey Section 
 -------------------- */
-.nav-tabs {
+.journey .nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+}
+.journey .nav-item {
+  margin: 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.journey .nav-item {
-  margin: 0 20px;
-}
 .journey .nav-link {
-  border: none;
+  border: 1px solid rgb(10, 41, 97);
+  border-radius: 0;
+  width: 250px;
+  height: 90px;
   transition: 0.5s ease;
-  color: #444;
+  color: rgb(10, 41, 97);
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
 }
-.journey .nav-link:hover {
-  border: none;
-  box-shadow: 0 3px 0 #2793ec;
-  color: #2793ec;
+.journey .nav-link .nav-link-icon {
+  font-size: 40px;
+  margin-right: 20px;
 }
-.journey .nav-item .active {
-  border: none;
-  box-shadow: 0 3px 0 #2793ec;
-  color: #2793ec;
+.journey .nav-link .nav-link-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 .journey .tab-content .tab-pane {
   text-align: center;
 }
+.journey .nav-link:hover {
+  color: #fff;
+  background-color: rgb(10, 41, 97);
+}
+.journey .nav-item .active {
+  color: #fff;
+  background-color: rgb(10, 41, 97);
+}
 
+@media screen and (max-width: 900px) {
+  .journey .nav-link {
+    width: 200px;
+    height: 80px;
+  }
+  .journey .nav-link .nav-link-icon {
+    font-size: 36px;
+  }
+  .journey .nav-link .nav-link-text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .journey .nav-link {
+    width: 180px;
+    height: 70px;
+  }
+  .journey .nav-link .nav-link-icon {
+    font-size: 30px;
+  }
+  .journey .nav-link .nav-link-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .journey .nav-link {
+    width: 100px;
+  }
+  .journey .nav-link .nav-link-icon {
+    font-size: 30px;
+    margin-right: 0;
+  }
+  .journey .nav-link .nav-link-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .journey .nav-link {
+    width: 70px;
+    height: 70px;
+  }
+  .journey .nav-link .nav-link-icon {
+    font-size: 30px;
+  }
+}
 
 .our-team-section {
   position: relative;
@@ -212,7 +275,17 @@ height: 100%;
   -webkit-transform:translate3d(0,0,0);
   -moz-transform:translate3d(0,0,0);
 }
-
+.portfolio .col-12 {
+  
+}
+.portfolio .portfolio-item h3 {
+  background-color: #9ECAF9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -559,8 +632,9 @@ height: 100%;
   background: #1C53A5;
   color: #fff;
   border: 2px solid #1C53A5;
-  padding: 0.45em 0.75em;
-  margin: 1rem;
+  padding: 0.60em 1.7em;
+  display: flex;
+  margin: 2rem auto 2rem auto;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -572,7 +646,7 @@ height: 100%;
 }
 #jobs .panel-group .panel-body .apply-btn::after {
   content: "";
-  background: #ecf0f1;
+  background: #fff;
   position: absolute;
   z-index: -1;
   padding: 0.85em 0.75em;
@@ -588,6 +662,12 @@ height: 100%;
 }
 #jobs .panel-group .panel-body .grow_skew_forward:hover::after {
   transform: skewX(-45deg) scale(1, 1);
+}
+
+@media screen and (max-width: 992px) {
+  #jobs .panel-group .panel-body .row {
+    flex-direction: column-reverse;
+  }
 }
 
 

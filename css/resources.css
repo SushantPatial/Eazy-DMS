@@ -315,3 +315,178 @@ html, body {
   margin: 0 auto;
   margin-top: 40px;
 }
+.catalogue .case-studies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalogue .case-studies .deck-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalogue .case-studies .case-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  padding: 20px;
+  margin: 20px 30px;
+  box-shadow: 0 0 10px rgb(177, 177, 177);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.catalogue .case-studies .case-card .card-img {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalogue .case-studies .case-card .card-img img {
+  width: 70%;
+}
+.catalogue .case-studies .case-card .card-text {
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+}
+.catalogue .case-studies .case-card button {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #13609e;
+  border: 1px solid #13609e;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: 0.5s ease;
+}
+.catalogue .case-studies .case-card button:hover {
+  color: #13609e;
+  background-color: #fff;
+}
+
+.catalogue .company-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalogue .company-deck .deck-card {
+  width: 28rem;
+  box-shadow: 0 0 10px rgb(153, 153, 153);
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.catalogue .company-deck .deck-card .deck-img {
+  margin-bottom: -70px;
+}
+.catalogue .company-deck .deck-card .deck-img img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.catalogue .company-deck .deck-text {
+  background-color: #1174c5;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transform: translateY(100px);
+  transition: 0.5s ease;
+}
+.catalogue .company-deck .deck-text h3 {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.catalogue .company-deck .deck-card:hover .deck-text {
+  transform: translateY(0px);
+}
+.catalogue .company-deck .deck-card:hover .deck-img img {
+  transform: scale(1.03);
+  filter: brightness(85%);
+}
+
+@media screen and (max-width: 500px) {
+  .catalogue .company-deck .deck-card {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .catalogue .company-deck .deck-card {
+    width: 16rem;
+  }
+}
+
+.catalogue-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.catalogue-cards .catalogue-card {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  width: 36rem;
+  padding: 15px;
+  box-shadow: 0 0 10px rgb(197, 197, 197);
+  border-radius: 7px;
+  transition: 0.5s ease;
+}
+.catalogue-cards img {
+  width: 80px;
+  margin-right: 30px;
+}
+
+.catalogue-cards .catalogue-card .catalogue-body {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+.catalogue-cards .catalogue-card .catalogue-body h6 {
+  margin-top: 2px;
+}
+.catalogue-cards .catalogue-card a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #111;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+.catalogue-cards .catalogue-card a:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.catalogue-cards .catalogue-card:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+@media screen and (max-width: 420px) {
+  .catalogue-cards img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .catalogue-cards .catalogue-card .catalogue-body h6 {
+    font-size: 14px;
+  }
+  .catalogue-cards .catalogue-card a {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
