@@ -256,6 +256,45 @@ header .navbar .navbar-brand img{
 }
 
 
+#request-a-demo .form-control {
+  height: 50px;
+  margin: 15px 0;
+}
+#request-a-demo .modal-header {
+  background-color: #2464AD;
+  color: white;
+  text-transform: uppercase;
+}
+#request-a-demo .modal-footer {
+  display: inline;
+  padding: 0;
+  border-top: 0;
+}
+#request-a-demo .modal-footer button {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border: none;
+  color: #ddd;
+  text-transform: uppercase;
+  background-color: #2464AD;
+  padding: 0 30px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+#request-a-demo .modal-footer .modal-cancel {
+  background-color: #333;
+}
+#request-a-demo .modal-footer .modal-cancel:hover {
+  background-color: #222;
+  color: #fff;
+}
+#request-a-demo .modal-footer .modal-submit:hover {
+  background-color: #1b508d;
+  color: #fff;
+}
+
+
 
 .loader-wrapper {
   width: 100%;
