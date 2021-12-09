@@ -79,13 +79,43 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li>
-                <button><a href="#">Request a Demo</a></button>
+                <button data-toggle="modal" data-target="#request-a-demo">Request a Demo</button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <div class="modal fade" id="request-a-demo" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="about-hero">
       <h1 data-aos="zoom-out">About Us</h1>
@@ -95,6 +125,10 @@
     <main class="main-section-about">
 
       <section class="about-section">
+        <button class="g-recaptcha" 
+        data-sitekey="6LcfnowdAAAAAMgpg-OzuSRdzhq015f0kZ_Sdtji" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
         <p>Fusion DMS has travelled many miles i.e from integration with your Distributor’s Tally & Busy & providing complete control over the distributor's billing Software with the same flavor of Portal based DMS.
         <p>Eazy’s re-engineered Fusion DMS provides a comprehensive solution for end-to-end distribution channel management, equipping not just Superstockists and Distributors but Retailers, Influencers, Managers, Sales Person, Support Centers along the way as well.</p>
         <p>By bringing everything under a single cohesive system, something that Hybrid DMS failed to do, the Fusion DMS enables businesses to establish multi-dimensional control & accessibility across different processes of their distribution channel. As such, the Fusion DMS overcomes the limitations of distributor management and redefines how modern businesses approach distributor & loyalty management in three ways – streamlining connectivity, establishing seamless communication and facilitating collaboration.</p>
@@ -579,9 +613,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- Script -->
     <script src="script/header.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
 
   </body>
 </html>
