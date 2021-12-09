@@ -91,11 +91,9 @@ html, body {
   width: 90%;
 }
 .customers .customers-row-2 img {
-  width: 70%;
+  width: 60%;
 }
-.customers .customers-row-3 img {
-  width: 70%;
-}
+
 
 @media only screen and (max-width: 992px) {
   .customers .customers-row-1 img {
