@@ -351,7 +351,7 @@ html, body {
   align-items: flex-start;
   position: relative;
   width: 450px;
-  height: 500px;
+  height: 520px;
   margin: 30px;
   border: none;
   border-radius: 20px;
@@ -484,7 +484,7 @@ html, body {
 @media screen and (max-width: 768px) {
   .about-benefits-section .models .card {
     width: 450px;
-    height: 580px;
+    height: 600px;
   }
   .about-benefits-section .models .card .icon {
     left: 135px;
@@ -498,7 +498,7 @@ html, body {
     min-width: 300px;
     display: flex;
     align-items: center;
-    height: 580px
+    height: 620px;
   }
   .about-benefits-section .models .card .content h2 {
     font-size: 1.2em;
