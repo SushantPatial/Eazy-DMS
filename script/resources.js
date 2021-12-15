@@ -9,7 +9,7 @@ function sendmail(){
 				
     To: 'sushantpatial18@gmail.com',
     From: "patial.sushant12345@gmail.com",
-    Subject: "New message on contact from ",
+    Subject: "New message on contact from",
     Body: Body
   }).then(
     message =>{
