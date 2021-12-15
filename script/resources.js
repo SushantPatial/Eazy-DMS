@@ -7,8 +7,8 @@ function sendmail(){
   Email.send({
     SecureToken:"d31d5b48-c70e-4f1e-9880-9f8c4425413b",
 				
-    To: 'sushantpatial18@gmail.com',
-    From: "patial.sushant12345@gmail.com",
+    To: 'patial.sushant12345@gmail.com',
+    From: "sushantpatial18@gmail.com",
     Subject: "New message on contact from",
     Body : "And this is the body",
     Attachments : [
