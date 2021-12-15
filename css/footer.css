@@ -8,6 +8,10 @@
   width: 100%;
   color: #fff;
 }
+.footer-section .footer-inner-1 {
+  padding-bottom: 20px;
+}
+
 .footer-section .contact-col .address, .footer-section .contact-col ul li, .footer-section .contact-col ul li a, .footer-section .links-col ul li a {
   color: #bbb;
   transition: 0.5s ease;
@@ -58,6 +62,13 @@
 .footer-section .links-col ul li i {
   color: rgb(45, 144, 224)
 }
+.footer-section .links-col .product-links {
+  margin-left: -5px;
+}
+.footer-section .links-col .product-links img {
+  width: 35px;
+  margin: 0 5px;
+}
 .footer-section .links-col .social-links .fab {
   font-size: 24px;
   margin: 0 10px 10px 12px;
@@ -100,6 +111,12 @@
   height: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-section h5 {
+    font-size: 20px !important;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .footer-section .partners-col .link-image img {
     width: 100%;
@@ -126,6 +143,32 @@
   .footer-section .partners-col {
     position: relative;
     left: 0px;
+  }
+  .footer-section .links-col .product-links img {
+    width: 40px;
+    margin: 0 5px;
+  }
+  .footer-section .links-col .product-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .footer-section .footer-inner-1 .container .row .links-col .links-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .footer-section .footer-inner-1 .container .row .links-col .links-row .col-6 .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
   }
 }
 

@@ -28,7 +28,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/index.webp);
+  background-image: url(../images/index.gif);
 }
 #hero-img1 {
   width: 200px;
@@ -164,7 +164,7 @@ body {
   animation: 1.5s infinite scroll-down;
 }
 .header .scroll-down-arrow a {
-  color: white;
+  color: rgb(0, 140, 255);
 }
 .scroll-down-arrow-absolute {
   position: absolute !important;
@@ -432,7 +432,7 @@ body {
 ------------------*/
 .eazy-dms4 .eazy-dms4-sec1 {
   width: 50%;
-  height: 560px;
+  height: 500px;
   color: #fff;
   background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/index-text.jpg) no-repeat center;
   display: flex;
@@ -450,7 +450,7 @@ body {
 .eazy-dms4 .eazy-dms4-sec2 {
   float: right;
   width: 70%;
-  height: 560px;
+  height: 460px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -473,14 +473,13 @@ body {
   border-top: 5px solid white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .eazy-dms4 .eazy-dms4-sec1 {
     width: 80%;
     height: 660px;
     right: 0;
     z-index: 1;
   }
-  
   .eazy-dms4 .eazy-dms4-sec2 {
     width: 80%;
     height: 800px;
@@ -972,7 +971,7 @@ body {
     margin-right: 50px;
   }
   #stats-box .sec-2 {
-    width: 100%;
+    width: 80%;
     align-items: normal;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -1017,10 +1016,10 @@ body {
     margin: 0px;
   }
   #stats-box .years {
-    font-size: 170px;
+    font-size: 140px;
   }
   .experience h2 {
-    font-size: 24px !important;
+    font-size: 22px !important;
     padding-left: 10px;
     margin-bottom: 30px;
   }
@@ -1042,11 +1041,11 @@ body {
   }
   .stats {
     margin-top: -70px;
-    font-size: 22px;
+    font-size: 18px;
   }
   .stats .fas {
     color: #1F305D;
-    font-size: 40px;
+    font-size: 30px;
   }
   .sec-2 h5 {
     font-size: 14px;
@@ -1132,6 +1131,9 @@ body {
   width: 100%;
   color: #fff;
 }
+.footer-section .footer-inner-1 {
+  padding-bottom: 20px;
+}
 .footer-section .contact-col .address, .footer-section .contact-col ul li, .footer-section .contact-col ul li a, .footer-section .links-col ul li a {
   color: #bbb;
   transition: 0.5s ease;
@@ -1188,7 +1190,13 @@ body {
   color: #bbb;
   transition: all 0.3s ease;
 }
-
+.footer-section .links-col .product-links {
+  margin-left: -5px;
+}
+.footer-section .links-col .product-links img {
+  width: 35px;
+  margin: 0 5px;
+}
 .footer-section .links-col .social-links .fa-facebook-f:hover {
 	color: #4064AC;
 }
@@ -1224,6 +1232,12 @@ body {
   height: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-section h5 {
+    font-size: 20px !important;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .footer-section .partners-col .link-image img {
     width: 70%;
@@ -1245,6 +1259,31 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
+  }
+  .footer-section .links-col .product-links img {
+    width: 40px;
+    margin: 0 5px;
+  }
+  .footer-section .links-col .product-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .footer-section .footer-inner-1 .container .row .links-col .links-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-section .footer-inner-1 .container .row .links-col .links-row .col-6 .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
   }
 }
 

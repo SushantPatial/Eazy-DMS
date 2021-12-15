@@ -93,8 +93,7 @@
     </header>
 
     <div class="resources-hero">
-      <h1 data-aos="zoom-out">Resources</h1>
-      <p data-aos="zoom-out">The tools you need to succeed at every level</p>
+     
     </div>
 
     <main class="main-section-resources">
@@ -599,6 +598,73 @@
               
           </section>
 
+          <div class="case-study modal fade" id="case-study-goodyear" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 100000;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Goodyear Case Study</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white;">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form method="post" action="javascript:sendmail()">
+                    <input type="text" class="form-control name" name="name" id="gy-name" placeholder="Name*" style="margin-top: 0;" required>
+                    <input type="text" class="form-control mobile" name="mobile" id="gy-mobile" placeholder="Mobile*" required>
+                    <input type="text" class="form-control email" name="email" id="gy-email" placeholder="Email*" required>
+                    <input type="text" class="form-control company-name" name="company-name" id="gy-company-name" placeholder="Company Name*" required>
+                    <input type="text" class="form-control country" name="country" id="gy-country" placeholder="Country*" required>
+                    <button type="submit">He</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-6" style="padding-right: 0;">
+                      <button class="modal-cancel" data-dismiss="modal" aria-label="Close" style="text-align: left;">Cancel</button>
+                    </div>
+                    <div class="col-6" style="padding-left: 0;">
+                      <button type="submit" class="modal-submit" name="modal-submit" style="text-align: right;">Submit</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study modal fade" id="case-study-crompton" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 100000;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Crompton Case Study</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white;">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <input type="text" class="form-control name" name="name" placeholder="Name*" style="margin-top: 0;" required>
+                    <input type="text" class="form-control mobile" name="mobile" placeholder="Mobile*" required>
+                    <input type="text" class="form-control email" name="email" placeholder="Email*" required>
+                    <input type="text" class="form-control company-name" name="company-name" placeholder="Company Name*" required>
+                    <input type="text" class="form-control country" name="country" placeholder="Country*" required>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-6" style="padding-right: 0;">
+                      <button class="modal-cancel" data-dismiss="modal" aria-label="Close" style="text-align: left;">Cancel</button>
+                    </div>
+                    <div class="col-6" style="padding-left: 0;">
+                      <button type="submit" class="modal-submit" name="modal-submit" style="text-align: right;">Submit</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
           <section id="catalogue" class="catalogue tab-pane fade">
 
             <div class="section-heading" style="margin-top: 40px;">
@@ -614,7 +680,7 @@
                 <div class="card-text">
                   Goodyear leverages Eazy DMS for Collecting Secondary Sales Data!
                 </div>
-                <button>View Case Study</button>
+                <button data-toggle="modal" data-target="#case-study-goodyear">View Case Study</button>
               </div>
 
               <div class="case-card">
@@ -624,49 +690,55 @@
                 <div class="card-text">
                   Crompton gears up for its secondary sales data collection with EAZY DMS!
                 </div>
-                <button>View Case Study</button>
+                <button data-toggle="modal" data-target="#case-study-crompton">View Case Study</button>
               </div>
             </div>
 
 
-            <div class="section-heading" style="margin-top: 40px;">
-              <h2>Company Deck</h2>
-              <div class="section-heading-underline" style="margin-bottom:20px;"></div>
-            </div>
-            
-            <div class="company-deck">
+            <div class="row">
 
-              <a href="https://bitrix24public.com/eazyerp.bitrix24.in/docs/pub/91305a0e21cf47cfd3b3ad255f557ea7/default/?&" target="_blank" style="text-decoration: none;">
-                <div class="deck-card">
-                  <div class="deck-img">
-                    <img src="images/company-deck.png">
-                  </div>
-                  <div class="deck-text">
-                    <h3>Fusion DMS <span style="position: absolute; right: 20px;"><i class="fas fa-file-powerpoint"></i></span></h3>
-                  </div>
+              <div class="col-lg-6">
+                <div class="section-heading" style="margin-top: 40px;">
+                  <h2>Company Deck</h2>
+                  <div class="section-heading-underline" style="margin-bottom:20px;"></div>
                 </div>
-              </a>
-
-            </div>
+                <div class="company-deck">
+  
+                  <a href="https://bitrix24public.com/eazyerp.bitrix24.in/docs/pub/91305a0e21cf47cfd3b3ad255f557ea7/default/?&" target="_blank" style="text-decoration: none;">
+                    <div class="deck-card">
+                      <div class="deck-img">
+                        <img src="images/company-deck.png">
+                      </div>
+                      <div class="deck-text">
+                        <h3>Fusion DMS <span style="position: absolute; right: 20px;"><i class="fas fa-file-powerpoint"></i></span></h3>
+                      </div>
+                    </div>
+                  </a>
+    
+                </div>
+              </div>
+                
+              <div class="col-lg-6">
+                <div class="section-heading" style="margin-top: 40px;">
+                  <h2>Catalogue</h2>
+                  <div class="section-heading-underline" style="margin-bottom:20px;"></div>  
+                </div>
+    
+                <div class="catalogue-cards">
+    
+                  <div class="catalogue-card">
+                    <img src="images/pdf-icon.jpg">
+                    <div class="catalogue-body">
+                      <h6 class="catalogue-text">
+                        DMS Flyer.pdf
+                      </h6>
+                      <a href="images/DMS FLYER.pdf" target="_blank">View PDF</a>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
               
-
-            <div class="section-heading" style="margin-top: 40px;">
-              <h2>Catalogue</h2>
-              <div class="section-heading-underline" style="margin-bottom:20px;"></div>  
-            </div>
-
-            <div class="catalogue-cards">
-
-              <div class="catalogue-card">
-                <img src="images/pdf-icon.jpg">
-                <div class="catalogue-body">
-                  <h6 class="catalogue-text">
-                    DMS Flyer.pdf
-                  </h6>
-                  <a href="images/DMS FLYER.pdf" target="_blank">View PDF</a>
-                </div>
-              </div>
-
             </div>
           
           </section>
@@ -751,12 +823,25 @@
                   </ul>
                 </div>
               </div>
-              <h5>Social Links</h5>
-              <div class="row social-links">
-                <a href="https://www.facebook.com/eazyerp"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/eazyerp"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/singhal-system-solutions-pvt-ltd---offical-page?trk=tyah&trkInfo=tas%3Aeazy%20b%2Cidx%3A1-2-2"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/channel/UCiAOxBYpm4VCZqhKQI3dZNw/videos"><i class="fab fa-youtube"></i></a>
+              <div class="row links-row">
+                <div class="col-6">
+                  <h5>Other Products</h5>
+                  <div class="row product-links">
+                    <a href="https://www.eazyerp.com/"><img src="images/logos/ERP.png"></a>
+                    <a href="https://www.eazyerp.com/eazy-crm.php"><img src="images/logos/CRM.png"></a>
+                    <a href="https://www.eazyerp.com/eazy-pay.php"><img src="images/logos/PAY.png"></a>
+                    <a href="https://www.eazyerp.com/eazy-crm.php"><img src="images/logos/RETAIL.png"></a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h5>Social Links</h5>
+                  <div class="row social-links">
+                    <a href="https://www.facebook.com/eazyerp"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/eazyerp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/singhal-system-solutions-pvt-ltd---offical-page?trk=tyah&trkInfo=tas%3Aeazy%20b%2Cidx%3A1-2-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCiAOxBYpm4VCZqhKQI3dZNw/videos"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-12 col-lg-3 partners-col">
@@ -779,12 +864,7 @@
     </footer>
 
     
-    <div class="loader-wrapper">
-      <div class="ring ring1"></div>
-      <div class="ring ring2"></div>
-      <div class="ring ring3"></div>
-      <p>Loading...</p>
-    </div>
+    <div class="loader-wrapper"></div>
 
 
     <!-- AOS -->
@@ -793,6 +873,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <!-- Swiper Script -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Script -->
