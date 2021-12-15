@@ -5,7 +5,7 @@ function sendmail(){
   var Body='Hello';
 
   Email.send({
-    SecureToken:"060f8a24-0719-4a45-8dda-6bdd4f395e98",
+    SecureToken:"b8344be3-0b41-4854-ac1b-1f3e5927e97c",
 				
     To: 'sushantpatial18@gmail.com',
     From: "patial.sushant12345@gmail.com",
