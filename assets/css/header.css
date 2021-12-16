@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .section-heading {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;

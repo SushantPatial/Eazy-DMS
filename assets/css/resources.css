@@ -151,6 +151,27 @@ html, body {
   }
 }
 
+
+.blogs .offset {
+  --color: #2454f3;
+  --hover: #30adf5;
+  background: none;
+  border: 2px solid;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  padding: 1em 2em 0.9em;
+  cursor: pointer;
+  color: var(--color);
+  transition: 0.25s;
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.blogs .offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  border-color: var(--hover);
+  color: #fff;
+}
+
 /* --------------------
     Newsroom Section 
 -------------------- */

@@ -1,0 +1,391 @@
+html, body {
+  font-family: "Open Sans",sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --------------------
+    Blogs Hero 
+-------------------- */
+.blogs-hero {
+  height: 60vh;
+  background-image: url(../images/blogs.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.blogs-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.blogs-hero p {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* --------------------
+    Blogs  
+-------------------- */
+.blogs {
+  margin: 40px 0;
+}
+.blogs .blog {
+  margin-top: 20px;
+}
+.blogs .blog-main {
+  margin-bottom: 30px;
+}
+.blogs .row img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+.blogs .row a {
+  text-decoration: none;
+}
+.blogs .row .blog-main .blog-head {
+  font-weight: 600;
+  font-size: 46px;
+  color: #222;
+  line-height: 56px;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff,#fff), linear-gradient(#111, #111);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+.blogs .row .blog-main:hover .blog-head {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+.blogs .row .blog .blog-head {
+  font-weight: 600;
+  font-size: 20px;
+  color: #222;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff,#fff), linear-gradient(#111, #111);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+.blogs .row .blog:hover .blog-head {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+.blogs .row h6 {
+  color: rgb(50, 132, 255);
+  padding: 20px 0 0px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.blogs .row p {
+  color: #555;
+  margin-top: 10px;
+}
+.blogs .row h5 {
+  color: #222;
+}
+
+@media screen and (max-width: 1200px) {
+  .blogs .row h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .blogs .row h1 {
+    font-size: 22px;
+  }
+  .blogs .row p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blogs .blog-main {
+    margin-bottom: 0px;
+  }
+  .blogs .row h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blogs .container .row {
+    padding: 0 20px;
+  }
+  .blogs .container .row .row {
+    padding: 0;
+  }
+}
+
+/*===--- Blogs ---===*/
+.blog-general-hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding: 25vh 5vh;
+}
+.right-approach-hero {
+  overflow: auto;
+  position: relative;
+}
+.right-approach-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/right-approach.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.dms-crm-hero {
+  overflow: auto;
+  position: relative;
+}
+.dms-crm-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/dms-crm.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.how-technology-hero {
+  overflow: auto;
+  position: relative;
+}
+.how-technology-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/how-technology.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.saas-vs-onprem-hero {
+  overflow: auto;
+  position: relative;
+}
+.saas-vs-onprem-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/saas-vs-onprem.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.benefits-onsite-hero {
+  overflow: auto;
+  position: relative;
+}
+.benefits-onsite-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/benefits-onsite.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.dms-for-automobiles-hero {
+  overflow: auto;
+  position: relative;
+}
+.dms-for-automobiles-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/dms-for-automobiles.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.eazy-dms-vs-portal-hero {
+  overflow: auto;
+  position: relative;
+}
+.eazy-dms-vs-portal-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/eazy-dms-vs-portal.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.usps-of-eazy-sfa-hero {
+  overflow: auto;
+  position: relative;
+}
+.usps-of-eazy-sfa::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/USP\'s-Of.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.why-do-fmcg-fmcd-hero {
+  overflow: auto;
+  position: relative;
+}
+.why-do-fmcg-fmcd::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/Why-Do-FMCG-FMCD.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.why-tally-integrated-hero {
+  overflow: auto;
+  position: relative;
+}
+.why-tally-integrated::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/Why-Tally-Integrated.jpg);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+.what-is-dms-hero {
+  overflow: auto;
+  position: relative;
+}
+.what-is-dms::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../images/What-is-Distributor.png);
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+
+
+
+.blog-body .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blog-body .col-md-4 img {
+  width: 100%;
+  box-shadow: 0 0 10px #ddd;;
+}
+.blog-body .col-md-4 .row {
+  margin-top: 20px;
+}
+.blog-body .col-md-4 .col-7 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.blog-body .col-md-4 a {
+  color: #333;
+  text-decoration-color: #333;
+}
+.blog-body .col-md-4 h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.blog-body .col-md-4 .blog-date {
+  font-size: 13px;
+  font-weight: 600;
+  color:rgb(50, 132, 255);
+  text-transform: uppercase;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
