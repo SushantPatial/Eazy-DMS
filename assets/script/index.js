@@ -17,6 +17,12 @@ $(document).ready(function() {
 });
 
 
+$('#parallax').parallax({
+	invertX: true,
+	invertY: true
+});
+
+
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 2030) {
     $(".scroll-down-arrow").addClass("scroll-down-arrow-absolute")

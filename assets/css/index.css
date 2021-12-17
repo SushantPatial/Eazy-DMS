@@ -227,28 +227,30 @@ body {
 }
 .header-mobile .mobile-hero-bg {
   width: 600px;
-  top: -40px;
+  top: -250px;
   left: 12%;
 }
 .header-mobile .mobile-hero-img1 {
-  width: 200px;
+  width: 330px;
   top: 400px;
-  left: -15%;
+  left: -25%;
+  z-index: 10;
+}
+.header-mobile .mobile-hero-img2 {
+  width: 330px;
+  top: -530px;
+  left: 84%;
+  z-index: 10;
 }
 .header-mobile .mobile-hero-img3 {
   width: 460px;
-  top: -65px;
-  left: -50%;
-}
-.header-mobile .mobile-hero-img2 {
-  width: 600px;
-  top: -340px;
-  left: 80%;
+  top: -95px;
+  left: -75%;
 }
 .header-mobile .mobile-hero-img4 {
-  width: 200px;
-  top: -1300px;
-  left: 90%;
+  width: 460px;
+  top: -1040px;
+  left: 33.5%;
 }
 .mobile-hero-head {
   display: flex;
@@ -470,7 +472,7 @@ body {
 }
 .triple-c-section .row .col-md-4:nth-child(1)
 {
-  background-color: #00B8F4;
+  background-color: #0e8dd6;
   padding-left: 4%;
 }
 .triple-c-section .row .col-md-4:nth-child(2)
@@ -479,7 +481,7 @@ body {
 }
 .triple-c-section .row .col-md-4:nth-child(3)
 {
-  background-color: #181D31;
+  background-color: #0951be;
 }
 /*------------------
     Eazy DMS 4.0
@@ -871,8 +873,7 @@ body {
 /* --------------------
     Stats Section 
 -------------------- */
-
-#stats-box {
+.counts #stats-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -880,14 +881,14 @@ body {
   margin-top: 40px;
 }
 
-#stats-box .sec-1 {
+.counts #stats-box .sec-1 {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#stats-box .years {
+.counts #stats-box .years {
   font-size: 350px;
   text-align: center;
   font-weight: bold;
@@ -895,7 +896,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#stats-box .text-img {
+.counts #stats-box .text-img {
   position: relative;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to bottom right, #1F305D, rgb(24, 95, 177));
@@ -905,7 +906,7 @@ body {
   margin-right: 20px;
 }
 
-#particles-js {
+.counts #particles-js {
   position: absolute;
   width: 410px;
   height: 380px;
@@ -913,29 +914,29 @@ body {
   left: 0;
 }
 
-.particles-js-canvas-el {
+.counts .particles-js-canvas-el {
   position: relative;
   top: -15px;
   left: 5%;
 }
 
-.experience {
+.counts .experience {
   width: 60%;
 }
 
-.experience h2 {
+.counts .experience h2 {
   border-left: 5px solid rgb(177, 177, 177);
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
-.experience h6 {
+.counts .experience h6 {
   font-size: 15px;
   color: rgb(95, 95, 95);
 }
 
 
-#stats-box .sec-2 {
+.counts #stats-box .sec-2 {
   width: 40%;
   display: flex;
 	justify-content: center;
@@ -943,11 +944,11 @@ body {
   flex-wrap: wrap;
 }
 
-.sec-2 h5 {
+.counts .sec-2 h5 {
   margin: 0;
 }
 
-.stats {
+.counts .stats {
   width: 40%;
   margin: 2%;
   display: flex;
@@ -959,17 +960,17 @@ body {
   font-weight: 700;
 }
 
-.stats .fas {
+.counts .stats .fas {
   color: #1F305D;
   font-size: 50px;
 }
 
-.counter-flex {
+.counts .counter-flex {
   display: flex;
   flex-direction: row;
 }
 
-.button {
+.counts .button {
   margin: 0 auto;
   display: block;
   margin-top: 20px;
@@ -981,13 +982,13 @@ body {
   position: relative;
 }
 
-.button::before, .button::after {
+.counts .button::before, .button::after {
   position: absolute;
   top: 0;
   height: 100%;
 }
 
-.button--mimas {
+.counts .button--mimas {
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;
 	font-weight: 700;
@@ -996,12 +997,12 @@ body {
 	color: #fff;
 }
 
-.button--mimas span {
+.counts .button--mimas span {
 	position: relative;
 	mix-blend-mode: difference;
 }
 
-.button--mimas::before {
+.counts .button--mimas::before {
 	content: '';
 	background: rgb(20, 20, 20);
 	width: 120%;
@@ -1010,98 +1011,98 @@ body {
 	transition: transform 0.4s ease;
 }
 
-.button--mimas:hover::before {
+.counts .button--mimas:hover::before {
 	transform: translate3d(100%,0,0);
 }
 
 @media screen and (max-width: 1000px) {
-  #stats-box {
+  .counts #stats-box {
     height: 100%;
     flex-direction: column;
   }
-  #stats-box .sec-1 {
+  .counts #stats-box .sec-1 {
     width: 100%;
     height: 400px;
     margin-right: 50px;
   }
-  #stats-box .sec-2 {
+  .counts #stats-box .sec-2 {
     width: 80%;
     align-items: normal;
     flex-wrap: nowrap;
     flex-direction: row;
   }
-  .stats {
+  .counts .stats {
    margin: 0%;
    width: 100%;
   }
-  .particles-js-canvas-el {
+  .counts .particles-js-canvas-el {
     left: 15%
   }
 }
 
 @media screen and (max-width: 750px) {
-  #stats-box .years {
+  .counts #stats-box .years {
     font-size: 300px;
   }
-  .experience {
+  .counts .experience {
     width: 100%;
   }
-  #particles-js {
+  .counts #particles-js {
     position: absolute;
     width: 340px;
     height: 340px;
   }
-  .particles-js-canvas-el {
+  .counts .particles-js-canvas-el {
     left: 2%;
   }
-  .experience h2 {
+  .counts .experience h2 {
     font-size: 30px !important;
   }
-  .experience h6 {
+  .counts .experience h6 {
     font-size: 15px;
   }
-  .button {
+  .counts .button {
     padding: 1.2rem 2rem;
   }
 }
 
 @media screen and (max-width: 650px) {
-  #stats-box {
+  .counts #stats-box {
     margin: 0px;
   }
-  #stats-box .years {
+  .counts #stats-box .years {
     font-size: 140px;
   }
-  .experience h2 {
+  .counts .experience h2 {
     font-size: 22px !important;
     padding-left: 10px;
     margin-bottom: 30px;
   }
-  .experience h6 {
+  .counts .experience h6 {
     font-size: 14px;
     display: none;
   }
-  #particles-js {
+  .counts #particles-js {
     position: absolute;
     width: 200px;
     height: 200px;
   }
-  .button {
+  .counts .button {
     padding: 0.8rem 1rem;
     margin: 0;
   }
-  .button--mimas {
+  .counts .button--mimas {
     font-size: 10px;
   }
-  .stats {
+  .counts .stats {
     margin-top: -70px;
     font-size: 18px;
   }
-  .stats .fas {
+  .counts .stats .fas {
     color: #1F305D;
     font-size: 30px;
   }
-  .sec-2 h5 {
+  .counts .sec-2 h5 {
     font-size: 14px;
   }
 }
@@ -1183,7 +1184,8 @@ body {
   border: 2px solid;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 1em 2em 0.9em;
   cursor: pointer;
   color: var(--color);
@@ -1195,6 +1197,89 @@ body {
   border-color: var(--hover);
   color: #fff;
 }
+
+/* --------------------
+    Particles Section 
+-------------------- */
+.particles-section {
+  width: 100%;
+}
+#parallax {
+  height: 450px;
+  background-color: rgb(38, 46, 71);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.particles-section #particles-js-2 {
+  background-color: rgb(38, 46, 71);
+  width: 1500px;
+  margin-left: -100px;
+
+}
+.particles-section #particles-js-2 .particles-js-canvas-el {
+  left: 0;
+  top: 0;
+}
+.particles-section .particles-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 15;
+}
+.particles-section .particles-content h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+.particles-section .particles-content h5 {
+  margin-top: 20px;
+  font-weight: 400;
+  width: 80%;
+}
+.particles-section .particles-content button {
+  margin-top: 30px;
+  padding: 20px 50px 20px 55px;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.particles-section .particles-content button i {
+  position: relative;
+  left: 0;
+  transition: 0.3s ease;
+  color: rgb(38, 46, 71);
+}
+.particles-section .particles-content button:hover {
+  color: rgb(38, 46, 71);
+  background-color: white;
+}
+.particles-section .particles-content button:hover i {
+  left: 10px;
+}
+.particles-section .particles-content button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------
     Footer Section 
