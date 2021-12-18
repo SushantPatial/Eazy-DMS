@@ -448,6 +448,9 @@ html, body {
   padding: 50px 0;
   background-color: #181D31;
 }
+.testimonials-2 .container {
+  max-width: 1300px;
+}
 .testimonials-2 .section-heading h2 {
   color: #fff;
 }
@@ -463,8 +466,6 @@ html, body {
   background-color: #091D42;
   color: #fff;
 }
-.testimonials-2 .card .card-top .row .col-5 {
-}
 .testimonials-2 .card .card-top .row .col-7 {
   padding-left: 0;
 }
@@ -473,8 +474,7 @@ html, body {
 }
 .testimonials-2 .card .card-top .profile-pic {
   width: 100% !important;
-  border: 2px solid rgb(39, 115, 255);
-  border-radius: 10px;
+  margin-top: -10px;
 }
 .testimonials-2 .card .card-top .fa-youtube {
   color: red;
@@ -484,17 +484,19 @@ html, body {
   bottom: 10px;
 }
 .testimonials-2 .card .card-top h5 {
-  font-size: 17px;
+  font-size: 16px;
   color:#13afe4;
   font-weight: 700;
+  margin-top: 20px;
 }
 .testimonials-2 .card .card-top h6 {
-  font-size: 15px;
+  font-size: 12px;
   margin-top: -7px; 
 }
 .testimonials-2 .card .card-top .fa-quote-right {
   font-size: 30px;
   color:#305185;
+  margin-top: 10px;
 }
 .testimonials-2 .card .card-top .company-logo {
   display: flex;
@@ -507,29 +509,45 @@ html, body {
 
 .testimonials-2 .card .card-body {
   padding: 0;
+  margin-top: -10px;
 }
-.testimonials-2 .card .card-body p:nth-child(1) {
+.testimonials-2 .card .card-body p {
   font-size: 15px;
 }
-.testimonials-2 .card .card-body p:nth-child(2) {
+.testimonials-2 .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials-2 .card .card-bottom .stars {
   font-size: 20px;
   color: rgb(255, 187, 1);
+}
+.testimonials-2 .card .card-bottom .sign img {
+  height: 35px;
 }
 
 
 .testimonials-2 .owl-carousel .owl-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 35%;
 }
 .testimonials-2 .owl-carousel .owl-nav button.owl-next,
 .testimonials-2 .owl-carousel .owl-nav button.owl-prev {
   background: 0 0;
   color: #1E88E5 !important;
   border: none;
-  padding: 5px 20px !important;
   font: inherit;
-  font-size: 50px !important
+  font-size: 50px !important;
+}
+.testimonials-2 .owl-carousel .owl-nav button.owl-next {
+  padding: 5px 5px 5px 20px !important;
+}
+.testimonials-2 .owl-carousel .owl-nav button.owl-prev {
+  padding: 5px 20px 5px 5px !important;
 }
 .testimonials-2 .owl-carousel .owl-nav button.owl-next:hover,
 .testimonials-2 .owl-carousel .owl-nav button.owl-prev:hover {
