@@ -238,7 +238,7 @@ body {
 }
 .header-mobile .mobile-hero-img2 {
   width: 330px;
-  top: -530px;
+  top: -522px;
   left: 84%;
   z-index: 10;
 }
@@ -249,25 +249,26 @@ body {
 }
 .header-mobile .mobile-hero-img4 {
   width: 460px;
-  top: -1040px;
+  top: -1013px;
   left: 33.5%;
 }
 .mobile-hero-head {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
-  top: 0px;
-}
-.mobile-hero-head h1 {
+  top: -270px;
   font-family: 'Poppins', sans-serif;
-  color: #ccc;
-  font-size: 40px;
+}
+.mobile-hero-head h4 {
+  color: #fff;
   text-align: center;
   font-weight: 500;
 }
-.mobile-hero-head h1 span {
-  color: rgb(224, 5, 5);
+.mobile-hero-head h1 {
+  margin-top: -10px;
+  color: #01a8db;
 }
 
 @media screen and (max-width: 1100px) {
@@ -278,36 +279,37 @@ body {
     position: relative;
   }
   .header-mobile .mobile-hero-bg {
-    width: 450px;
-    top: -220px;
-    left: 5%;
+    width: 500px;
+    top: -430px;
+    left: 0%;
   }
   .header-mobile .mobile-hero-img1 {
-    width: 150px;
-    top: 450px;
-    left: -30%;
-  }
-  .header-mobile .mobile-hero-img3 {
-    width: 360px;
-    top: -250px;
+    width: 300px;
+    top: 467px;
     left: -40%;
   }
   .header-mobile .mobile-hero-img2 {
-    width: 450px;
-    top: -500px;
-    left: 88%;
+    width: 300px;
+    top: -580px;
+    left: 80%;
+  }
+  .header-mobile .mobile-hero-img3 {
+    width: 410px;
+    top: -417px;
+    left: -50%;
+    z-index: 10;
   }
   .header-mobile .mobile-hero-img4 {
-    width: 150px;
-    top: -1300px;
-    left: 95%;
+    width: 410px;
+    top: -1469px;
+    left: 68%;
   }
   .mobile-hero-head {
-    top: -210px;
+    top: -420px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .header-mobile {
     max-width: 300px;
   }
@@ -316,71 +318,76 @@ body {
   }
   .header-mobile .mobile-hero-bg {
     width: 400px;
-    top: -150px;
-    left: -16.5%;
-    z-index: 101;
+    top: -240px;
+    left: -17%;
   }
   .header-mobile .mobile-hero-img1 {
-    width: 120px;
-    top: 530px;
+    width: 230px;
+    top: 467px;
     left: -40%;
+  }
+  .header-mobile .mobile-hero-img2 {
+    width: 223px;
+    top: -327px;
+    left: 64%;
   }
   .header-mobile .mobile-hero-img3 {
     width: 300px;
-    top: -200px;
-    left: -55%;
-  }
-  .header-mobile .mobile-hero-img2 {
-    width: 400px;
-    top: -225px;
-    left: 80%;
+    top: -256px;
+    left: -60.5%;
+    z-index: 10;
   }
   .header-mobile .mobile-hero-img4 {
-    width: 120px;
-    top: -1100px;
-    left: 99%;
+    width: 300px;
+    top: -1054px;
+    left: 60%;
   }
   .mobile-hero-head {
-    top: -100px;
+    top: -220px;
   }
-  .mobile-hero-head h1{
-    font-size: 22px;
-    width: 70%;
+  .mobile-hero-head h4 {
+    font-size: 16px;
+  }
+  .mobile-hero-head h1 {
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .header-mobile .mobile-hero-bg {
     width: 300px;
-    top: -100px;
+    top: -140px;
     left: 0%;
   }
   .header-mobile .mobile-hero-img1 {
-    width: 100px;
-    top: 450px;
-    left: -10%;
-  }
-  .header-mobile .mobile-hero-img3 {
-    width: 240px;
-    top: -140px;
-    left: -30%;
+    width: 180px;
+    top: 518px;
+    left: -20%;
   }
   .header-mobile .mobile-hero-img2 {
-    width: 300px;
-    top: -200px;
-    left: 60%;
+    width: 172px;
+    top: -115px;
+    left: 58.7%;
+  }
+  .header-mobile .mobile-hero-img3 {
+    width: 250px;
+    top: -166px;
+    left: -30.5%;
+    z-index: 10;
   }
   .header-mobile .mobile-hero-img4 {
-    width: 100px;
-    top: -900px;
-    left: 78%;
+    width: 250px;
+    top: -800px;
+    left: 48%;
   }
   .mobile-hero-head {
-    top: -50px;
+    top: -120px;
   }
-  .mobile-hero-head h1{
-    font-size: 20px;
-    width: 40%;
+  .mobile-hero-head h4 {
+    font-size: 16px;
+  }
+  .mobile-hero-head h1 {
+    font-size: 30px;
   }
 }
 
@@ -1140,7 +1147,7 @@ body {
   width: 100%;
 }
 .blogs-section .blog-img .blog-date {
-  color:#449bce;
+  color:#0f4f8b;
   position: absolute;
   bottom: -1px;
   left: -1px;
@@ -1178,9 +1185,10 @@ body {
 }
 
 .blogs-section .offset {
-  --color: #2454f3;
-  --hover: #30adf5;
+  --color: #0f4f8b;
+  --hover: #246cf3;
   background: none;
+  font-weight: 600;
   border: 2px solid;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;

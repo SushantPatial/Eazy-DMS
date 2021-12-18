@@ -153,8 +153,8 @@ html, body {
 
 
 .blogs .offset {
-  --color: #2454f3;
-  --hover: #30adf5;
+  --color: #0f4f8b;
+  --hover: #246cf3;
   background: none;
   border: 2px solid;
   font-family: 'Poppins', sans-serif;

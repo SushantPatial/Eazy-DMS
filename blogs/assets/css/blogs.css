@@ -146,7 +146,7 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .dms-crm-hero {
   overflow: auto;
@@ -164,7 +164,7 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .how-technology-hero {
   overflow: auto;
@@ -182,7 +182,7 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .saas-vs-onprem-hero {
   overflow: auto;
@@ -195,12 +195,12 @@ html, body {
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url(../images/saas-vs-onprem.png);
+  background-image: url(../images/saas-vs-onprem.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .benefits-onsite-hero {
   overflow: auto;
@@ -213,12 +213,12 @@ html, body {
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url(../images/benefits-onsite.png);
+  background-image: url(../images/benefits-onsite.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .dms-for-automobiles-hero {
   overflow: auto;
@@ -231,12 +231,12 @@ html, body {
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url(../images/dms-for-automobiles.png);
+  background-image: url(../images/dms-for-automobiles.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .eazy-dms-vs-portal-hero {
   overflow: auto;
@@ -249,36 +249,36 @@ html, body {
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url(../images/eazy-dms-vs-portal.png);
+  background-image: url(../images/Eazy-DMS-Vs-Portal.jpg);
   background-size:cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .usps-of-eazy-sfa-hero {
   overflow: auto;
   position: relative;
 }
-.usps-of-eazy-sfa::before {
+.usps-of-eazy-sfa-hero::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   z-index: -1;
   display: block;
-  background-image: url(../images/USP\'s-Of.png);
+  background-image: url(../images/usps-of-sfa.png);
   background-size:cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .why-do-fmcg-fmcd-hero {
   overflow: auto;
   position: relative;
 }
-.why-do-fmcg-fmcd::before {
+.why-do-fmcg-fmcd-hero::before {
   content: "";
   position: absolute;
   left: 0;
@@ -290,13 +290,13 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .why-tally-integrated-hero {
   overflow: auto;
   position: relative;
 }
-.why-tally-integrated::before {
+.why-tally-integrated-hero::before {
   content: "";
   position: absolute;
   left: 0;
@@ -308,13 +308,13 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 .what-is-dms-hero {
   overflow: auto;
   position: relative;
 }
-.what-is-dms::before {
+.what-is-dms-hero::before {
   content: "";
   position: absolute;
   left: 0;
@@ -326,7 +326,7 @@ html, body {
   background-position: center;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
 }
 
 

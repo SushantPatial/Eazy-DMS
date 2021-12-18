@@ -116,14 +116,18 @@
   background-color: #e20101;
 }
 
-.footer-section .footer-content .footer-below {
+.footer-section .footer-content .footer-underline {
   width: 100%;
   margin-top: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.footer-section .footer-content .footer-below {
   padding: 30px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.616);
+  text-align: center;
   color: #fff;
 }
 
