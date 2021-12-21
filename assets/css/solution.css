@@ -85,13 +85,11 @@ html, body {
   text-align: left;
 }
 .hybrid-dms-image i {
-  font-size: 26px;
+  font-size: 30px;
   position: absolute;
   bottom: 20%;
   left: 45%;
-  color:rgb(0, 110, 255);
-  background-color: white;
-  border-radius: 50%;
+  color:rgb(255, 0, 0);
 }
 
 .hybrid-dms-image .hybrid-dms-head {
@@ -118,7 +116,6 @@ html, body {
 }
 
 .hybrid-dms-text {
-  background-color: white;
   height: 90%;
   display: flex;
   justify-content: center;
@@ -157,12 +154,17 @@ html, body {
 }
 
 .hybrid-dms-text p {
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
 }
-.hybrid-dms-text i {
-  font-size: 26px;
+.hybrid-dms-text a {
+  font-size: 30px;
+  color:rgb(255, 0, 0);
+}
+.hybrid-dms-text a:hover {
+  color:rgb(236, 1, 1);
 }
 
 
