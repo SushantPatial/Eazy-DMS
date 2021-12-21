@@ -87,9 +87,13 @@ html, body {
 .hybrid-dms-image i {
   font-size: 30px;
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   left: 45%;
   color:rgb(255, 0, 0);
+}
+.hybrid-dms-mobile i {
+  bottom: 10%;
+  left: 13%;
 }
 
 .hybrid-dms-image .hybrid-dms-head {
@@ -116,7 +120,7 @@ html, body {
 }
 
 .hybrid-dms-text {
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -128,9 +132,8 @@ html, body {
   z-index: 1;
   padding-left: 7%;
   padding-right: 7%;
-  margin-top: 4%;
-  margin-left: 9%;
-  margin-right: 9%;
+  margin-left: 5%;
+  margin-right: 5%;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s ease;
@@ -165,6 +168,19 @@ html, body {
 }
 .hybrid-dms-text a:hover {
   color:rgb(236, 1, 1);
+}
+
+@media screen and (max-width: 992px) {
+  .hybrid-dms-text {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hybrid-dms-text {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 
