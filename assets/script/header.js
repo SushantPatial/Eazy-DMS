@@ -47,6 +47,5 @@ $(document).on('click', function() {
       $('.fa-caret-down').removeClass('flip');
     }
   }, 500);
-  
 })
 
