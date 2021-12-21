@@ -74,7 +74,7 @@ html, body {
 .hybrid-dms-card {
   margin: 15px 0;
 }
-.hybrid-dms-image img {
+.hybrid-dms-image img:nth-child(1) {
   width: 100%;
 }
 .hybrid-dms-image h6 {
@@ -84,17 +84,13 @@ html, body {
   margin-left: 10px;
   text-align: left;
 }
-.hybrid-dms-image i {
-  font-size: 30px;
+.hybrid-dms-image img:nth-child(2) {
+  width: 40px;
   position: absolute;
-  bottom: 40%;
-  left: 45%;
-  color:rgb(255, 0, 0);
+  bottom: 8%;
+  left: 11%;
 }
-.hybrid-dms-mobile i {
-  bottom: 10%;
-  left: 13%;
-}
+
 
 .hybrid-dms-image .hybrid-dms-head {
   width: 70%;
@@ -162,12 +158,12 @@ html, body {
   font-weight: 600;
   text-align: center;
 }
-.hybrid-dms-text a {
-  font-size: 30px;
-  color:rgb(255, 0, 0);
+.hybrid-dms-text img {
+  width: 40px;
+  transition: 0.3s ease;
 }
-.hybrid-dms-text a:hover {
-  color:rgb(236, 1, 1);
+.hybrid-dms-text img:hover {
+  filter: brightness(85%);
 }
 
 @media screen and (max-width: 992px) {

@@ -401,13 +401,13 @@ height: 100%;
 }
 #career .nav-tabs1 .nav-link1:hover {
   border: none;
-  box-shadow: 0 3px 0 #e03a3c;
-  color: #e03a3c;
+  box-shadow: 0 3px 0 #A20300;
+  color: #A20300;
 }
 #career .nav-tabs1 .nav-item1 .active {
-  background-color: #e03a3c;
-  border-bottom: 1px solid #e03a3c;
-  box-shadow: 0 0px 0 #e03a3c;
+  background-color: #A20300;
+  border-bottom: 1px solid #A20300;
+  box-shadow: 0 0px 0 #A20300;
   color: #fcfcfc;
 }
 
@@ -416,11 +416,11 @@ height: 100%;
 }
 .career .tab-content .spikes {
   position: relative;
-  background: #e03a3c;
+  background: #A20300;
   height: 100%;
   margin: 0 auto; 
   color: white;
-  padding: 100px 0;
+  padding: 60px 0;
   bottom: 25px;
   margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
@@ -436,7 +436,7 @@ height: 100%;
   display: block;
   height: 60px;
   background-size: 60px 100%;
-  background-image: linear-gradient(135deg, #e03a3c 25%, transparent 25%), linear-gradient(225deg, #e03a3c 25%, transparent 25%);
+  background-image: linear-gradient(135deg, #A20300 25%, transparent 25%), linear-gradient(225deg, #A20300 25%, transparent 25%);
   background-position: 0 0;
 }
 
@@ -528,7 +528,7 @@ height: 100%;
 
 
 #jobs .panel-default>.panel-heading {
-  background-color: rgb(28, 83, 165);
+  background-color: #10649c;
   padding: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -561,7 +561,7 @@ height: 100%;
 }
 
 #jobs .panel-default>.panel-heading a[aria-expanded="true"] {
-  background-color: rgb(15, 66, 141)
+  background-color: #0c4f7c;
 }
 
 #jobs .panel-default>.panel-heading a[aria-expanded="true"]:after {
@@ -621,7 +621,7 @@ height: 100%;
 }
 #jobs .panel-group .panel-body tr th i {
   font-size: 20px;
-  color: #1C53A5;
+  color: #10649c;
   margin-top: 2px;
 }
 
@@ -630,9 +630,9 @@ height: 100%;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: bold;
-  background: #1C53A5;
+  background: #10649c;
   color: #fff;
-  border: 2px solid #1C53A5;
+  border: 2px solid #10649c;
   padding: 0.60em 1.7em;
   display: flex;
   margin: 2rem auto 2rem auto;
@@ -643,7 +643,7 @@ height: 100%;
   cursor: pointer;
 }
 #jobs .panel-group .panel-body .apply-btn:hover {
-  color: #1C53A5;
+  color: #10649c;
 }
 #jobs .panel-group .panel-body .apply-btn::after {
   content: "";
@@ -684,7 +684,7 @@ height: 100%;
   margin-bottom: 30px;
 }
 #apply .reasons h1 span {
-  color: rgb(67, 133, 233);
+  color: #10649c;
 }
 #apply .reasons ul  {
   padding-left: 5%;
@@ -695,13 +695,13 @@ height: 100%;
   margin-bottom: 10px;
 }
 #apply .reasons ul li i {
-  color:rgb(67, 133, 233);
+  color:#10649c;
   width: 40px;
   text-align: center;
   margin-right: 5px;
 }
 #apply .reasons .know-more {
-  background-color: rgb(67, 133, 233);
+  background-color: #10649c;
   color: white;
   border: none;
   outline: none;
@@ -710,20 +710,20 @@ height: 100%;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
-  border-left: 1px solid rgb(49, 110, 201);
-  border-right: 1px solid rgb(49, 110, 201);
-  border-bottom: 5px solid rgb(49, 110, 201);
+  border-left: 1px solid #10649c;
+  border-right: 1px solid #10649c;
+  border-bottom: 5px solid #10649c;
   transition: 0.3s ease;
   box-shadow: 0 4px 0px rgb(182, 182, 182);
   margin-bottom: 30px;
 }
 #apply .reasons .know-more:hover {
   transform: translateY(4px);
-  border-bottom: 1px solid rgb(49, 110, 201);
+  border-bottom: 1px solid #10649c;
 }
 
 #apply .box {
-  background-color: rgb(67, 133, 233);
+  background-color: #10649c;
   padding: 20px 40px;
   border-radius: 10px;
   margin: 0 10% 0 2%;
@@ -734,17 +734,16 @@ height: 100%;
   border: none;
 }
 #apply .box .btn {
-  background-color: #0d4eb1;
+  background-color: #10649c;
   padding: 12px 25px;
-  border: 1px solid #0d4eb1;
+  border: 2px solid #fff;
   font-weight: 700;
   letter-spacing: 1.5px;
   transition: 0.3s ease;
 }
 #apply .box .btn:hover {
   background-color: #0c469e;
-  border: 1px solid #0c469e;
-  transform: scale(1.05);
+  border: 2px solid #0c469e;
 }
 
 
@@ -759,11 +758,11 @@ height: 100%;
   width: 100%;
   margin: 0;
   color: #fff;
-  background: rgb(67, 133, 233);
+  background: #10649c;
   border: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 4px solid rgb(67, 133, 233);
+  border-bottom: 4px solid #10649c;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -771,7 +770,7 @@ height: 100%;
 }
 
 .file-upload-btn:hover {
-  background: rgb(67, 133, 233);
+  background: #0b4e7a;
   color: #ffffff;
   transition: all .2s ease;
   cursor: pointer;
@@ -801,13 +800,13 @@ height: 100%;
 
 .image-upload-wrap {
   margin-top: 20px;
-  border: 4px dashed rgb(67, 133, 233);
+  border: 4px dashed #10649c;
   position: relative;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-  background-color: rgb(67, 133, 233);
+  background-color: #10649c;
   border: 4px dashed #ffffff;
 }
 
@@ -823,7 +822,7 @@ height: 100%;
 
 .drag-text i {
   font-size: 40px;
-  color: rgb(67, 133, 233);
+  color: #10649c;
 }
 
 .drag-text h3 {
@@ -831,7 +830,7 @@ height: 100%;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 22px;
-  color: rgb(67, 133, 233);
+  color: #10649c;
 }
 .image-dropping, .image-upload-wrap:hover h3, .image-dropping, .image-upload-wrap:hover i {
   color: #fff;
