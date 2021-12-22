@@ -115,7 +115,7 @@ $('.testimonials-carousel').owlCarousel({
     600: {
       items: 1
     },
-    1000: {
+    992: {
       items: 3
     }
   }

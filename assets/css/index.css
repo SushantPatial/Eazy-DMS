@@ -506,6 +506,11 @@ body {
 {
   background-color: #0f487c;
 }
+@media screen and (max-width: 768px) {
+  .triple-c-section .row .col-md-4 img {
+    margin-top: 20px;
+  }
+}
 /*------------------
     Eazy DMS 4.0
 ------------------*/
@@ -552,18 +557,18 @@ body {
   border-top: 5px solid white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .eazy-dms4 .eazy-dms4-sec1 {
     width: 80%;
-    height: 660px;
+    height: 600px;
     right: 0;
     z-index: 1;
   }
   .eazy-dms4 .eazy-dms4-sec2 {
     width: 80%;
-    height: 800px;
-    margin-top: 580px;
-    padding: 0 10% 0 10%;
+    height: 600px;
+    margin-top: 560px;
+    padding: 0 8% 0 8%;
     color: #fff;
   }
   .eazy-dms4 h2 {
@@ -573,7 +578,6 @@ body {
     font-size: 20px;
   }
 }
-
 
 /*------------------
     Logo Slider
@@ -815,13 +819,14 @@ body {
   }
   .testimonials-2 .card .card-top h5 {
     font-size: 16px;
-    color:#13afe4;
+    color:#a0c1ff;
     font-weight: 700;
     margin-top: 20px;
   }
   .testimonials-2 .card .card-top h6 {
     font-size: 12px;
     margin-top: -7px; 
+    color: #ccc;
   }
   .testimonials-2 .card .card-top .fa-quote-right {
     font-size: 30px;
@@ -835,6 +840,11 @@ body {
   }
   .testimonials-2 .card .card-top .company-logo img {
     width: 130px;
+  }
+  .testimonials-2 .card .card-top .col-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   
   .testimonials-2 .card .card-body {
@@ -851,9 +861,92 @@ body {
   .testimonials-2 .card .card-bottom .stars {
     font-size: 20px;
     color: rgb(255, 187, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .testimonials-2 .card .card-bottom .sign img {
-    height: 35px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .testimonials-2 .item {
+      margin: 40px;
+    }
+    .testimonials-2 .card .card-top .profile-pic {
+      width: 90% !important;
+    }
+    .testimonials-2 .card .card-top h5 {
+      font-size: 24px;
+    }
+    .testimonials-2 .card .card-top h6 {
+      font-size: 20px;
+    }
+    .testimonials-2 .card .card-top .fa-quote-right {
+      font-size: 40px;
+    }
+    .testimonials-2 .card .card-top .company-logo img {
+      width: 200px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .testimonials-2 .card .card-top h5 {
+      font-size: 18px;
+    }
+    .testimonials-2 .card .card-top h6 {
+      font-size: 14px;
+    }
+    .testimonials-2 .card .card-top .fa-quote-right {
+      font-size: 30px;
+    }
+    .testimonials-2 .card .card-top .company-logo img {
+      width: 140px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .testimonials-2 .card .card-top .col-5 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+    .testimonials-2 .card .card-top .col-5 a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .testimonials-2 .card .card-top .col-7 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+    .testimonials-2 .card .card-top .profile-pic {
+      width: 60% !important;
+      margin-bottom: 10px;
+    }
+    .testimonials-2 .card .card-top h5 {
+      font-size: 15px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .testimonials-2 .card .card-top h6 {
+      font-size: 12px;
+      margin-left: 20px;
+    }
+    .testimonials-2 .card .card-top .fa-quote-right {
+      font-size: 30px;
+      float: right;
+    }
+    .testimonials-2 .card .card-top .company-logo img {
+      width: 120px;
+      margin-left: 15px;
+    }
+    .testimonials-2 .card .card-body p {
+      font-size: 14px;
+    }
+    .testimonials-2 .card .card-bottom .stars {
+      font-size: 15px;
+    }
+    .testimonials-2 .card .card-bottom .sign img {
+      height: 30px;
+    }
   }
   
   .testimonials-2 .owl-stage-outer {
@@ -1281,7 +1374,7 @@ body {
   background-color: rgb(38, 46, 71);
   width: 1500px;
   margin-left: -100px;
-
+  
 }
 .particles-section #particles-js-2 .particles-js-canvas-el {
   left: 0;
@@ -1296,6 +1389,7 @@ body {
   text-align: center;
   color: #fff;
   z-index: 15;
+  margin: 0px 30px;
 }
 .particles-section .particles-content h1 {
   font-size: 54px;
@@ -1334,6 +1428,16 @@ body {
 }
 .particles-section .particles-content button:focus {
   outline: none;
+}
+@media screen and (max-width: 576px) {
+  .particles-section .particles-content h1 {
+    font-size: 36px;
+  }
+  .particles-section .particles-content h5 {
+    margin-top: 20px;
+    font-weight: 400;
+    width: 80%;
+  }
 }
 
 

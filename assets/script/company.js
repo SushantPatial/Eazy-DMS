@@ -2,15 +2,11 @@ $(document).ready(function() {
   
   let $grid = $('.portfolio-container');
 
-  
-
   $grid.isotope({
     itemSelector: '.portfolio-item',
     filter: '.filter-awards',
     layoutMode: 'masonry'
   });
-
- 
     
   $('#portfolio-flters').on('click', 'li', function() {
     var filterValue = $(this).attr('data-filter');
@@ -18,11 +14,7 @@ $(document).ready(function() {
     $('#portfolio-flters li').removeClass('filter-active');
     $(this).addClass('filter-active');
   });
-
 })
-
-
-
 
 /** Initiate portfolio lightbox **/
 const portfolioLightbox = GLightbox({
