@@ -7,7 +7,7 @@
   position: relative;
 }
 .footer-section .footer-video {
-  filter: brightness(14%);
+  filter: brightness(14%) sepia(80%) hue-rotate(160deg) saturate(300%);
   position: absolute;
   bottom: 0;
 }

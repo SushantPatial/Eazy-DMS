@@ -45,3 +45,19 @@ const portfolioLightbox8 = GLightbox({
 const portfolioLightbox9 = GLightbox({
   selector: '.rishikesh-lightbox'
 });
+
+
+
+$('#year-20-21-toggler').on('click', function() {
+  $('#year-20-21').toggle();
+  $('.portfolio-container').isotope( 'reloadItems' ).isotope( { sortBy: 'original-order' } );
+})
+
+$('#year-18-19-toggler').on('click', function() {
+  $('#year-18-19').toggle();
+  $('.portfolio-container').isotope( 'reloadItems' ).isotope( { sortBy: 'original-order' } );
+})
+$('#year-17-18-toggler').on('click', function() {
+  $('#year-17-18').toggle();
+  $('.portfolio-container').isotope( 'reloadItems' ).isotope( { sortBy: 'original-order' } );
+})

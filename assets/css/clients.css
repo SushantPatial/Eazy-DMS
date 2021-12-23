@@ -363,6 +363,152 @@ html, body {
   flex-direction: column;
   background-color: rgb(219, 235, 253);
 }
+.testimonials .container {
+  max-width: 1300px;
+}
+.testimonials .testimonial-card {
+  background-color: #BCD4EE;
+  margin: 15px;
+  max-width: 30.9%;
+  flex: 0 0 30.9%;
+  border-radius: 10px;
+  height: 100%;
+}
+.testimonials .testimonial-card .details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.testimonials .testimonial-card .details .testimonial-img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px gray;
+}
+.testimonials .testimonial-card .details h5 {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #134479;
+}
+.testimonials .testimonial-card .details h6 {
+  margin-top: -6px;
+  height: 80px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #0c3663;
+}
+.testimonials .testimonial-card .details .sign {
+  margin-top: 5px;
+  height: 28px;
+}
+.testimonials .testimonial-card .review {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.testimonials .testimonial-card .review .company-logo {
+  width: 100px;
+}
+.testimonials .testimonial-card .review .stars i {
+  color: rgb(255, 208, 0);
+}
+.testimonials .testimonial-card .review .fa-quote-right {
+  float: right;
+  position: absolute;
+  font-size: 30px;
+  top: 20px;
+  right: 20px;
+  color:#BCD4EE;
+}
+.testimonials .testimonial-card .review p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.testimonials .testimonial-card .review p .more {
+  display: none;
+}
+.testimonials .testimonial-card .review .moreless-button {
+  background-color: #1263af;
+  color: white;
+  width: 110px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.testimonials .testimonial-card .review .moreless-button:hover {
+  background-color: #0e579b;
+}
+.testimonials .testimonial-card .review .moreless-button:focus {
+  outline: none;
+  border: none;
+}
+.testimonials .testimonial-card .review p #moretext1 {
+  display: none;
+}
+.testimonials .testimonial-card .review p #moretext2 {
+  display: none;
+}
+.testimonials .testimonial-card .review p #moretext3 {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .testimonials .testimonial-card {
+    max-width: 30%;
+    flex: 0 0 30%;
+  }
+  .testimonials .testimonial-card .details h6 {
+    height: 110px;
+  }
+  .testimonials .testimonial-card .details .sign {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .testimonials .testimonial-card {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+  .testimonials .testimonial-card .details .testimonial-img {
+    width: 40%;
+  }
+  .testimonials .testimonial-card .details h6 {
+    height: 40px;
+  }
+  .testimonials .testimonial-card .details .sign {
+    height: 35px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .testimonials .testimonial-card .details .testimonial-img {
+    width: 80%;
+  }
+  .testimonials .testimonial-card .details h6 {
+    height: 60px;
+  }
+  .testimonials .testimonial-card .details .sign {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .testimonials .testimonial-card .details .testimonial-img {
+    width: 90%;
+  }
+  .testimonials .testimonial-card .details h6 {
+    height: 100px;
+  }
+  .testimonials .testimonial-card .details .sign {
+    height: 23px;
+  }
+}
+/*
 .testimonials .col-lg-4 {
   margin: 40px auto;
 }
@@ -438,5 +584,5 @@ html, body {
   .testimonials .profile {
     min-height: 270px;
   }
-}
+} */
 
