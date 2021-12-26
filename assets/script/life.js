@@ -74,9 +74,7 @@ $('#year-17-18-toggler').on('click', function() {
 $('#diwali-19-toggler').on('click', function() {
   $('#diwali-19').toggle();
   $('#holi-19').hide();
-  $('#holi-19').addClass('window-resize');
   $('.portfolio-container').isotope('reloadItems').isotope();
-
 })
 $('#holi-19-toggler').on('click', function() {
   $('#holi-19').toggle();
@@ -105,6 +103,11 @@ $('#fortune-orange-toggler').on('click', function() {
   $('#fortune-orange').addClass('window-resize');
   $('.portfolio-container').isotope('reloadItems').isotope();
 })
+$("#fortune-orange-toggler").one("click", function () {
+  setTimeout(function() {
+    $('#fortune-orange').removeClass('window-resize');
+  }, 500)
+});
 $('#rishikesh-toggler').on('click', function() {
   $('#rishikesh').toggle();
   $('#fortune-orange').hide();
@@ -113,6 +116,11 @@ $('#rishikesh-toggler').on('click', function() {
   $('#rishikesh').addClass('window-resize');
   $('.portfolio-container').isotope('reloadItems').isotope();
 })
+$("#rishikesh-toggler").one("click", function () {
+  setTimeout(function() {
+    $('#rishikesh').removeClass('window-resize');
+  }, 500)
+});
 $('#golden-tulip-toggler').on('click', function() {
   $('#golden-tulip').toggle();
   $('#fortune-orange').hide();
@@ -121,6 +129,11 @@ $('#golden-tulip-toggler').on('click', function() {
   $('#golden-tulip').addClass('window-resize');
   $('.portfolio-container').isotope('reloadItems').isotope();
 })
+$("#golden-tulip-toggler").one("click", function () {
+  setTimeout(function() {
+    $('#golden-tulip').removeClass('window-resize');
+  }, 500)
+});
 
 
 $(window).resize(function() {
