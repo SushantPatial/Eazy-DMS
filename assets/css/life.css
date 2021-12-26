@@ -33,8 +33,9 @@ html, body {
     Life at Eazy Section 
 -------------------- */
 .portfolio {
-  overflow-y: hidden;
+  overflow: hidden;
   margin: 40px 0;
+  width: 100%;
 }
 .portfolio .container {
   max-width: 100%;
@@ -45,7 +46,7 @@ html, body {
   -webkit-transform:translate3d(0,0,0);
   -moz-transform:translate3d(0,0,0);
 }
-.portfolio .col-md-6 {
+.portfolio .col-6 {
   padding: 0;
 }
 .portfolio .portfolio-item h3 {
@@ -147,6 +148,31 @@ html, body {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.03);
 }
+@media screen and (max-width: 900px) {
+  .portfolio .portfolio-wrap .portfolio-links i {
+    font-size: 18px;
+  }
+  .portfolio .portfolio-wrap:hover i {
+    transform: translateY(-7px);
+  }
+  .portfolio .portfolio-wrap .portfolio-links h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio .portfolio-wrap .portfolio-links i {
+    font-size: 15px;
+  }
+  .portfolio .portfolio-wrap .portfolio-info {
+    padding-bottom: 10px;
+  }
+  .portfolio .portfolio-wrap .portfolio-links h4 {
+    font-size: 15px;
+  }
+  .portfolio .portfolio-wrap:hover i {
+    transform: translateY(-7px);
+  }
+}
 
 .portfolio .portfolio-wrap:hover::before {
   opacity: 1;
@@ -154,44 +180,87 @@ html, body {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+.portfolio .white-bg {
+  background-color: rgb(245, 120, 120);
+  width: 100%;
+  height: 200vh;
+}
 
 .portfolio .col-12 {
   background-color:#222;
   padding: 10px;
 }
+.window-resize {
+  transform:translate3d(0,0,0) !important;
+  -webkit-transform:translate3d(0,0,0) !important;
+  -moz-transform:translate3d(0,0,0) !important;
+}
 .masonry {
   display: none;
+  left: 0 !important;
 }
-.masonry .grid {
-  column-count: 4;
-  column-gap: 10px;
-  max-width: 100%;
-  margin: auto;
-  width: 100%;
+.masonry p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 8px 0;
+}
+.masonry p i {
+  color: #bbb;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.masonry p i:hover {
+  color: #fff;
 }
 .masonry img {
   height: auto;
   width: 100%;
-  margin-bottom: 10px;
   filter: brightness(80%);
   transition: 0.3s ease;
 }
 .masonry img:hover {
   filter: brightness(100%);
+  transform: scale(1.05);
+}
+.masonry .overflow-hidden {
+  overflow: hidden;
+  width: 100%;
 }
 
-@media(max-width: 800px) {
-  .masonry .grid {
-    column-count: 3;
-  }
+.masonry .grid2 {
+  column-count: 2;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
 }
-@media(max-width: 600px) {
-  .masonry .grid {
-    column-count: 2;
-  }
+.masonry .grid3 {
+  column-count: 3;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
 }
-@media(max-width: 400px) {
-  .masonry .grid {
-    column-count: 1;
-  }
+.masonry .grid4 {
+  column-count: 4;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+.masonry .grid4-wrap {
+  column-count: 4;
+  column-gap: 0px;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.masonry .grid4-wrap a {
+ width: 50%;
 }
