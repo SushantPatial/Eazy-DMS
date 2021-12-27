@@ -442,7 +442,7 @@
 
         <div class="tab-content" id="nav-tabContent">
 
-          <div class="tab-pane fade show active" id="life" role="tabpanel">
+          <div class="tab-pane fade" id="life" role="tabpanel">
 
             <div class="section-heading" style="margin-top: 40px;">
               <h2>Life <span>@</span> Eazy</h2>
@@ -1191,7 +1191,7 @@
       
           </div>
 
-          <div class="tab-pane fade" id="about-eazy" role="tabpanel">
+          <div class="tab-pane fade show active" id="about-eazy" role="tabpanel">
 
             <div class="container">
               <div class="section-heading" style="margin-top: 40px;">
@@ -1211,8 +1211,7 @@
               <img style="width: 100%" src="assets/images/journey.png">
             </div>
 
-            
-
+          
             <div class="tech-slideshow">
               <div class="mover-1"></div>
             </div>
@@ -1227,15 +1226,96 @@
 
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-3">
-                    <div class="team">
-                      
+                  <div class="col-md-12">
+                    <div id="team-carousel" class="carousel slide" data-ride="carousel">
+
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"> 
+                          <div class="row">
+                            <div class="col-6">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id culpa cum odit numquam quidem, animi molestiae. Eveniet inventore deleniti natus incidunt officiis deserunt assumenda. Quidem voluptatibus magni ipsam doloribus!
+                            </div>
+                            <div class="col-6">
+                              <img src="assets/images/kunalSinghalPicture.png"> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item"> 
+                          <div class="row">
+                            <div class="col-6">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id culpa cum odit numquam quidem, animi molestiae. Eveniet inventore deleniti natus incidunt officiis deserunt assumenda. Quidem voluptatibus magni ipsam doloribus!
+                            </div>
+                            <div class="col-6">
+                              <img src="assets/images/kunalSinghalPicture.png"> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item"> 
+                          <div class="row">
+                            <div class="col-6">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id culpa cum odit numquam quidem, animi molestiae. Eveniet inventore deleniti natus incidunt officiis deserunt assumenda. Quidem voluptatibus magni ipsam doloribus!
+                            </div>
+                            <div class="col-6">
+                              <img src="assets/images/kunalSinghalPicture.png"> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item"> 
+                          <div class="row">
+                            <div class="col-6">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id culpa cum odit numquam quidem, animi molestiae. Eveniet inventore deleniti natus incidunt officiis deserunt assumenda. Quidem voluptatibus magni ipsam doloribus!
+                            </div>
+                            <div class="col-6">
+                              <img src="assets/images/kunalSinghalPicture.png"> 
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <a class="carousel-control-prev" href="#team-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#team-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a> 
+
+                      <ol class="carousel-indicators">
+                        <li class="list-inline-item active"> 
+                          <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#team-carousel"> 
+                            <img src="assets/images/KunalSinghal.jpg" class="img-fluid"> 
+                          </a> 
+                          <h6>Kunal Singhal</h6>
+                          <p>Manager Director</p>
+                        </li>
+                        <li class="list-inline-item"> 
+                          <a id="carousel-selector-1" data-slide-to="1" data-target="#team-carousel"> 
+                            <img src="assets/images/VinodGupta.jpeg"> 
+                          </a> 
+                          <h6>Vinod Gupta</h6>
+                          <p>National Sales Head</p>
+                        </li>
+                        <li class="list-inline-item"> 
+                          <a id="carousel-selector-2" data-slide-to="2" data-target="#team-carousel"> 
+                            <img src="assets/images/DeepakGoyal.jpg"> 
+                          </a> 
+                          <h6>Deepak Goyal</h6>
+                          <p>DMS Head-Implementation</p>
+                        </li>
+                        <li class="list-inline-item"> 
+                          <a id="carousel-selector-3" data-slide-to="3" data-target="#team-carousel"> 
+                            <img src="assets/images/KaushalMishra.jpg"> 
+                          </a> 
+                          <h6>Kaushal Mishra</h6>
+                          <p>DMS Development Head</p>
+                        </li>
+                      </ol>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="container">
+
+        <!--     <div class="container">
                 <div class="row">
                   <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="our-team">
@@ -1314,7 +1394,7 @@
                   </div>
 
                 </div>
-              </div>
+              </div>--> 
 
             </section>
 
@@ -2542,6 +2622,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Flex Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/jquery.flexslider.min.js"></script>
     <!-- Swiper Script -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Images Loaded -->

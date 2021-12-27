@@ -120,3 +120,51 @@ html, body {
 .industry-main p {
   color: #444;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .industry-intro .col-lg-5 {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .industry-intro .row {
+    flex-direction: column-reverse;
+  }
+  .industry-intro .col-lg-5 {
+    padding-left: 15px;
+  }
+  .industry-main .col-lg-2 i {
+    transform: rotate(90deg);
+  }
+  .industry-main .col-lg-5 {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .industry-intro .col-lg-7 {
+    padding-right: 50px;
+  }
+  .industry-intro .industry-background {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin-right: 50px;
+  }
+  .industry-intro .industry-front {
+    width: 80%;
+    left: 12%;
+    top: 10%;
+  }
+  .industry-main .col-lg-5 {
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .industry-intro .industry-background {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+  }
+}

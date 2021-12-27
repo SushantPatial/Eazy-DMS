@@ -134,7 +134,7 @@ html {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: #1F305D;
+  background-color: #1F305D !important;
   transition: 0.5s ease;
   padding: 0 !important;
 }
@@ -224,7 +224,7 @@ header .navbar .industries {
   transition: 0.5s ease;
 }
 .flip {
-  transform: rotate(180deg);
+  transform: rotate(180deg);  
 }
 header .navbar .nav-dropdown-content {
   display: none;
@@ -250,7 +250,7 @@ header .navbar .nav-dropdown-content a:hover {
   .navbar .navbar-nav .nav-link {
     display: inline-flex;
   }
-  .navbar ul{
+  .navbar ul {
     padding-bottom: 30px;
   }
   header .navbar .navbar-brand img {
@@ -260,8 +260,11 @@ header .navbar .nav-dropdown-content a:hover {
     border-top: 1px solid rgba(250,250,250,0.3);
     background-color: #1F305D;
   }
+  .nav-index .navbar {
+    background-color: #ffffff00;
+  }
   header .navbar .fa-caret-down {
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 5px;
   }
   header .navbar .nav-dropdown {

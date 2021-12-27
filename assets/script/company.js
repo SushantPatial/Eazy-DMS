@@ -1,4 +1,8 @@
 
+$('#team-carousel').carousel({
+  interval: 4000
+})
+
 
 $(".apply-btn").on("click", function() {
   $(".job-tab-button").removeClass("active");
