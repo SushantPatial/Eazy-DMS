@@ -233,8 +233,11 @@ html, body {
 }
 #team-carousel .carousel-item .team-text {
   text-align: left;
-  padding-left: 10%;
+  padding-left: 0%;
+  padding-right: 10%;
   padding-top: 10%;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 #team-carousel .carousel-item .team-text h1 {
   text-transform: uppercase;
@@ -248,6 +251,22 @@ html, body {
 #team-carousel .carousel-item .team-text p {
   margin-top: 20px;
   color: #222;
+}
+
+#team-carousel .carousel-item .team-img img {
+  margin-left: 20%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+#team-carousel .active .team-text {
+  padding-left: 10%;
+  padding-right: 0%;
+  opacity: 1;
+}
+#team-carousel .active .team-img img {
+  margin-left: 0%;
+  opacity: 1;
 }
 
 /* --------------------

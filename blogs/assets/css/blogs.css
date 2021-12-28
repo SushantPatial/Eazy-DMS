@@ -379,6 +379,18 @@ html, body {
   color: #444;
   font-size: 15px;
 }
+.blog-body .col-md-8 img {
+  width: 100%; 
+  margin: 40px 0;
+}
+.blog-body .col-md-8 li {
+  line-height: 35px;
+  color: #444;
+  font-size: 15px;
+}
+.blog-body .col-md-8 .points {
+  margin-left: 20px;
+}
 .blog-body .col-md-8 table {
   border-collapse: collapse;
   border-spacing: 0;

@@ -351,11 +351,15 @@ html, body {
 
 
 
-
+.models ul {
+  list-style: none;
+}
+.models button {
+  outline: none;
+  border: none;
+}
 /* -------------------------------- 
-
 Images block
-
 -------------------------------- */
 .cd-image-block {
   position: relative;
@@ -395,19 +399,15 @@ Images block
 }
 .cd-images-list > li {
   height: 250px;
-  background: #979c9c url(../img/img-1.jpg) no-repeat center center;
+  background: url(../images/model-1.jpg) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(2) {
-  background: #343642 url(../img/img-2.jpg) no-repeat center center;
+  background: url(../images/model-2.jpg) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(3) {
-  background: #982b3c url(../img/img-3.jpg) no-repeat center center;
-  background-size: cover;
-}
-.cd-images-list > li:nth-of-type(4) {
-  background: #338899 url(../img/img-4.jpg) no-repeat center center;
+  background: url(../images/model-3.jpg) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li > a {
@@ -439,8 +439,95 @@ Images block
     pointer-events: none;
   }
   .cd-images-list h2 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     text-align: left;
+  }
+}
+
+
+.cd-image-block {
+  height: 80vh !important;
+ 
+}
+.cd-image-block ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cd-content-block {
+  height: 80vh !important;
+}
+.cd-content-block ul li {
+  overflow: hidden !important;
+}
+.cd-content-block .content h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+.cd-content-block .content .content-body .content-point {
+  display: flex;
+  font-size: 18px;
+  color: #444;
+}
+.cd-content-block .content .content-body .content-point i {
+  color:rgb(84, 128, 194);
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.cd-content-block .equals span {
+  color: rgb(84, 128, 194);
+}
+
+@media screen and (max-width: 1050px) {
+  .cd-images-list h2 {
+    font-size: 2.4rem;
+  }
+  .cd-content-block .content h2 {
+    font-size: 26px;
+  }
+  .cd-content-block .content .content-body .content-point {
+    font-size: 16px;
+  }
+  .cd-content-block .equals {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cd-content-block {
+    height: 100vh !important;
+  }
+  .cd-images-list {
+    margin-left: -40px;
+    height: 100%;
+  }
+  .cd-content-block .equals {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 830px) {
+  .models {
+    padding-bottom: 10vh;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 780px) {
+  .models {
+    padding-bottom: 20vh;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 730px) {
+  .models {
+    padding-bottom: 30vh;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 670px) {
+  .models {
+    padding-bottom: 40vh;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 622px) {
+  .models {
+    padding-bottom: 50vh;
   }
 }
 
@@ -451,7 +538,7 @@ Content block
 -------------------------------- */
 .cd-content-block {
   /* move the block outside the viewport (to the right) - mobile only */
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -680,43 +767,33 @@ Slider navigation
   .block-navigation {
     display: block;
     position: absolute;
-    bottom: -18px;
+    bottom: 0px;
     width: 50%;
+    display: flex;
+    height: 50px;
   }
   .block-navigation::after {
     clear: both;
     content: "";
     display: table;
   }
-  .block-navigation li {
-    width: 50%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-transition: background 0.2s;
-    -moz-transition: background 0.2s;
-    transition: background 0.2s;
-  }
-  .block-navigation li:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  .block-navigation li:first-of-type {
-    float: left;
-  }
-  .block-navigation li:last-of-type {
-    float: right;
-  }
+  
   .block-navigation button {
     display: block;
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .block-navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
   .block-navigation button.inactive {
-    opacity: .3;
+    opacity: .7;
     cursor: not-allowed;
   }
 }
