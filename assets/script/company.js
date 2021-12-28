@@ -1,6 +1,6 @@
 
 $('#team-carousel').carousel({
-  interval: 4000
+  autoplay: false
 })
 
 

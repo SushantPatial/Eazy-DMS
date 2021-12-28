@@ -349,206 +349,431 @@ html, body {
   }
 }
 
+
+
+
+/* -------------------------------- 
+
+Images block
+
+-------------------------------- */
+.cd-image-block {
+  position: relative;
+}
+.cd-image-block::before {
+  /* this is the layer used to cover the .cd-image-block when the content block becomes visible - mobile only */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(52, 54, 66, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-image-block.content-block-is-visible::before {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-image-block::before {
+    display: none;
+  }
+}
+
+.cd-images-list::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+.cd-images-list > li {
+  height: 250px;
+  background: #979c9c url(../img/img-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.cd-images-list > li:nth-of-type(2) {
+  background: #343642 url(../img/img-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.cd-images-list > li:nth-of-type(3) {
+  background: #982b3c url(../img/img-3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.cd-images-list > li:nth-of-type(4) {
+  background: #338899 url(../img/img-4.jpg) no-repeat center center;
+  background-size: cover;
+}
+.cd-images-list > li > a {
+  /* used to vertically align the h2 child -  mobile version only */
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.cd-images-list h2 {
+  /* used to vertically align h2 -  mobile version only */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (min-width: 768px) {
+  .cd-images-list::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+  .cd-images-list > li > a {
+    display: block;
+    padding: 4em 3em;
+    cursor: default;
+    pointer-events: none;
+  }
+  .cd-images-list h2 {
+    font-size: 5.5rem;
+    text-align: left;
+  }
+}
+
+/* -------------------------------- 
+
+Content block
+
+-------------------------------- */
+.cd-content-block {
+  /* move the block outside the viewport (to the right) - mobile only */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cd-content-block.is-visible {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-content-block > ul {
+  height: 100%;
+}
+.cd-content-block > ul > li {
+  position: absolute;
+  height: 100%;
+  padding: 2em;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+}
+.cd-content-block > ul > li.is-selected {
+  /* this is the selected content */
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  -webkit-overflow-scrolling: touch;
+}
+.cd-content-block h2 {
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 1em;
+}
+.cd-content-block p {
+  margin-bottom: 2em;
+  line-height: 1.6;
+  color: #85868d;
+}
+.cd-content-block .cd-close {
+  /* 'X' icon to close the content block -  mobile only */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+.cd-content-block .cd-close::after, .cd-content-block .cd-close::before {
+  /* these are the 2 lines of the 'X' icon */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 24px;
+  background-color: #343642;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-content-block .cd-close::after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.cd-content-block .cd-close::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.cd-content-block .cd-close.is-scaled-up {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.no-touch .cd-content-block .cd-close.is-scaled-up:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+@media only screen and (min-width: 768px) {
+  .cd-content-block {
+    /* reset style */
+    position: static;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-content-block > ul > li {
+    /* reset style */
+    opacity: 1;
+    visibility: visible;
+    padding: 4em 3em;
+  }
+  .cd-content-block > ul > li.overflow-hidden {
+    /* this class is used during the animation (slider change) to hide the scrolling bar */
+    overflow: hidden;
+  }
+  .cd-content-block h2 {
+    font-size: 3rem;
+  }
+  .cd-content-block .cd-close {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------- 
+
+Desktop slider - both image and content blocks
+
+---------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .cd-image-block,
+  .cd-content-block {
+    /* slider style - desktop version only */
+    width: 50%;
+    float: left;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .cd-image-block > ul,
+  .cd-content-block > ul {
+    position: relative;
+    height: 100%;
+  }
+  .cd-image-block > ul > li,
+  .cd-content-block > ul > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    /* by default, the items are moved to the right - relative to their parent elements */
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+  }
+  .cd-image-block > ul > li.is-selected,
+  .cd-content-block > ul > li.is-selected {
+    /* this is the visible item */
+    position: absolute;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-image-block > ul > li.move-left,
+  .cd-content-block > ul > li.move-left {
+    /* this is the item hidden on the left */
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+/* -------------------------------- 
+
+Slider navigation
+
+-------------------------------- */
+
+.models {
+  position: relative;
+  height: 100%;
+}
+.block-navigation {
+  /* this is the slider navigation - desktop version only */
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .block-navigation {
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    width: 50%;
+  }
+  .block-navigation::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .block-navigation li {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+  }
+  .block-navigation li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .block-navigation li:first-of-type {
+    float: left;
+  }
+  .block-navigation li:last-of-type {
+    float: right;
+  }
+  .block-navigation button {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .block-navigation button.inactive {
+    opacity: .3;
+    cursor: not-allowed;
+  }
+}
+
+/* -------------------------------- 
+
+Javascript disabled
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .no-js .cd-content-block {
+    display: none;
+  }
+
+  .no-js .cd-image-block {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .no-js .cd-images-list::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .no-js .cd-images-list > li {
+    position: static;
+    width: 50%;
+    float: left;
+    height: 400px;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .no-js .cd-images-list > li.is-selected {
+    position: static;
+  }
+
+  .no-js .cd-images-list > li > a {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .no-js .block-navigation {
+    display: none;
+  }
+}
+
+
 /* benefits for distributors cards */
 .about-benefits-section .models .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px;
-  min-height: 100vh;
+  
+  height: 0;
 }
-.about-benefits-section .models .card {
-  background: linear-gradient(to bottom, #276ace, #5565f7);
-  display: flex;
-  justify-content: left;
-  align-items: flex-start;
-  position: relative;
-  width: 450px;
-  height: 520px;
-  margin: 30px;
-  border: none;
-  border-radius: 20px;
-  border-bottom-left-radius: 160px;
-  border-bottom-right-radius: 160px;
-  box-shadow: 0 15px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.24);
-  overflow: hidden;
-}
-.about-benefits-section .models .card::before {
-  content: "";
-  position: absolute;
-  top: -140px;
-  left: -40%;
-  padding: 0;
-  width: 100%;
-  height: 120%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
-  transform: rotate(35deg);
-  pointer-events: none;
-  filter: blur(5px);
-}
-.about-benefits-section .models .card .icon {
-  position: relative;
-  left: 150px;
-  width: 140px;
-  height: 120px;
-  background: #ffffff;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  box-shadow: 0 15px 0 rgba(0, 0, 0, 0.1),
-          inset 0 -8px 0 #fff;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.about-benefits-section .models .card .icon::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  border-top-right-radius: 50px;
-  box-shadow: 15px -15px 0 15px #ffffff;
-}
-.about-benefits-section .models .card .icon::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -50px;
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  border-top-left-radius: 50px;
-  box-shadow: -15px -15px 0 15px #ffffff;
-}
-.about-benefits-section .models .card .icon ion-icon {
-  color: rgb(56, 56, 56);
-  position: relative;
-  font-size: 6em;
-  z-index: 1000;
-  --ionicon-stroke-width: 24px;
-}
-
-.about-benefits-section .models .card .content {
-  position: absolute;
-  width: 100%;
-  padding: 30px;
-  padding-top: 150px;
-  text-align: center;
-  color: #fff;
-}
-.about-benefits-section .models .card .content h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.about-benefits-section .models .card .content h5 {
-  color: #ccc;
-  margin-bottom: 15px;
-}
-.about-benefits-section .models .card .content .content-body {
-  text-align: left;
-}
-.about-benefits-section .models .card .content .content-body .content-point {
-  display: flex;
-}
-.about-benefits-section .models .card .content .content-body .content-point i {
-  margin-top: 4px;
-  margin-right: 10px;
-}
-
-
-.about-benefits-section .models .container .plus {
-  position: absolute;
-  margin-top: -100px;
-  z-index: 100;
-}
-.about-benefits-section .models .container .plus i {
-  font-size: 100px;
-  color: #fff;
-  -webkit-text-stroke: 2px rgb(141, 141, 141);
-}
-.about-benefits-section .models .container .equals h2 {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  color: #222;
-}
-.about-benefits-section .models .container .equals h2 span {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  color: rgb(15, 79, 153);
-}
-
-
-@media screen and (max-width: 1200px) {
-  .about-benefits-section .models .container .plus {
-    margin-top: -80px
-  }
-  .about-benefits-section .models .card-2 {
-    margin-top: 100px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .about-benefits-section .models .container .plus {
-    margin-top: -120px
-  }
-}
-@media screen and (max-width: 768px) {
-  .about-benefits-section .models .card {
-    width: 450px;
-    height: 600px;
-  }
-  .about-benefits-section .models .card .icon {
-    left: 135px;
-  }
-  .about-benefits-section .models .container .plus {
-    margin-top: -150px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .about-benefits-section .models .card {
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    height: 620px;
-  }
-  .about-benefits-section .models .card .content h2 {
-    font-size: 1.2em;
-  }
-  .about-benefits-section .models .card .content h5 {
-    font-size: 16px;
-  }
-  .about-benefits-section .models .card .content p {
-    font-size: 14px;
-  }
-  .about-benefits-section .models .card .icon {
-    left: 0;
-  }
-  .about-benefits-section .models .container .plus {
-    margin-top: -190px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .about-benefits-section .models .card {
-    min-width: 300px;
-    display: flex;
-    align-items: center;
-    height: 660px
-  }
-  .about-benefits-section .models .container .plus {
-    margin-top: -200px;
-  }
-}
-@media screen and (max-width: 435px) {
-  .about-benefits-section .models .container .plus {
-    margin-top: -230px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .about-benefits-section .models .container .plus {
-    margin-top: -270px;
-  }
-}
-
