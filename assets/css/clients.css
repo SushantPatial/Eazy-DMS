@@ -361,13 +361,13 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(219, 235, 253);
+  background-color: #F2F9FF;
 }
 .testimonials .container {
   max-width: 1300px;
 }
 .testimonials .testimonial-card {
-  background-color: #BCD4EE;
+  background-color: var(--color-1);
   margin: 15px;
   max-width: 30.9%;
   flex: 0 0 30.9%;

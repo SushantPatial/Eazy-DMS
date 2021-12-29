@@ -50,7 +50,7 @@ html, body {
   padding: 0;
 }
 .portfolio .portfolio-item h3 {
-  background-color: #db3030;
+  background-color: var(--color-5);
   color: #fff;
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@ html, body {
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #e03a3c;
+  background: var(--color-6);
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;

@@ -59,9 +59,10 @@ html, body {
   font-size: 14px;
   color: #fff;
 }
-.contact-section .contact .left-sec .row p {
+.contact-section .contact .left-sec .row a {
   font-size: 14px;
   color: #ccc;
+  text-decoration: none;
 }
 .contact-section .contact .left-sec .col-3 img {
   width: 80px;
@@ -76,14 +77,14 @@ html, body {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(43, 123, 214);
+  background-color: var(--color-3);
   padding-top: 20px;
   padding-right: 5%;
   border-top-right-radius: 25px;
   height: 80px;
 }
 .contact-section .contact .left-sec .contact-row-1 .col-2 {
-  background-color: rgb(43, 123, 214);
+  background-color: var(--color-3);
   border-bottom-left-radius: 25px;
   height: 80px;
 }
@@ -193,10 +194,11 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  font-weight: 500;
   text-transform: uppercase;
   color: white;
-  background-color: rgb(19, 36, 114);
-  border: 1px solid rgb(19, 36, 114);
+  background-color: #041b5c;
+  border: 2px solid #041b5c;
   border-radius: 5px;
   letter-spacing: 2px;
   font-size: 18px;
@@ -204,8 +206,9 @@ html, body {
 }
 .contact-section .contact .right-sec .contact-form .submit:hover {
   background-color: transparent;
-  color: #222;
-  border: 1px solid #222;
+  font-weight: 500;
+  color: #041b5c;
+  border: 2px solid #041b5c
 }
 .contact-section .contact .right-sec .contact-form .submit:focus {
   outline: none;

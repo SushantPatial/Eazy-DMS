@@ -55,13 +55,13 @@ html, body {
 }
 .main-section-resources .nav-tabs .nav-link:hover {
   border: none;
-  box-shadow: 0 3px 0 #2793ec;
-  color: #2793ec;
+  box-shadow: 0 3px 0 var(--color-3);
+  color: var(--color-3);
 }
 .main-section-resources .nav-tabs .nav-item .active {
   border: none;
-  box-shadow: 0 3px 0 #2793ec;
-  color: #2793ec;
+  box-shadow: 0 3px 0 var(--color-3);
+  color: var(--color-3);
 }
 .main-section-resources .tab-content .tab-pane {
   text-align: center;
@@ -129,7 +129,7 @@ html, body {
 .blogs .blog-posts .date {
   font-size: 15px;
   font-style: italic;
-  color: #e77f67;
+  color: #e96446;
 }
 
 .blogs .blog-posts .post:hover .post-img {
@@ -153,8 +153,8 @@ html, body {
 
 
 .blogs .offset {
-  --color: #125a9e;
-  --hover: #246cf3;
+  --color: var(--color-4);
+  --hover: var(--color-3);
   font-weight: 600;
   border: 2px solid;
   font-family: 'Poppins', sans-serif;
@@ -368,7 +368,7 @@ html, body {
 
 .catalogue .case-studies .card_circle {
   background: url('http://lorempixel.com/400/200') no-repeat center bottom;
-  background-color: #3487f7;
+  background-color: var(--color-3);
   background-size: cover;
   border-radius: 50%;
   height: 300px;
@@ -432,9 +432,9 @@ html, body {
   -webkit-border-radius: 2px;
   -webkit-transition: 0.2s ease-out;
   background-clip: padding-box;
-  border: 2px solid #3487f7;
+  border: 2px solid var(--color-3);
   border-radius: 2px;
-  color: #3487f7;
+  color: var(--color-3);
   background-color: transparent;
   cursor: pointer;
   display: inline-block;
@@ -451,7 +451,7 @@ html, body {
   transition: 0.3s ease-out;
 }
 .catalogue .case-studies .cta:hover {
-  background-color: #3487f7;
+  background-color: var(--color-3);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #fff;
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -484,7 +484,7 @@ html, body {
   transition: 0.5s ease;
 }
 .catalogue .company-deck .deck-text {
-  background-color: #1174c5;
+  background-color: var(--color-3);
   height: 70px;
   color: white;
   display: flex;
@@ -589,7 +589,7 @@ html, body {
   margin: 15px 0;
 }
 .case-study .modal-header {
-  background-color: #2464AD;
+  background-color: var(--color-3);
   color: white;
   text-transform: uppercase;
 }
@@ -605,7 +605,7 @@ html, body {
   border: none;
   color: #ddd;
   text-transform: uppercase;
-  background-color: #2464AD;
+  background-color: var(--color-3);
   padding: 0 30px;
   transition: 0.2s ease;
   cursor: pointer;

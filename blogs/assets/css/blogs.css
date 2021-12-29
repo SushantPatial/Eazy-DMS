@@ -79,7 +79,7 @@ html, body {
   background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
 .blogs .row h6 {
-  color: rgb(50, 132, 255);
+  color: var(--color-3);
   padding: 20px 0 0px 0;
   font-size: 14px;
   text-transform: uppercase;

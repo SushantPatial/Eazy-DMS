@@ -1,6 +1,7 @@
 
 $('#team-carousel').carousel({
-  autoplay: false
+  pause: true,
+  interval: false
 })
 
 

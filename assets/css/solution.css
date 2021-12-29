@@ -196,7 +196,7 @@ html, body {
   margin-bottom: 20px;
 }
 .why-hybrid-dms-section .why-dms .fal {
-  color:rgb(17, 68, 177);
+  color:var(--color-3);
   font-size: 40px;
   margin-right: 10px;
   transition: 0.7s ease;
@@ -239,7 +239,7 @@ html, body {
   width: 90%;
 }
 .about-benefits-section .not-sure span {
-  color: rgb(0, 102, 255);
+  color: var(--color-3);
 }
 .about-benefits-section .not-sure h5 {
   font-weight: 600;
@@ -247,7 +247,7 @@ html, body {
   width: 90%;
 }
 .about-benefits-section .not-sure button {
-  background-color: rgb(214, 16, 16);
+  background-color: var(--color-6);
   color: white;
   padding: 10px 20px;
   margin-top: 20px;
@@ -258,7 +258,7 @@ html, body {
 }
 .about-benefits-section .not-sure button:hover {
   cursor: pointer;
-  background-color: rgb(192, 16, 16);
+  background-color: rgb(189, 21, 26);
 }
 @media screen and (max-width: 768px) {
   .about-benefits-section .not-sure h3 {
