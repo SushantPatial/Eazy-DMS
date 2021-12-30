@@ -10,20 +10,23 @@
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
         <!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-		<!-- AOS -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<!-- Bootstrap-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<!-- FontAwesome-->
-		<link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- FontAwesome-->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <!-- Swiper CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
         <!-- Owl Carousel -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<!-- Styles -->
+		    <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="assets/css/index.css">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 
         <!-- Google recaptcha-->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -585,7 +588,7 @@
                             <div class="card-top">
                               <div class="row">
                                 <div class="col-5">
-                                  <a href=""><img class="profile-pic" src="assets/images/testimonials/Pratyush.png"></a>
+                                  <img class="profile-pic" src="assets/images/testimonials/Pratyush.png" data-toggle="modal" data-target="#testimonial-videos-0">
                                 </div>
                                 <div class="col-7">
                                   <div class="row">
@@ -622,7 +625,7 @@
                             <div class="card-top">
                               <div class="row">
                                 <div class="col-5">
-                                  <a href=""><img class="profile-pic" src="assets/images/testimonials/Amit (1).png"></a>
+                                  <img class="profile-pic" src="assets/images/testimonials/Amit (1).png" data-toggle="modal" data-target="#testimonial-videos-1">
                                 </div>
                                 <div class="col-7">
                                   <div class="row">
@@ -659,7 +662,7 @@
                             <div class="card-top">
                               <div class="row">
                                 <div class="col-5">
-                                  <a href=""><img class="profile-pic" src="assets/images/testimonials/Anand.png"></a>
+                                  <img class="profile-pic" src="assets/images/testimonials/Anand.png" data-toggle="modal" data-target="#testimonial-videos-2">
                                 </div>
                                 <div class="col-7">
                                   <div class="row">
@@ -696,7 +699,7 @@
                             <div class="card-top">
                               <div class="row">
                                 <div class="col-5">
-                                  <a href=""><img class="profile-pic" src="assets/images/testimonials/Sameer.png"></a>
+                                  <img class="profile-pic" src="assets/images/testimonials/Sameer.png" data-toggle="modal" data-target="#testimonial-videos-3">
                                 </div>
                                 <div class="col-7">
                                   <div class="row">
@@ -728,14 +731,157 @@
                           </div>
                         </div>
             
-            
                       </div>
                     </div>
+
+
+
+                    <div class="modal fade bd-example-modal-lg" id="testimonial-videos-0" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="swiper swiper-0">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <h5>Pratyush <span>|</span> Kenstar</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Amit Singha <span>|</span> Weikfield</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Anand <span>|</span> Merino</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Sameer Chaudhary <span>|</span> Schneider Electric</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                              <div class="swiper-button-next"><i class="fas fa-caret-square-right"></i></div>
+                              <div class="swiper-button-prev"><i class="fas fa-caret-square-left"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" id="testimonial-videos-1" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="swiper swiper-1">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <h5>Amit Singha <span>|</span> Weikfield</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Anand <span>|</span> Merino</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Sameer Chaudhary <span>|</span> Schneider Electric</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Pratyush <span>|</span> Kenstar</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                              <div class="swiper-button-next"><i class="fas fa-caret-square-right"></i></div>
+                              <div class="swiper-button-prev"><i class="fas fa-caret-square-left"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" id="testimonial-videos-2" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="swiper swiper-2">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <h5>Anand <span>|</span> Merino</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Sameer Chaudhary <span>|</span> Schneider Electric</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Pratyush <span>|</span> Kenstar</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Amit Singha <span>|</span> Weikfield</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                              <div class="swiper-button-next"><i class="fas fa-caret-square-right"></i></div>
+                              <div class="swiper-button-prev"><i class="fas fa-caret-square-left"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" id="testimonial-videos-3" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="swiper swiper-3">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <h5>Sameer Chaudhary <span>|</span> Schneider Electric</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Pratyush <span>|</span> Kenstar</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Amit Singha <span>|</span> Weikfield</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                  <h5>Anand <span>|</span> Merino</h5>
+                                  <iframe src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                              </div>
+                              <div class="swiper-button-next"><i class="fas fa-caret-square-right"></i></div>
+                              <div class="swiper-button-prev"><i class="fas fa-caret-square-left"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </section>
 
-
-               
-            
             
                 <!-- ======= Stats Section ======= -->
                 <section id="counts" class="counts">
@@ -1027,6 +1173,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Swiper Script -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <!-- Owl Carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Particles.js and app.js -->

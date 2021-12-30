@@ -105,6 +105,7 @@ $(document).ready(function() {
 
 $('.testimonials-carousel').owlCarousel({
   mouseDrag: false,
+  touchDrag: false,
   loop: true,
   margin: 2,
   nav: true,
@@ -113,7 +114,8 @@ $('.testimonials-carousel').owlCarousel({
       items: 1
     },
     600: {
-      items: 1
+      items: 1,
+      touchDrag: true
     },
     992: {
       items: 3
@@ -163,6 +165,42 @@ $('.owl-next').click(function() {
     }
   }
 });
+
+
+var swiper0 = new Swiper(".swiper-0", {
+  loop: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+let swiper1 = new Swiper(".swiper-1", {
+  loop: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+let swiper2 = new Swiper(".swiper-2", {
+  loop: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+let swiper3 = new Swiper(".swiper-3", {
+  loop: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 
 
 

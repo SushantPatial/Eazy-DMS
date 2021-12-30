@@ -468,11 +468,11 @@ Images block
   display: flex;
   font-size: 18px;
   color: #444;
+  margin-bottom: 10px;
 }
-.cd-content-block .content .content-body .content-point i {
-  color:rgb(84, 128, 194);
-  margin-top: 4px;
-  margin-right: 10px;
+.cd-content-block .content .content-body .content-point .content-icon {
+  padding: 0px 25px;
+  height: 50px;
 }
 .cd-content-block .equals span {
   color: rgb(84, 128, 194);
