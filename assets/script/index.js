@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
+
 $(document).ready(function() {
   var s = skrollr.init();
   if (s.isMobile()) {
@@ -13,8 +17,35 @@ $(document).ready(function() {
     $(".hero-head").show();
     $(".header-mobile").hide();
     $(".main-section").removeClass("main-section-mobile");
+    $('.scroll-down-arrow a').hide();
+    setTimeout(function() {
+      $('body').css('overflow-y','scroll');
+      $('.scroll-down-arrow a').fadeIn('slow');
+    }, 5000) 
   }
 });
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
+    markers: false // Easaly remove markers for production 
+  });
+
+  const timelineHeader = gsap.timeline({
+    scrollTrigger: {
+    trigger: "#header-zoom", // What element triggers the scroll
+    scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+    start: "top top", // Start at top of Trigger and at the top of the viewport
+    end: "+=310% 50px", // The element is 500px hight and end 50px from the top of the viewport
+    pin: true, // Pin the element true or false
+  }
+});
+timelineHeader
+  .to(".video", {
+    scale: 0.7
+  }, "sameTime")
 
 
 $('#parallax').parallax({
@@ -24,7 +55,7 @@ $('#parallax').parallax({
 
 
 $(window).bind('scroll', function () {
-  if ($(window).scrollTop() > 2025) {
+  if ($(window).scrollTop() > 1955) {
     $(".scroll-down-arrow").addClass("scroll-down-arrow-absolute")
   } else {
     $('.scroll-down-arrow').removeClass('scroll-down-arrow-absolute');
@@ -199,8 +230,6 @@ let swiper3 = new Swiper(".swiper-3", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-
 
 
 

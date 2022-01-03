@@ -78,24 +78,38 @@
   filter: brightness(100%) grayscale(0%);
 }
 
+.footer-section .footer-content .other-products {
+  margin-left: 30px;
+  margin-top: 17px;
+  width: 75%;
+}
 .footer-section .footer-content .other-products img {
   width: 42px;
-  margin: 0 7px;
+  margin: 0 5px;
   transition: 0.3s ease;
 }
 .footer-section .footer-content .other-products img:hover {
   transform: scale(1.06);
 }
-.footer-section .footer-content .other-products {
-  margin-left: 7px;
+.footer-section .footer-content .col-12:nth-child(3) {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+}
+.footer-section .footer-content .col-12:nth-child(3) h6 {
+  width: 25%;
 }
 
+.footer-section .footer-content .social-links {
+  margin-top: 17px;
+  width: 75%;
+}
 .footer-section .footer-content .social-links i {
-  padding: 13px 16px;
+  padding: 12px 15px;
   border: 2px solid #3A5998;
   color: #3A5998;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 6px;
   transition: 0.3s ease;
 }
 .footer-section .footer-content .social-links i:hover {
@@ -103,7 +117,7 @@
   color: white;
 }
 .footer-section .footer-content .social-links .fa-twitter {
-  padding: 13px 13px;
+  padding: 12px 12px;
   border: 2px solid #55ACEE;
   color: #55ACEE;
 }
@@ -111,7 +125,7 @@
   background-color: #55ACEE;
 }
 .footer-section .footer-content .social-links .fa-linkedin-in {
-  padding: 13px 14px;
+  padding: 12px 13px;
   border: 2px solid #017BB6;
   color: #017BB6;
 }
@@ -119,17 +133,25 @@
   background-color: #017BB6;
 }
 .footer-section .footer-content .social-links .fa-youtube {
-  padding: 13px 12.5px;
+  padding: 12px 11px;
   border: 2px solid #e20101;
   color: #e20101;
 }
 .footer-section .footer-content .social-links .fa-youtube:hover {
   background-color: #e20101;
 }
+.footer-section .footer-content .col-12:nth-child(4) {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+}
+.footer-section .footer-content .col-12:nth-child(4) h6 {
+  width: 25%;
+}
 
 .footer-section .footer-content .footer-underline {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
   border-bottom: 1px solid gray;
 }
 
@@ -141,6 +163,7 @@
   text-align: center;
   color: #fff;
 }
+
 
 @media screen and (max-width: 1200px) {
   .footer-section .footer-video video {

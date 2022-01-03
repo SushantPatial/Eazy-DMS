@@ -206,13 +206,15 @@ html, body {
   transition: 0.5s ease;
   transition-delay: 0.5s;
 }
+#team-carousel .carousel-item .team-img {
+
+}
 #team-carousel .carousel-item .team-img img {
   width: 450px;
   margin-left: -30%;
   opacity: 0;
 }
 #team-carousel .active .team-img img {
-  margin-left: 0%;
   opacity: 1;
   transition: 0.5s ease;
   transition-delay: 0.5s;
@@ -337,10 +339,17 @@ html, body {
   .our-team-section .container {
     max-width: 1092px;
   }
+  #team-carousel .active .team-img img {
+    margin-left: 0%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .our-team-section .container {
-    max-width: 1300px;
+    max-width: 100%;
+    padding: 0;
+  }
+  #team-carousel .active .team-img img {
+    margin-left: 20%;
   }
 }
 
