@@ -195,7 +195,7 @@ html, body {
 -------------------- */
 .customer-videos {
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
   margin: 0px auto;
   padding: 20px 30px;
   display: flex;
@@ -211,7 +211,7 @@ html, body {
   --angle: 0deg;
   border: 7px solid;
   /* This will work but yield a wrong result: */
-  border-image: linear-gradient(var(--angle), rgb(47, 188, 253), rgb(8, 66, 151), rgb(47, 188, 253), rgb(8, 66, 151)) 1;
+  border-image: linear-gradient(var(--angle), var(--color-6), var(--color-4), var(--color-6), var(--color-4)) 1;
   animation: 10s rotate linear infinite;
 }
 
@@ -256,7 +256,7 @@ html, body {
 }
 .swiper-custom-next:hover {
   right: 2px;
-  color: rgb(207, 40, 40);
+  color: var(--color-3);
 }
 
 .swiper-custom-prev { 
@@ -265,7 +265,7 @@ html, body {
 }
 .swiper-custom-prev:hover {
   left: 2px;
-  color: rgb(207, 40, 40);
+  color: var(--color-3);
 }
 
 .swiper-custom-next.swiper-button-disabled,
@@ -323,10 +323,7 @@ html, body {
 }
 
 .swiper-pagination-bullet-active {
-    background: #013870;
-}
-.swiper-pagination-bullet-active:hover {
-    background: #002c57;
+    background: var(--color-3);
 }
 
 .swiper-pagination-bullet {
@@ -361,7 +358,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #F2F9FF;
+  background-color: rgb(233, 241, 245);
 }
 .testimonials .container {
   max-width: 1300px;
@@ -385,8 +382,6 @@ html, body {
 }
 .testimonials .testimonial-card .details .testimonial-img {
   width: 100%;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px gray;
 }
 .testimonials .testimonial-card .details h5 {
   margin-top: 10px;

@@ -89,11 +89,9 @@ html, body {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(9, 114, 155, 0.5);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(9, 114, 155, 0.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -180,11 +178,7 @@ html, body {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-.portfolio .white-bg {
-  background-color: rgb(245, 120, 120);
-  width: 100%;
-  height: 200vh;
-}
+
 
 .portfolio .col-12 {
   background-color:#222;
@@ -263,4 +257,43 @@ html, body {
 }
 .masonry .grid4-wrap a {
  width: 50%;
+}
+
+
+.toggler {
+  cursor: pointer;
+}
+.toggler .portfolio-wrap {
+  background-color: rgb(9, 114, 155);
+  border: 1px solid #aaa;
+  height: 379px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggler .portfolio-wrap h2 {
+  color: #fff;
+  transition: 0.5s ease;
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+}
+.toggler:hover .portfolio-wrap h2 {
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.particles-js { 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.toggler:hover .particles-js  {
+  opacity: 1;
 }

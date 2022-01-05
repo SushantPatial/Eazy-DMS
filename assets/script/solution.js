@@ -106,3 +106,27 @@ jQuery(document).ready(function($){
 	}
 
 });
+
+
+
+$('.block-navigation .cd-next').on('click', function() {
+	if($('.is-selected a h2').html() == 'Support / Helpdesk Model') {
+		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(1) a h2').html()).show('slide', {direction: 'right'}, 500);
+		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(3) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'right'}, 500);
+	}
+	if($('.is-selected a h2').html() == 'Implementation / Rollout Model') {
+		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(2) a h2').html()).show('slide', {direction: 'right'}, 500);
+		$('.cd-next h6').hide().html('').show('slide', {direction: 'right'}, 500);
+	}
+})
+
+$('.block-navigation .cd-prev').on('click', function() {
+	if($('.is-selected a h2').html() == 'Result') {
+		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(1) a h2').html()).show('slide', {direction: 'left'}, 500);
+		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(3) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'left'}, 500);
+	}
+	if($('.is-selected a h2').html() == 'Implementation / Rollout Model') {
+		$('.cd-prev h6').hide().html('').show('slide', {direction: 'left'}, 500);
+		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(2) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'left'}, 500);
+	}
+})

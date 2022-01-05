@@ -372,7 +372,7 @@ Images block
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(52, 54, 66, 0.6);
+  background-color: rgba(60,143,161, 0.6);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -762,6 +762,10 @@ Slider navigation
 .block-navigation {
   /* this is the slider navigation - desktop version only */
   display: none;
+}
+.block-navigation h6 {
+  margin-bottom: -15px;
+  font-size: 14px;
 }
 @media only screen and (min-width: 768px) {
   .block-navigation {
