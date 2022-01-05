@@ -764,7 +764,7 @@ Slider navigation
   display: none;
 }
 .block-navigation h6 {
-  margin-bottom: -15px;
+  margin-bottom: -5px;
   font-size: 14px;
 }
 @media only screen and (min-width: 768px) {
