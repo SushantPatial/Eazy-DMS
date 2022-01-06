@@ -349,7 +349,9 @@ html, body {
 /* ==================
     Testimonials
    ================== */
-
+.testimonials-wrapper {
+  background-color: #DBEBFD;
+}
 .testimonials {
   width: 100%;
   padding: 50px 30px;
@@ -358,7 +360,10 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(233, 241, 245);
+  background: url(../images/distributors-bkg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:bottom;
 }
 .testimonials .container {
   max-width: 1300px;
@@ -398,7 +403,7 @@ html, body {
 }
 .testimonials .testimonial-card .details .sign {
   margin-top: 5px;
-  height: 28px;
+  height: 50px;
 }
 .testimonials .testimonial-card .review {
   background-color: #fff;
