@@ -369,7 +369,7 @@ html, body {
   max-width: 1300px;
 }
 .testimonials .testimonial-card {
-  background-color: var(--color-1);
+  background-color: #9fd6fd;
   margin: 15px;
   max-width: 30.9%;
   flex: 0 0 30.9%;
