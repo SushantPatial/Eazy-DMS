@@ -191,160 +191,88 @@ html, body {
 }
 
 /* --------------------
-    Client Wins Section 
+    Industry Peers Section 
 -------------------- */
-.customer-videos {
+.industry-peers {
+  background-color: #eeeeeeff;
+  padding: 50px 0 80px 0;
+  position: relative;
+}
+.industry-peers .slick-carousel {
   margin: 0 auto;
   width: 100%;
-  margin: 0px auto;
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
-
-.vid-main-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  --angle: 0deg;
-  border: 7px solid;
-  /* This will work but yield a wrong result: */
-  border-image: linear-gradient(var(--angle), var(--color-6), var(--color-4), var(--color-6), var(--color-4)) 1;
-  animation: 10s rotate linear infinite;
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-
-
-
-#video-scrollbar {
-  width: 100%;
-  position: relative; 
-  padding-right: 32px; 
-  padding-left: 32px; 
-  margin-top: 10px;
-  border-radius: 5px;
-  background: #eee;
-}
-
-.swiper-custom-next, .swiper-custom-prev {
-  font-size: 24px;
-  color: rgb(39, 39, 39);
-  position: absolute; 
-  padding: 10px 2px; 
-  z-index: 2;
-  display: inline-block;
+.industry-peers .slick-nav {
+  z-index: 100;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0 15px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s ease;
 }
-
-.swiper-custom-next {
-  right: 4px;
-  top: 32%; 
+.industry-peers .slick-nav:focus {
+  outline: none;
 }
-.swiper-custom-next:hover {
-  right: 2px;
-  color: var(--color-3);
+.industry-peers .slick-carousel:hover .slick-nav {
+  background-color: rgba(24, 24, 24, 0.527);
 }
-
-.swiper-custom-prev { 
-  left: 4px; 
-  top: 33%; 
+.industry-peers .pull-right {
+  right: 0;
 }
-.swiper-custom-prev:hover {
-  left: 2px;
-  color: var(--color-3);
+.industry-peers .slick-nav i {
+  color: white;
+  font-size: 30px;
+  transition: 0.3s ease;
 }
-
-.swiper-custom-next.swiper-button-disabled,
-.swiper-custom-prev.swiper-button-disabled
-{
-  opacity: 0.2;
+.industry-peers .pull-right:hover i, .industry-peers .pull-left:hover i {
+  color: var(--color-2);
 }
-.swiper-custom-next.swiper-button-disabled:hover {
-  right: 4px;
-}
-.swiper-custom-prev.swiper-button-disabled:hover {
-  left: 4px;
-}
-
-
-.swiper-container-videos .swiper-slide {
-  width: 223px;
-}
-
-.swiper-container-videos .swiper-slide a .desc {
-  margin-top: 3px;
-  margin-bottom: 0px;
-  text-decoration: underline;
-}
-
-.vid-thumb {
-  display: block;
-  margin-top: 10px;
-}
-
-.vid-thumb img {
-  height: auto;
+.industry-peers .slick-slide img {
   width: 100%;
-  display: block;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-.vid-thumb:hover img {
-  -webkit-transform: scale(1.06);
-  transform: scale(1.06);
 }
 
-.swiper-container-videos .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
-  position: relative;
-  top: 0px;
+.slick-lightbox-inner {
+  top: 50px !important;
 }
-.swiper-container-videos .swiper-slide a .desc {
-  text-decoration: none;
-  font-size: 14px;
-  color: #222222;
+.slick-lightbox-close {
+  top: 60px !important;
+  right: 30px !important;
 }
-.swiper-container-videos  .selected.swiper-slide a .desc {
-  color: #025282;
-  font-weight: bold;
+.slick-lightbox-close:before {
+  font-size: 30px !important;
+}
+.slick-lightbox .slick-prev, .slick-lightbox .slick-next {
+  z-index: 100 !important;
+}
+.slick-lightbox .slick-prev {
+  left: 20px !important;
+}
+.slick-lightbox .slick-next {
+  right: 30px !important;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 30px !important;
 }
 
-.swiper-pagination-bullet-active {
-    background: var(--color-3);
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-}
-
-@media screen and (max-width: 700px) {
-  .vid-container iframe {
-    width: 500px;
-    height: 280px;
+@media screen and (max-width: 576px) {
+  .slick-lightbox .slick-prev {
+    left: 15px !important;
+  }
+  .slick-lightbox .slick-next {
+    right: 15px !important;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px !important;
+  }
+  .slick-lightbox-slick-img {
+    max-width: 81% !important;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .vid-container iframe {
-    width: 100%;
-    max-width: 320px;
-    height: 100%;
-  }
-}
+
 
 /* ==================
     Testimonials
@@ -355,7 +283,6 @@ html, body {
 .testimonials {
   width: 100%;
   padding: 50px 30px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
