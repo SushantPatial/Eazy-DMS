@@ -146,7 +146,7 @@ html, body {
   justify-content: center;
   overflow: hidden;
 }
-.portfolio .toggler .trophy {
+.portfolio .toggler .icon {
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -158,44 +158,44 @@ html, body {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.03);
 }
-.portfolio .toggler:hover .trophy {
+.portfolio .toggler:hover .icon {
   opacity: 1;
   transform: translateY(-50px);
 }
 
 @media screen and (max-width: 1050px) {
-  .portfolio .toggler .trophy {
+  .portfolio .toggler .icon {
     width: 50px;
     transform: translateY(80px);
   }
-  .portfolio .toggler:hover .trophy {
+  .portfolio .toggler:hover .icon {
     transform: translateY(-30px);
   }
 }
 @media screen and (max-width: 750px) {
-  .portfolio .toggler .trophy {
+  .portfolio .toggler .icon {
     width: 35px;
     transform: translateY(70px);
   }
-  .portfolio .toggler:hover .trophy {
+  .portfolio .toggler:hover .icon {
     transform: translateY(-20px);
   }
 }
 @media screen and (max-width: 500px) {
-  .portfolio .toggler .trophy {
+  .portfolio .toggler .icon {
     width: 25px;
     transform: translateY(50px);
   }
-  .portfolio .toggler:hover .trophy {
+  .portfolio .toggler:hover .icon {
     transform: translateY(-10px);
   }
 }
 @media screen and (max-width: 350px) {
-  .portfolio .toggler .trophy {
+  .portfolio .toggler .icon {
     width: 17px;
     transform: translateY(40px);
   }
-  .portfolio .toggler:hover .trophy {
+  .portfolio .toggler:hover .icon {
     transform: translateY(-7px);
   }
 }
