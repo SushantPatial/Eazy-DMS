@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+/* $(document).ready(function() {
   var url = window.location.href;
   console.log(url);
   if( url.indexOf('#') < 0 ) {
@@ -7,7 +7,7 @@ $(document).ready(function() {
   } else {
       window.location.replace(url);
   }
-});
+}); */
 
 
 $(document).ready(function() {
@@ -26,12 +26,12 @@ $(document).ready(function() {
     $(".hero-head").show();
     $(".header-mobile").hide();
     $(".main-section").removeClass("main-section-mobile");
-    $('body').css('overflow-y','hidden');
-    $('.scroll-down-arrow a').hide();
+    $('body').css('overflow-y','scroll');
+  /*  $('.scroll-down-arrow a').hide();
     setTimeout(function() {
       $('body').css('overflow-y','scroll');
       $('.scroll-down-arrow a').fadeIn('slow');
-    }, 5000) 
+    }, 5000) */
   }
 });
 

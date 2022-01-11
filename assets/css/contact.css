@@ -64,12 +64,27 @@ html, body {
   color: #ccc;
   text-decoration: none;
 }
+.contact-section .contact .left-sec .row:nth-child(3) h6 {
+  color: #444;
+}
+.contact-section .contact .left-sec .row:nth-child(3) a {
+  color: #666;
+}
 .contact-section .contact .left-sec .col-3 img {
   width: 80px;
   display: flex;
   margin: 0 auto;
   border-radius: 50%;
-  border: 4px solid white;
+  outline-offset: -2px;
+}
+.contact-section .contact .left-sec .row:nth-child(2) .col-3 img {
+  outline: 2px solid #2984ce;
+}
+.contact-section .contact .left-sec .row:nth-child(3) .col-3 img {
+  outline: 2px solid #eee;
+}
+.contact-section .contact .left-sec .row:nth-child(4) .col-3 img {
+  outline: 2px solid #b81717;
 }
 
 .contact-section .contact .left-sec .contact-row-1 .col-7 {
@@ -96,7 +111,7 @@ html, body {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(86, 26, 182);
+  background-color: #ccc;
   padding-top: 20px;
   padding-right: 5%;
   border-top-right-radius: 25px;
@@ -109,7 +124,7 @@ html, body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(86, 26, 182);
+  background-color: #ccc;;
   padding-top: 20px;
   padding-left: 5%;
   
@@ -118,7 +133,7 @@ html, body {
 }
 
 .contact-section .contact .left-sec .contact-row-3 .col-2 {
-  background-color: rgb(25, 16, 146);
+  background-color: var(--color-5);
   border-top-right-radius: 25px;
   height: 80px;
 }
@@ -127,7 +142,7 @@ html, body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(25, 16, 146);
+  background-color: var(--color-5);
   padding-top: 20px;
   padding-left: 5%;
   border-bottom-left-radius: 25px;

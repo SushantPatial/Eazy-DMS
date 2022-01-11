@@ -84,11 +84,45 @@ html, body {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: 2px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(1) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(2) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(5) .portfolio-wrap {
+  border-top: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(8) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(9) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(13) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(14) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(17) .portfolio-wrap {
+  border-right: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-2);
+}
+.portfolio .toggler:nth-child(18) .portfolio-wrap {
+  border-left: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-2);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -102,83 +136,69 @@ html, body {
   opacity: 0;
 }
 .portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-.portfolio .portfolio-wrap .hide {
-  display: none;
-}
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.portfolio .portfolio-wrap .portfolio-links {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   width: 100%;
-  height: 100%;
-  color: rgb(255, 255, 255);
+  transition: all ease-in-out 0.3s;
 }
-.portfolio .portfolio-wrap .portfolio-links h4 {
-  font-size: 30px;
+.portfolio .toggler {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-.portfolio .portfolio-wrap .portfolio-links i {
-  color: rgb(255, 255, 255);
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  transition: 0.5s;
-  transform: translateY(60px);
-}
-.portfolio .portfolio-wrap:hover i {
-  transform: translateY(0px);
+.portfolio .toggler .trophy {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 70px;
+  transition: 0.8s ease;
+  opacity: 0;
+  transform: translateY(100px);
 }
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.03);
 }
-@media screen and (max-width: 900px) {
-  .portfolio .portfolio-wrap .portfolio-links i {
-    font-size: 18px;
+.portfolio .toggler:hover .trophy {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio .toggler .trophy {
+    width: 50px;
+    transform: translateY(80px);
   }
-  .portfolio .portfolio-wrap:hover i {
-    transform: translateY(-7px);
+  .portfolio .toggler:hover .trophy {
+    transform: translateY(-30px);
   }
-  .portfolio .portfolio-wrap .portfolio-links h4 {
-    font-size: 20px;
+}
+@media screen and (max-width: 750px) {
+  .portfolio .toggler .trophy {
+    width: 35px;
+    transform: translateY(70px);
+  }
+  .portfolio .toggler:hover .trophy {
+    transform: translateY(-20px);
   }
 }
 @media screen and (max-width: 500px) {
-  .portfolio .portfolio-wrap .portfolio-links i {
-    font-size: 15px;
+  .portfolio .toggler .trophy {
+    width: 25px;
+    transform: translateY(50px);
   }
-  .portfolio .portfolio-wrap .portfolio-info {
-    padding-bottom: 10px;
+  .portfolio .toggler:hover .trophy {
+    transform: translateY(-10px);
   }
-  .portfolio .portfolio-wrap .portfolio-links h4 {
-    font-size: 15px;
+}
+@media screen and (max-width: 350px) {
+  .portfolio .toggler .trophy {
+    width: 17px;
+    transform: translateY(40px);
   }
-  .portfolio .portfolio-wrap:hover i {
+  .portfolio .toggler:hover .trophy {
     transform: translateY(-7px);
   }
 }
-
-.portfolio .portfolio-wrap:hover::before {
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
 
 .portfolio .col-12 {
   background-color:#222;
@@ -260,15 +280,6 @@ html, body {
 }
 
 
-.toggler {
-  cursor: pointer;
-}
-.toggler .portfolio-wrap img {
-  width: 100%;
-  outline: 1px solid var(--color-3);
-  outline-offset: -1px;
-
-}
 
 .particles-js { 
   position: absolute; 
