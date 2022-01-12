@@ -483,7 +483,7 @@ body {
 .some-extra-space {
   height: 200px;
   width: 100%;
-  background-color: var(--color-1);
+  background-color: #eee;
   margin-top: -100px;
   display: flex;
   align-items: center;
@@ -501,11 +501,11 @@ body {
   color: white;
 }
 .triple-c-section .row {
-  background-color: var(--color-1);
+  background-color: #eee;
 }
 .triple-c-section .row .col-md-4 {
  padding: 0 3% 4% 3%;
- color: var(--color-4);
+ color: #fff;
 }
 .triple-c-section .row .col-md-4 img {
   width: 120px;
@@ -521,16 +521,16 @@ body {
 }
 .triple-c-section .row .col-md-4:nth-child(1)
 {
-  background-color: #dadada;
+  background-color: #1e6dad;
   padding-left: 4%;
 }
 .triple-c-section .row .col-md-4:nth-child(2)
 {
-  background-color: #e9e9e9;
+  background-color: #1b639e;
 }
 .triple-c-section .row .col-md-4:nth-child(3)
 {
-  background-color: #f5f5f5
+  background-color: rgb(28, 95, 150)
 }
 @media screen and (max-width: 768px) {
   .triple-c-section .row .col-md-4 {
@@ -551,7 +551,7 @@ body {
   width: 50%;
   height: 500px;
   color: #fff;
-  background: linear-gradient(to top, #126ec49a, #126ec49a), url(../images/index-text.jpg) no-repeat center;
+  background: linear-gradient(to top, #4f8ab97e, #4f8ab97e), url(../images/index-text.jpg) no-repeat center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -561,7 +561,7 @@ body {
   z-index: 1;
 }
 .eazy-dms4 .eazy-dms4-sec1 p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .eazy-dms4 .eazy-dms4-sec2 {
@@ -664,7 +664,7 @@ body {
   width: 10%
 }
 .logo-section .slide img {
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .logo-section .slide img:hover {
   transform: scale(0.95);
@@ -1140,7 +1140,7 @@ body {
     height: 100%;
     padding: 20px;
     border-radius: 30px;
-    background-color: #eeeeee;
+    background-color: #fff;
     color: #333;
   }
   .testimonials-2 .card .card-top .row .col-7 {
@@ -1155,19 +1155,20 @@ body {
     cursor: pointer;
   }
   .testimonials-2 .card .card-top h5 {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--color-3);
     font-weight: 700;
     margin-top: 20px;
   }
   .testimonials-2 .card .card-top h6 {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: -7px; 
     color: #555;
+    font-weight: 600;
   }
   .testimonials-2 .card .card-top .fa-quote-right {
     font-size: 30px;
-    color:#305185;
+    color: #305185;
     margin-top: -10px;
   }
   .testimonials-2 .card .card-top .company-logo {
@@ -1186,6 +1187,8 @@ body {
   } 
   .testimonials-2 .card .card-top .company-logo img {
     width: 130px;
+    position: absolute;
+    bottom: 0;
   }
   .testimonials-2 .card .card-top .col-7 {
     display: flex;
@@ -1205,6 +1208,7 @@ body {
   }
   .testimonials-2 .card .card-body p {
     font-size: 15px;
+    color: #333;
   }
   .testimonials-2 .card .card-bottom {
     display: flex;
@@ -1724,7 +1728,7 @@ body {
 
 .blogs-section {
   margin-top: 50px;
-  background-color: rgb(233, 241, 245);
+  background-color: #e9f1f5;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1736,14 +1740,14 @@ body {
   width: 80%;
   justify-content: center;
 }
-.blogs-section .row .col-lg-3 {
-  
+.blogs-section .row .col-lg-3 a {
+  text-decoration: none;
 }
 .blogs-section .blog-img {
   transition: 0.4s ease;
   transform: scale(1.02);
 }
-.blogs-section .blog-img:hover {
+.blogs-section a:hover .blog-img {
   transform: scale(1);
 }
 .blogs-section .blog-img img {
@@ -1756,7 +1760,7 @@ body {
   left: -1px;
   font-family: 'Poppins', sans-serif;
   font-size: 170%;
-  background-color: rgb(233, 241, 245);
+  background-color: #e9f1f5;
   padding: 10px 20px 0 10px;
   cursor: default;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 90% 0);
@@ -1769,9 +1773,18 @@ body {
 .blogs-section .blog-body {
   padding-top: 20px;
 }
-.blogs-section .blog-body h3 {
+.blogs-section .blog-body .blog-head {
   color: #333;
   font-size: 24px;
+  background-image: linear-gradient(#e9f1f5, #e9f1f5), linear-gradient(#e9f1f5,#e9f1f5), linear-gradient(#111, #111);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+.blogs-section a:hover .blog-head {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
 .blogs-section .blog-body p {
   color: #777;

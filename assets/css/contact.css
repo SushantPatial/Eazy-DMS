@@ -297,7 +297,6 @@ html, body {
 }
 .offices-section .offices-map img {
   width: 80%;
-
   padding: 0 30px;
 }
 
@@ -319,6 +318,9 @@ html, body {
   box-shadow: 0 0 15px rgba(128, 128, 128, 0.651);
   padding: 10px;
 }
+.offices-section .office-card .office-img {
+  overflow: hidden;
+}
 .offices-section .office-card img {
   width: 100%;
   min-height: 270px;
@@ -326,7 +328,7 @@ html, body {
   transition: 0.5s ease;
 }
 .offices-section .office-card .office-card-body:hover img{
-  transform: scale(1.02);
+  transform: scale(1.05);
   filter: grayscale(0%);
 }
 .offices-section .office-card h4 {

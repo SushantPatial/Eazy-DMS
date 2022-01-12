@@ -194,8 +194,7 @@ html, body {
     Industry Peers Section 
 -------------------- */
 .industry-peers {
-  background-color: #eeeeeeff;
-  padding: 50px 0 80px 0;
+  padding: 60px 0 90px 0;
   position: relative;
 }
 .industry-peers .slick-carousel {
@@ -232,6 +231,26 @@ html, body {
 }
 .industry-peers .slick-slide img {
   width: 100%;
+  transition: 0.5s ease;
+}
+.industry-peers .slick-slide:hover img {
+  filter: brightness(50%);
+}
+.industry-peers .slick-slide a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.industry-peers .slick-slide i {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  transform: translateY(200px);
+  transition: 0.5s ease;
+}
+.industry-peers .slick-slide:hover i {
+  transform: translateY(0px);
 }
 
 .slick-lightbox-inner {
@@ -278,7 +297,7 @@ html, body {
     Testimonials
    ================== */
 .testimonials-wrapper {
-/*  background-color: #DBEBFD; */
+  background-color: #DBEBFD;
 }
 .testimonials {
   width: 100%;
@@ -287,16 +306,16 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-/*  background: url(../images/distributors-bkg.png);
+  background: url(../images/distributors-bkg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom; */
+  background-position: bottom; 
 }
 .testimonials .container {
   max-width: 1300px;
 }
 .testimonials .testimonial-card {
-  background-color: var(--color-1);
+  background-color: #94cef5;
   margin: 15px;
   max-width: 30.9%;
   flex: 0 0 30.9%;
@@ -360,7 +379,7 @@ html, body {
   display: none;
 }
 .testimonials .testimonial-card .review .moreless-button {
-  background-color: #1263af;
+  background-color: var(--color-3);
   color: white;
   width: 110px;
   padding: 5px 0px;
