@@ -318,12 +318,23 @@ html, body {
   box-shadow: 0 0 15px rgba(128, 128, 128, 0.651);
   padding: 10px;
 }
+.offices-section .office-card .office-img-main {
+  overflow: hidden;
+  width: 100%;
+}
+.offices-section .office-card .office-img-main img {
+  width: 100%;
+  min-height: 320px;
+  filter: grayscale(50%);
+  transition: 0.5s ease;
+}
 .offices-section .office-card .office-img {
   overflow: hidden;
-}
-.offices-section .office-card img {
   width: 100%;
-  min-height: 270px;
+}
+.offices-section .office-card .office-img img {
+  max-height: 270px;
+  height: 100%;
   filter: grayscale(50%);
   transition: 0.5s ease;
 }
@@ -331,6 +342,7 @@ html, body {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
+
 .offices-section .office-card h4 {
   font-size: 26px;
   font-weight: 700;
