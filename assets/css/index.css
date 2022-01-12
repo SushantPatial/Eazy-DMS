@@ -551,7 +551,7 @@ body {
   width: 50%;
   height: 500px;
   color: #fff;
-  background: linear-gradient(to top, #4f8ab97e, #4f8ab97e), url(../images/index-text.jpg) no-repeat center;
+  background: linear-gradient(to top, #1a1a1a7e, #1a1a1a7e), url(../images/index-text.jpg) no-repeat center;
   display: flex;
   justify-content: center;
   flex-direction: column;
