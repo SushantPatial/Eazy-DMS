@@ -46,7 +46,7 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-.customers .customers-row:nth-child(even) {
+.customers .customers-row:nth-child(odd) {
   background-color: #eeeeeeff;
 }
 .customers .customers-text-1 {
@@ -196,6 +196,7 @@ html, body {
 .industry-peers {
   padding: 60px 0 90px 0;
   position: relative;
+  background-color: #eeeeeeff;
 }
 .industry-peers .slick-carousel {
   margin: 0 auto;
@@ -229,11 +230,11 @@ html, body {
 .industry-peers .pull-right:hover i, .industry-peers .pull-left:hover i {
   color: var(--color-2);
 }
-.industry-peers .slick-slide img {
+.industry-peers .slick-slide .slider-img {
   width: 100%;
   transition: 0.5s ease;
 }
-.industry-peers .slick-slide:hover img {
+.industry-peers .slick-slide:hover .slider-img {
   filter: brightness(50%);
 }
 .industry-peers .slick-slide a {
@@ -246,11 +247,35 @@ html, body {
   position: absolute;
   font-size: 40px;
   color: white;
+  z-index: 10;
   transform: translateY(200px);
   transition: 0.5s ease;
 }
 .industry-peers .slick-slide:hover i {
   transform: translateY(0px);
+}
+.industry-peers .slick-slide .youtube {
+  position: absolute;
+  top: 10px;
+  margin-left: -7%;
+  width: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .industry-peers .slick-slide .youtube {
+    margin-left: -8.5%;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .industry-peers .slick-slide .youtube {
+    margin-left: -12%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .industry-peers .slick-slide .youtube {
+    margin-left: -11%;
+  }
 }
 
 .slick-lightbox-inner {

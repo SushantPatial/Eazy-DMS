@@ -90,12 +90,14 @@ html, body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: pointer;
 }
 
 .blogs .blog-posts .post {
   width: calc(33% - 10px);
   overflow: hidden;
+}
+.blogs .blog-posts .post a {
+  text-decoration: none;
 }
 
 .blogs .blog-posts .post-img {
@@ -129,7 +131,7 @@ html, body {
 .blogs .blog-posts .date {
   font-size: 15px;
   font-style: italic;
-  color: #e96446;
+  color: var(--color-6);
 }
 
 .blogs .blog-posts .post:hover .post-img {
