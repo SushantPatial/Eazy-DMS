@@ -56,6 +56,20 @@ html, body {
   margin-right: -10px;
   margin-left: -10px;
 }
+@media screen and (max-width: 786px) {
+  .live {
+    width: 100px;
+    bottom: 14.5px;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .live {
+    width: 70px;
+    bottom: 8.5px;
+  }
+}
 .hybrid-dms-section {
   margin-top: 20px;
   text-align: center;
@@ -366,6 +380,9 @@ html, body {
 .models {
   position: relative;
 }
+.models .model {
+  margin: 0;
+}
 .models .model-1 {
   background-image: url("../images/model-1.jpg");
   background-size: cover;
@@ -384,6 +401,7 @@ html, body {
   position: absolute;
   color: #fff;
   margin-left: 8%;
+  margin-right: 8%;
 }
 .models .model-head {
   height: 100%;
@@ -409,6 +427,7 @@ html, body {
   position: relative;
   overflow:hidden;
   height: 500px;
+  padding: 0;
 }
 .models #move-in-to-place-1 {
   left: -100%;
@@ -446,3 +465,36 @@ html, body {
 }
 
 
+@media screen and (max-width: 1200px) {
+  .models h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .models .content h2 {
+    font-size: 32px;
+  }
+  .models .content .content-body .content-point {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .models .model-head {
+    justify-content: center;
+    text-align: center;
+  }
+  .models .box {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .models h1 {
+    font-size: 30px;
+  }
+  .models .content h2 {
+    font-size: 20px;
+  }
+  .models .content .content-body .content-point {
+    font-size: 14px;
+  }
+}

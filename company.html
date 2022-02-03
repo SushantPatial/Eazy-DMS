@@ -62,7 +62,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logo.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="assets/images/logos/logo.png"></a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="far fa-bars"></i>
@@ -71,10 +71,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="solution.html">Solution</a>
+                <a class="nav-link" href="solution.php">Solution</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-dropdown">
@@ -82,29 +82,29 @@
                     <i class="fa fa-caret-down"></i>
                   </a>
                   <div class="nav-dropdown-content">
-                    <a href="apparel.html">Apparel</a>
-                    <a href="auto.html">Auto</a>
-                    <a href="stationery.html">Stationery</a>
-                    <a href="fmcg.html">FMCG</a>
-                    <a href="fmcd.html">FMCD</a>
-                    <a href="cosmetics.html">Cosmetics</a>
+                    <a href="apparel.php">Apparel</a>
+                    <a href="auto.php">Auto</a>
+                    <a href="stationery.php">Stationery</a>
+                    <a href="fmcg.php">FMCG</a>
+                    <a href="fmcd.php">FMCD</a>
+                    <a href="cosmetics.php">Cosmetics</a>
                   </div>
                 </a> 
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="clients.html">Clients</a>
+                <a class="nav-link" href="clients.php">Clients</a>
               </li>
               <li class="nav-item active">
                   <a class="nav-link" href="#">Company</a>
               </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="resources.html">Resources</a>
+                  <a class="nav-link" href="resources.php">Resources</a>
               </li>   
               <li class="nav-item">
-                <a class="nav-link" href="life.html">Life @ Eazy</a>
+                <a class="nav-link" href="life.php">Life @ Eazy</a>
               </li>                        
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.php">Contact</a>
               </li>
               <li>
                 <button data-toggle="modal" data-target="#request-a-demo">Request a Demo</button>
@@ -2333,32 +2333,65 @@
                             <li><i class="far fa-file-check"></i>Result focused model</li>
                             <li><i class="far fa-comments-alt"></i>Communication is way</li>
                           </ul>
-                          <a href="index.html"><button class="know-more">KNOW MORE</button></a>
+                          <a href="index.php"><button class="know-more">KNOW MORE</button></a>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="box">
-                          <form method="post">
-                            <input type="text" class="name form-control" name="name" placeholder="Name*" required>
-                            <input type="email" class="email form-control" name="email" placeholder="Email Address*" required>
-                            <input type="text" class="number form-control" name="number" placeholder="Number*" required style="margin-bottom: 0;">
-                            <select class="custom-select job-post form-control" name="job-post" required>
-                              <option disabled selected hidden>Post Applied For*</option>
-                              <option value="dms-project-manager">DMS Project Manager</option>
-                              <option value="php-developer">PHP Developer</option>
-                              <option value="business-development">Business Development Manager/ Executive</option>
-                              <option value="erp-account-manager">ERP Account Manager</option>
-                              <option value="executive-consultant">Executive Consultant/ ERP Implementation</option>
-                              <option value="ios-developer">IOS Developer</option>
-                              <option value="react-js-developer">React JS/ Front-end Developer</option>
-                              <option value="net-developer">.Net Developer</option>
-                              <option value="net-core-developer">.Net Core Developer</option>
-                              <option value="dms-support-north">DMS Support Executive - North Zone</option>
-                              <option value="dms-support-south">DMS Support Executive - South Zone</option>
-                              <option value="resident-engineer">Resident Engineer</option>
-                            </select>
+                          
+                          <form action='email_send.php' class="application-form" method="post" id="application-form" enctype='multipart/form-data'>		
+
+                            <div class="form-group">
+
+                              <input type="text" class="name form-control" name="app_name" id="app_name" placeholder="Name*" required>
+
+                              <input type="email" class="email form-control" name="app_email" id="app_email" placeholder="Email Address*" required>
+
+                              <input type="text" class="number form-control" name="app_number" id="app_number" placeholder="Number*" required style="margin-bottom: 0;">
+
+                              <select class="custom-select job-post form-control" name="app_post" id="app_post" required>
+                                <option value="0" disabled selected hidden>Post Applied For*</option>
+                                <option value="dms-project-manager">DMS Project Manager</option>
+                                <option value="php-developer">PHP Developer</option>
+                                <option value="business-development">Business Development Manager/ Executive</option>
+                                <option value="erp-account-manager">ERP Account Manager</option>
+                                <option value="executive-consultant">Executive Consultant/ ERP Implementation</option>
+                                <option value="ios-developer">IOS Developer</option>
+                                <option value="react-js-developer">React JS/ Front-end Developer</option>
+                                <option value="net-developer">.Net Developer</option>
+                                <option value="net-core-developer">.Net Core Developer</option>
+                                <option value="dms-support-north">DMS Support Executive - North Zone</option>
+                                <option value="dms-support-south">DMS Support Executive - South Zone</option>
+                                <option value="resident-engineer">Resident Engineer</option>
+                              </select>
+
+                              <div class="file-upload">
+                                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Resume</button>
+                              
+                                <div class="image-upload-wrap">
+                                  <input class="file-upload-input" type='file' name="attach" id="attach" onchange="readURL(this);" >
+                                  <div class="drag-text">
+                                    <i class="fal fa-upload"></i>
+                                    <h3>Drag and drop a file or select Add Resume</h3>
+                                  </div>
+                                </div>
+                                <div class="file-upload-content">
+                                  <div class="image-title-wrap">
+                                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title"></span></button>
+                                  </div>
+                                </div> 
+                              </div>
+
+                              <br><button type="submit" class="btn btn-primary" name="email_send" id="email_send">APPLY</button>
+
+                             
+                          </form>	
+
+
+                            
+                            
                     
-                            <div class="file-upload">
+                          <!--  <div class="file-upload">
                               <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Resume</button>
                             
                               <div class="image-upload-wrap">
@@ -2372,10 +2405,9 @@
                                 <div class="image-title-wrap">
                                   <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title"></span></button>
                                 </div>
-                              </div>
-                            </div>
-                            <br><button class="btn btn-primary">APPLY</button>
-                          </form>
+                              </div> 
+                            </div>-->
+
                         </div>
                       </div>
                     </div>
@@ -2547,18 +2579,18 @@
                   <div class="useful-links">
                     <div class="row">
                       <div class="col-6">
-                        <a href="index.html">Home</a>
-                        <a href="solution.html">About Eazy</a>
-                        <a href="solution.html#features">Features</a>
-                        <a href="clients.html">Customers</a>
+                        <a href="index.php">Home</a>
+                        <a href="solution.php">About Eazy</a>
+                        <a href="solution.php#features">Features</a>
+                        <a href="clients.php">Customers</a>
                         <a target="_blank" href="assets/images/company-profile.pdf">Company Profile</a>
                       </div>
                       <div class="col-6">
                         <a target="_blank" href="assets/images/DMS FLYER.pdf">Product Presentation</a>
-                        <a href="resources.html">Media</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="blogs/blogs.html">Blog</a>
-                        <a href="#">Privacy Policy</a>
+                        <a href="resources.php">Media</a>
+                        <a href="contact.php">Contact Us</a>
+                        <a href="blogs/blogs.php">Blog</a>
+                        <a href="privacy-policy.php">Privacy Policy</a>
                       </div>
                     </div>
                   </div>

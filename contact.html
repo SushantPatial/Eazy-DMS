@@ -19,8 +19,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- FontAwesome-->
 		<link rel="stylesheet" href="assets/css/fontawesome.css">
-    <!-- Swiper CSS-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Styles -->
@@ -59,7 +57,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logo.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="assets/images/logos/logo.png"></a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="far fa-bars"></i>
@@ -68,10 +66,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="solution.html">Solution</a>
+                <a class="nav-link" href="solution.php">Solution</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-dropdown">
@@ -79,26 +77,26 @@
                     <i class="fa fa-caret-down"></i>
                   </a>
                   <div class="nav-dropdown-content">
-                    <a href="apparel.html">Apparel</a>
-                    <a href="auto.html">Auto</a>
-                    <a href="stationery.html">Stationery</a>
-                    <a href="fmcg.html">FMCG</a>
-                    <a href="fmcd.html">FMCD</a>
-                    <a href="cosmetics.html">Cosmetics</a>
+                    <a href="apparel.php">Apparel</a>
+                    <a href="auto.php">Auto</a>
+                    <a href="stationery.php">Stationery</a>
+                    <a href="fmcg.php">FMCG</a>
+                    <a href="fmcd.php">FMCD</a>
+                    <a href="cosmetics.php">Cosmetics</a>
                   </div>
                 </a> 
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="clients.html">Clients</a>
+                <a class="nav-link" href="clients.php">Clients</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="company.html">Company</a>
+                  <a class="nav-link" href="company.php">Company</a>
               </li> 
               <li class="nav-item">
-                  <a class="nav-link" href="resources.html">Resources</a>
+                  <a class="nav-link" href="resources.php">Resources</a>
               </li>   
               <li class="nav-item">
-                <a class="nav-link" href="life.html">Life @ Eazy</a>
+                <a class="nav-link" href="life.php">Life @ Eazy</a>
               </li>                        
               <li class="nav-item active">
                 <a class="nav-link" href="#">Contact</a>
@@ -462,14 +460,15 @@
 
           <div class="right-sec" data-aos="fade-left" data-aos-duration="1000">
             <h4>It's your time to upgrade!</h4>
-            <form class="contact-form row">
-                <input type="text" class="form-control name col-md-6" name="name" placeholder="Your Name">
-                <input type="text" class="form-control company col-md-6" name="company" placeholder="Company Name">
 
-                <input type="text" class="form-control email col-md-6" name="email" placeholder="Email Address">
-                <input type="text" class="form-control phone col-md-6" name="phone" placeholder="Phone Number">
+            <form action='email_send.php' class="contact-form row" id="contact-form" method="post" enctype='multipart/form-data'>
+                <input type="text" class="form-control name col-md-6" name="contact_name" placeholder="Your Name">
+                <input type="text" class="form-control company col-md-6" name="contact_company" placeholder="Company Name">
 
-                <select name="state" class="form-control state col-md-12">
+                <input type="text" class="form-control email col-md-6" name="contact_email" placeholder="Email Address">
+                <input type="text" class="form-control phone col-md-6" name="contact_phone" placeholder="Phone Number">
+
+                <select name="contact_state" id="contact_state" class="form-control state col-md-12">
                   <option value="none" selected disabled hidden>State</option>
                   <option value="Andhra Pradesh">Andhra Pradesh</option>
                   <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -509,9 +508,9 @@
                   <option value="West Bengal">West Bengal</option>
                 </select>
 
-                <textarea class="form-control message col-md-12" name="message" placeholder="Message"></textarea>
+                <textarea class="form-control message col-md-12" name="contact_message" placeholder="Message" required></textarea>
 
-                <input type="submit" name="submit" class="submit" value="Submit">
+                <input type="submit" name="contact_submit" class="submit" value="Submit">
             </form>
           </div>
         </div>
@@ -858,18 +857,18 @@
                   <div class="useful-links">
                     <div class="row">
                       <div class="col-6">
-                        <a href="index.html">Home</a>
-                        <a href="solution.html">About Eazy</a>
-                        <a href="solution.html#features">Features</a>
-                        <a href="clients.html">Customers</a>
+                        <a href="index.php">Home</a>
+                        <a href="solution.php">About Eazy</a>
+                        <a href="solution.php#features">Features</a>
+                        <a href="clients.php">Customers</a>
                         <a target="_blank" href="assets/images/company-profile.pdf">Company Profile</a>
                       </div>
                       <div class="col-6">
                         <a target="_blank" href="assets/images/DMS FLYER.pdf">Product Presentation</a>
-                        <a href="resources.html">Media</a>
+                        <a href="resources.php">Media</a>
                         <a href="#">Contact Us</a>
-                        <a href="blogs/blogs.html">Blog</a>
-                        <a href="#">Privacy Policy</a>
+                        <a href="blogs/blogs.php">Blog</a>
+                        <a href="privacy-policy.php">Privacy Policy</a>
                       </div>
                     </div>
                   </div>
@@ -932,10 +931,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Swiper Script -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Script -->
-    <script src="script/contact.js"></script>
+    <script src="assets/script/contact.js"></script>
     <script src="assets/script/header.js"></script>
 
   </body>

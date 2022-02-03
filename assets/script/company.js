@@ -16,6 +16,18 @@ $(".apply-btn").on("click", function() {
 })
 
 
+$(document).on("submit", "#application-form", function(e) {
+  if (!$("#app_post").val()) {
+    alert("Please select post");
+    e.preventDefault();
+    return  false;
+  }
+  if (!$("#attach").val()) {
+    alert("Please attach resume");
+    e.preventDefault();
+    return  false;
+  }
+});
 
 
 function readURL(input) {

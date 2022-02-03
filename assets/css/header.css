@@ -33,6 +33,23 @@ html {
   color: var(--color-3);
 }
 
+@media screen and (max-width: 786px) {
+  .section-heading h2 {
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-heading h2 {
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
 /* Sub Header Style */
 
 .sub-header {

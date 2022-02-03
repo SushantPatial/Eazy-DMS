@@ -1762,7 +1762,6 @@ body {
   font-size: 170%;
   background-color: #e9f1f5;
   padding: 10px 20px 0 10px;
-  cursor: default;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 90% 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 90% 0);
 }
@@ -1791,12 +1790,18 @@ body {
   font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
-  .blogs-section .row {
-    width: 60%;
+@media screen and (max-width: 768px) {
+  .blogs-section .blog-body {
+    margin-bottom: 50px;
   }
-  .blogs-section .row .col-lg-4{
-    margin: 20px;
+}
+@media screen and (max-width: 576px) {
+  .blogs-section .blog-body .blog-head {
+    font-size: 20px;
+  }
+  .blogs-section .blog-img .blog-date {
+    font-size: 150%;
+    padding: 5px 12px 0 10px;
   }
 }
 
