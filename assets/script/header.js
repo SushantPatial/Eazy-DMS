@@ -9,20 +9,15 @@ $(window).bind('scroll', function () {
   }
 });
 
-if ("ontouchstart" in document.documentElement)
-{
-  $('.nav-index').show();
-}
-else
-{
-  $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 2300) {
-      $('.nav-index').fadeIn();
-    } else {
-      $('.nav-index').fadeOut();
-    }
-  });
-}
+
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 2800) {
+    $('.nav-index').fadeIn();
+  } else {
+    $('.nav-index').fadeOut();
+  }
+});
+
 
 
 $(window).on("load",function() {
