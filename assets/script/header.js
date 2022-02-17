@@ -25,24 +25,20 @@ $(window).on("load",function() {
   $(".navbar").fadeIn("slow");
 });
 
-
 $('.industries').on('click', function() {
-  $('.fa-caret-down').addClass('flip');
   $('.nav-dropdown-content').slideToggle();
+  if ($('.navbar .nav-link .fa-caret-down').hasClass('flip')) {
+    $('.navbar .nav-link .fa-caret-down').removeClass('flip');
+  } else {
+    $('.navbar .nav-link .fa-caret-down').addClass('flip');
+  }
 })
 $(document).click(function(event) {
   if (!$(event.target).hasClass('industries')) {
     $('.nav-dropdown-content').slideUp();
-    $('.fa-caret-down').removeClass('flip');
+    $('.navbar .nav-link .fa-caret-down').removeClass('flip');
   }
 });
-$(document).on('click', function() {
-  setTimeout(function () {
-    if ($('.nav-dropdown-content').attr('style') == 'display: none;') {
-      $('.fa-caret-down').removeClass('flip');
-    }
-  }, 500);
-})
 
 
 

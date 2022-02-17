@@ -108,37 +108,23 @@ jQuery(document).ready(function($){
 });
 
 
-
-$('.block-navigation .cd-next').on('click', function() {
-	if($('.is-selected a h2').html() == 'Support / Helpdesk Model') {
-		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(1) a h2').html()).show('slide', {direction: 'right'}, 500);
-		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(3) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'right'}, 500);
-	}
-	if($('.is-selected a h2').html() == 'Implementation / Rollout Model') {
-		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(2) a h2').html()).show('slide', {direction: 'right'}, 500);
-		$('.cd-next h6').hide().html('').show('slide', {direction: 'right'}, 500);
-	}
-})
-
-$('.block-navigation .cd-prev').on('click', function() {
-	if($('.is-selected a h2').html() == 'Result') {
-		$('.cd-prev h6').hide().html('<i class="far fa-long-arrow-left"></i> &nbsp; ' + $('.cd-images-list li:nth-of-type(1) a h2').html()).show('slide', {direction: 'left'}, 500);
-		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(3) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'left'}, 500);
-	}
-	if($('.is-selected a h2').html() == 'Implementation / Rollout Model') {
-		$('.cd-prev h6').hide().html('').show('slide', {direction: 'left'}, 500);
-		$('.cd-next h6').hide().html($('.cd-images-list li:nth-of-type(2) a h2').html() + ' &nbsp; <i class="far fa-long-arrow-right"></i>').show('slide', {direction: 'left'}, 500);
-	}
-})
-
-
 $(".models #stay-in-place-1").on("click", function() {
 	$(".models #move-in-to-place-2").css("right", "0");
-})
+	$(".models #stay-in-place-2").css("pointer-events", "none");
+	setTimeout(function() {
+		$(".models #stay-in-place-2").css("pointer-events", "auto");
+	}, 1000);
+});
 $(".models #stay-in-place-2").on("click", function() {
 	$(".models #move-in-to-place-1").css("left", "0");
-})
-$(".close-model").on("click", function() {
-	$(".models #move-in-to-place-2").css("right", "-100%");
+	$(".models #stay-in-place-1").css("pointer-events", "none");
+	setTimeout(function() {
+		$(".models #stay-in-place-1").css("pointer-events", "auto");
+	}, 1000);
+});
+$(".close-model-1").on("click", function() {
 	$(".models #move-in-to-place-1").css("left", "-100%");
-})
+});
+$(".close-model-2").on("click", function() {
+	$(".models #move-in-to-place-2").css("right", "-100%");
+});
