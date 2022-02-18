@@ -57,11 +57,11 @@ html, body {
 }
 .contact-section .contact .left-sec .row h6 {
   font-size: 14px;
-  color: #444;
+  color: #fff;
 }
 .contact-section .contact .left-sec .row a {
   font-size: 14px;
-  color: #666;
+  color: #ddd;
   text-decoration: none;
 }
 .contact-section .contact .left-sec .col-3 img {
@@ -72,13 +72,22 @@ html, body {
   outline-offset: -2px;
 }
 .contact-section .contact .left-sec .row:nth-child(2) .col-3 img {
-  outline: 3px solid #fff;
+  outline: 3px solid #185f99;
 }
 .contact-section .contact .left-sec .row:nth-child(3) .col-3 img {
-  outline: 3px solid #eee;
+  outline: 3px solid #e7e3e3;
 }
 .contact-section .contact .left-sec .row:nth-child(4) .col-3 img {
-  outline: 3px solid #ddd;
+  outline: 3px solid #7c0c0c;
+}
+.contact-section .contact .left-sec .row:nth-child(3) h6 {
+  font-size: 14px;
+  color: #333;
+}
+.contact-section .contact .left-sec .row:nth-child(3) a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
 }
 
 .contact-section .contact .left-sec .contact-row-1 .col-7 {
@@ -86,20 +95,20 @@ html, body {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  background-color: #ddd;
+  background-color: #1E6DAD;
   padding-top: 20px;
   padding-right: 5%;
   border-top-right-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #fff;
+  outline: 3px solid #185f99;
 }
 .contact-section .contact .left-sec .contact-row-1 .col-2 {
-  background-color: #ddd;
+  background-color: #1E6DAD;
   border-bottom-left-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #fff;
+  outline: 3px solid #185f99;
 }
 
 .contact-section .contact .left-sec .contact-row-2 .col-5 {
@@ -109,13 +118,13 @@ html, body {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  background-color: #ccc;
+  background-color: #fbf7f7;
   padding-top: 20px;
   padding-right: 5%;
   border-top-right-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #eee;
+  outline: 3px solid #e7e3e3;
 }
 .contact-section .contact .left-sec .contact-row-2 .col-4 {
   max-width: 36.5%;
@@ -124,34 +133,34 @@ html, body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: #ccc;
+  background-color: #fbf7f7;
   padding-top: 20px;
   padding-left: 5%;
   border-bottom-left-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #eee;
+  outline: 3px solid #e7e3e3;
 }
 
 .contact-section .contact .left-sec .contact-row-3 .col-2 {
-  background-color: #bbb;
+  background-color: #961010;
   border-top-right-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #ddd;
+  outline: 3px solid #7c0c0c;
 }
 .contact-section .contact .left-sec .contact-row-3 .col-7 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: #bbb;
+  background-color: #961010;
   padding-top: 20px;
   padding-left: 5%;
   border-bottom-left-radius: 25px;
   height: 80px;
   outline-offset: -2px;
-  outline: 3px solid #ddd;
+  outline: 3px solid #7c0c0c;
 }
 .contact-section .contact .left-sec .contact-row-4 {
   width: 99%;

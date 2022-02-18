@@ -698,9 +698,9 @@ body {
     Triple C Section
 ------------------*/
 .some-extra-space {
-  height: 200px;
+  height: 100px;
   width: 100%;
-  background-color: #eee;
+  background-color: #0e5792;
   margin-top: -100px;
   display: flex;
   align-items: center;
@@ -736,18 +736,21 @@ body {
 .triple-c-section .row .col-md-4 p {
   line-height: 28px;
 }
-.triple-c-section .row .col-md-4:nth-child(1)
-{
+.triple-c-section .row .col-md-4:nth-child(1) {
   background-color: #1e6dad;
   padding-left: 4%;
 }
-.triple-c-section .row .col-md-4:nth-child(2)
-{
-  background-color: #1b639e;
+.triple-c-section .row .col-md-4:nth-child(2) {
+  background-color: #c6d1da;
 }
-.triple-c-section .row .col-md-4:nth-child(3)
-{
-  background-color: rgb(28, 95, 150)
+.triple-c-section .row .col-md-4:nth-child(2) h4 {
+  color: rgb(20, 21, 66);
+}
+.triple-c-section .row .col-md-4:nth-child(2) p {
+  color: rgb(20, 21, 66);
+}
+.triple-c-section .row .col-md-4:nth-child(3) {
+  background-color: #1e6dad;
 }
 @media screen and (max-width: 768px) {
   .triple-c-section .row .col-md-4 {
@@ -1801,6 +1804,9 @@ body {
   flex-direction: row;
 }
 
+.counts a {
+  text-decoration: none;
+}
 .counts .button {
   margin: 0 auto;
   display: block;
