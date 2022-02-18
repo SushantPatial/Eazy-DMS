@@ -387,18 +387,15 @@ html, body {
   background-image: url("../images/model-1.jpg");
   background-size: cover;
   background-position: center;
-  cursor: pointer;
 }
 .models .model-2 {
   background-image: url("../images/model-2.jpg");
   background-size: cover;
   background-position: center;
-  cursor: pointer;
 }
 .models h1 {
   font-size: 56px;
   font-weight: 700;
-  position: absolute;
   color: #fff;
   margin-left: 8%;
   margin-right: 8%;
@@ -407,11 +404,59 @@ html, body {
   height: 100%;
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: absolute;
+}
+.models .model-head button {
+  width: 200px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 15px 45px 15px 40px;
+  position: relative;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+.models .model-head button:hover {
+  color: #333;
+  letter-spacing: 0.05rem;
+}
+.models .model-head button:focus {
+  outline: none;
+}
+.models .model-head button:before, .models .model-head button:after {
+  background: #fff;
+  transition: 0.3s ease;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.diagonal-tr-bl-in:before, .diagonal-tr-bl-in:after {
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg);
+  width: 100%;
+}
+.diagonal-tr-bl-in:before {
+  right: -120%;
+}
+.diagonal-tr-bl-in:after {
+  left: -120%;
+}
+.diagonal-tr-bl-in:hover:before, .diagonal-tr-bl-in:hover:after {
+  width: 175%;
 }
 .models .model-body {
   position: absolute;
+  z-index: 2;
   height : 100%;
   width : 100%;
   background: #eee;

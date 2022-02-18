@@ -1,3 +1,23 @@
+// Load page from top
+$(window).onbeforeunload = function () {
+  $(window).scrollTop(0);
+}
+$(window).ready(function(){
+  $(window).scrollTop(0);
+});
+
+// Making page scroll after 5s
+$(window).on('load', function() {
+  if ($(window).scrollTop() < 100) {
+    $('html').css('overflow-y', 'hidden');
+    $('.scroll-down-wrapper').css('opacity', '0');
+    setTimeout(function() {
+      $('html').css('overflow-y', 'scroll');
+      $('.scroll-down-wrapper').css('opacity', '1');
+    }, 5000)
+  }
+})
+
 
 gsap.timeline({
   scrollTrigger: {
@@ -114,11 +134,6 @@ $('#parallax').parallax({
 	invertX: true,
 	invertY: true
 });
-
-
-
-
-AOS.init();
 
 
 $('.modal').on('touchstart touchmove touchend', function(e) {

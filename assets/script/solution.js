@@ -108,14 +108,14 @@ jQuery(document).ready(function($){
 });
 
 
-$(".models #stay-in-place-1").on("click", function() {
+$(".models #stay-in-place-1 button").on("click", function() {
 	$(".models #move-in-to-place-2").css("right", "0");
 	$(".models #stay-in-place-2").css("pointer-events", "none");
 	setTimeout(function() {
 		$(".models #stay-in-place-2").css("pointer-events", "auto");
 	}, 1000);
 });
-$(".models #stay-in-place-2").on("click", function() {
+$(".models #stay-in-place-2 button").on("click", function() {
 	$(".models #move-in-to-place-1").css("left", "0");
 	$(".models #stay-in-place-1").css("pointer-events", "none");
 	setTimeout(function() {

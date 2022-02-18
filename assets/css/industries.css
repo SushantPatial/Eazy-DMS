@@ -67,6 +67,7 @@ html, body {
   position: absolute;
   left: 10%;
   top: 10%;
+  box-shadow: 0 0 15px rgba(34, 34, 34, 0.445);
 }
 .industry-intro .col-lg-5 {
   display: flex;
@@ -167,4 +168,63 @@ html, body {
     max-width: 500px;
     height: 250px;
   }
+}
+
+/*------------------
+    Logo Slider
+------------------*/
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  padding: 50px 0;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.logo-section .logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+.logo-section .brand-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.logo-section .slide {
+  width: 150px;
+}
+.logo-section .owl-stage {
+  display: flex;
+  align-items: center;
+  cursor:grab;
+}
+.logo-section .fade-left {
+  background-image: linear-gradient(to right, white, transparent);
+  position: absolute;
+  z-index: 99;
+  left: 5%;
+  height: 105px;
+  width: 10%;
+}
+.logo-section .fade-right {
+  background-image: linear-gradient(to left, white, transparent);
+  position: absolute;
+  z-index: 99;
+  right: 5%;
+  height: 105px;
+  width: 10%
+}
+.logo-section .slide img {
+  transition: all 0.3s;
+}
+.logo-section .slide img:hover {
+  transform: scale(0.95);
 }

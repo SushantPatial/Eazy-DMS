@@ -131,7 +131,7 @@ html, body {
   padding: 25vh 5vh;
 }
 .right-approach-hero {
-  overflow: auto;
+  overflow-x: hidden;
   position: relative;
 }
 .right-approach-hero::before {
@@ -149,7 +149,7 @@ html, body {
   filter: brightness(40%);
 }
 .dms-crm-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .dms-crm-hero::before {
@@ -167,7 +167,7 @@ html, body {
   filter: brightness(40%);
 }
 .how-technology-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .how-technology-hero::before {
@@ -185,7 +185,7 @@ html, body {
   filter: brightness(40%);
 }
 .saas-vs-onprem-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .saas-vs-onprem-hero::before {
@@ -203,7 +203,7 @@ html, body {
   filter: brightness(40%);
 }
 .benefits-onsite-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .benefits-onsite-hero::before {
@@ -221,7 +221,7 @@ html, body {
   filter: brightness(40%);
 }
 .dms-for-automobiles-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .dms-for-automobiles-hero::before {
@@ -239,7 +239,7 @@ html, body {
   filter: brightness(40%);
 }
 .eazy-dms-vs-portal-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .eazy-dms-vs-portal-hero::before {
@@ -257,7 +257,7 @@ html, body {
   filter: brightness(40%);
 }
 .usps-of-eazy-sfa-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .usps-of-eazy-sfa-hero::before {
@@ -275,7 +275,7 @@ html, body {
   filter: brightness(40%);
 }
 .why-do-fmcg-fmcd-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .why-do-fmcg-fmcd-hero::before {
@@ -293,7 +293,7 @@ html, body {
   filter: brightness(40%);
 }
 .why-tally-integrated-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .why-tally-integrated-hero::before {
@@ -311,7 +311,7 @@ html, body {
   filter: brightness(40%);
 }
 .what-is-dms-hero {
-  overflow: auto;
+    overflow-x: hidden;
   position: relative;
 }
 .what-is-dms-hero::before {

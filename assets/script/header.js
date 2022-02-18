@@ -1,6 +1,11 @@
 // AOS
-AOS.init();
+AOS.init({
+  duration: 700,
+  easing: 'ease',
+  once: true
+});
 
+// Navbar General
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 47) {
     $('.navbar').addClass('navbar-fixed');
@@ -9,17 +14,27 @@ $(window).bind('scroll', function () {
   }
 });
 
-
+// Index navbar and back to top
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 2800) {
     $('.nav-index').fadeIn();
+    $(".back-to-top").addClass('active-2');
   } else {
     $('.nav-index').fadeOut();
+    $(".back-to-top").removeClass('active-2');
   }
 });
 
+// Back to top 
+$(window).on("scroll", function() {
+  if ($(window).scrollTop() > 100) {
+    $(".back-to-top").addClass('active');
+  } else {
+    $(".back-to-top").removeClass('active');
+  }
+})
 
-
+// Loader 
 $(window).on("load",function() {
   $(".loader-wrapper").fadeOut("slow");
   $(".navbar").fadeIn("slow");
@@ -70,3 +85,6 @@ $("footer .footer-content .other-products a .retail").on("mouseenter", function(
 $("footer .footer-content .other-products a .retail").on("mouseleave", function() {
   $(this).attr("src","assets/images/logos/RETAIL.png");
 })
+
+// Footer year
+$("#year").html(new Date().getFullYear());

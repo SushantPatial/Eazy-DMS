@@ -427,3 +427,38 @@ header .navbar .nav-dropdown-content a:hover {
   background-repeat: no-repeat;
 }
 
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  text-decoration: none;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--color-6);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 18px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: var(--color-5);
+  text-decoration: none;
+}
+.back-to-top:hover i {
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+

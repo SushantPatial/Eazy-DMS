@@ -5,28 +5,6 @@ html, body {
   
 }
 
-/* --------------------
-    Customers Hero 
--------------------- */
-.company-hero {
-  height: 60vh;
-  background-image: url(../images/company.webp);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-}
-.company-hero h1 {
-  font-size: 50px;
-  font-weight: 700;
-}
-.company-hero p {
-  font-size: 14px;
-  text-transform: uppercase;
-}
 
 /* --------------------
     Journey Section 

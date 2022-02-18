@@ -12,6 +12,15 @@ body {
   height: 100% !important;
 }
 
+.back-to-top.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.back-to-top.active-2 {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*------------------
     Hero Section
 ------------------*/
@@ -330,6 +339,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.3s ease;
 }
 .scroll-down-arrow {
   position: fixed;
