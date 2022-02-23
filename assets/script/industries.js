@@ -25,10 +25,19 @@ $(window).on('scroll', function() {
       top: '200px'
     });
   }
-  if ($(window).scrollTop() > $('.stationery').innerHeight() - $('.logo-section').innerHeight() - 220) {
+
+  // Stopping the fixed position
+  let div1 = $(".lower-particle");
+  let div2 = $(".particles-bottom");
+  let div1_top = div1.offset().top;
+  var div2_top = div2.offset().top;
+  let div1_bottom = div1_top + div1.height();
+  let div2_bottom = div2_top + div2.height();
+
+  if (div1_top >= div2_top) {
     $('.particles').css({
       position: 'absolute',
-      top: $('.stationery').innerHeight()- $('.logo-section').innerHeight() - 120
+      top: div2_bottom - $('.particles').height()
     });
   }
 })

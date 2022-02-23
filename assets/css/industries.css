@@ -12,18 +12,18 @@ html, body {
   filter: invert(78%) sepia(47%) saturate(7126%) hue-rotate(140deg) brightness(103%) contrast(101%);
 }
 .auto {
-  --industry: rgb(255, 208, 0);
-  --industry-sec: rgb(251, 255, 188);
+  --industry: #3C84DA;
+  --industry-sec: #dbecff;
 }
-.auto .industry-intro .col-lg-5 img {
-  filter: invert(88%) sepia(25%) saturate(5048%) hue-rotate(359deg) brightness(103%) contrast(104%);
+.auto .industry-intro .col-lg-6:nth-child(2) img {
+  filter: invert(47%) sepia(99%) saturate(2277%) hue-rotate(194deg) brightness(92%) contrast(84%);
 }
 .stationery {
-  --industry: rgb(25, 199, 63);
-  --industry-sec: rgb(192, 253, 192);
+  --industry: #3C84DA;
+  --industry-sec: #dbecff;
 }
-.stationery .industry-intro .col-lg-5 img {
-  filter: invert(71%) sepia(82%) saturate(2621%) hue-rotate(81deg) brightness(90%) contrast(91%);
+.stationery .industry-intro .col-lg-6:nth-child(2) img {
+  filter: invert(47%) sepia(99%) saturate(2277%) hue-rotate(194deg) brightness(92%) contrast(84%);
 }
 .fmcg {
   --industry: rgb(162, 0, 255);
@@ -71,11 +71,10 @@ html, body {
   top: 15%;
   box-shadow: 0 0 15px rgba(34, 34, 34, 0.445);
 }
-.industry-intro .col-lg-5 {
+.industry-intro .col-lg-6 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: left;
 }
 .industry-intro .industry-body h1 {
   color: var(--industry);
@@ -90,7 +89,7 @@ html, body {
 .industry-intro .industry-body p {
   color: #444;
 }
-.industry-intro .col-lg-5 img {
+.industry-intro .col-lg-6:nth-child(2) img {
   position: absolute;
   top: 0;
   right: 10%;
@@ -143,6 +142,12 @@ html, body {
   .industry-main .col-lg-5 {
     margin: 10px;
   }
+  .industry-intro .industry-body h1 {
+    margin-top: 80px;
+  }
+  .industry-main {
+    padding: 0px 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -163,6 +168,12 @@ html, body {
   .industry-main .col-lg-5 {
     margin: 30px;
   }
+  .industry-main h3 {
+    font-size: 20px;
+  }
+  .industry-main p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 376px) {
   .industry-intro .industry-background {
@@ -172,97 +183,54 @@ html, body {
   }
 }
 
-/*------------------
-    Logo Slider
-------------------*/
-.logo-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  width: 90%;
-  padding: 50px 0;
-  margin: 0 auto;
-  margin-top: 30px;
+.industry-intro .industry-front-2 {
+  width: 450px;
+  position: relative;
+  left: 10%;
+  top: 10%;
 }
-.logo-section .logo-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  background: rgb(255, 255, 255);
-}
-.logo-section .brand-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-}
-.logo-section .slide {
-  width: 150px;
-}
-.logo-section .owl-stage {
-  display: flex;
-  align-items: center;
-  cursor:grab;
-}
-.logo-section .fade-left {
-  background-image: linear-gradient(to right, white, transparent);
-  position: absolute;
-  z-index: 99;
-  left: 5%;
-  height: 105px;
-  width: 10%;
-}
-.logo-section .fade-right {
-  background-image: linear-gradient(to left, white, transparent);
-  position: absolute;
-  z-index: 99;
-  right: 5%;
-  height: 105px;
-  width: 10%
-}
-.logo-section .slide img {
-  transition: all 0.3s;
-}
-.logo-section .slide img:hover {
-  transform: scale(0.95);
-}
-
 .industry-container {
-  width: 100%;
+  width: 80%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-
-@media (min-width: 576px) {
-  .industry-container {
-    max-width: 540px;
+@media screen and (max-width: 992px) {
+  .industry-intro .col-lg-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .industry-intro .industry-front-2 {
+    left: 0%;
+    top: 0%;
   }
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .industry-intro .industry-front-2 {
+    width: 300px;
+  }
   .industry-container {
-    max-width: 720px;
+    width: 70%;
   }
 }
-@media (min-width: 992px) {
-  .industry-container {
-    max-width: 960px;
+@media screen and (max-width: 576px) {
+  .industry-intro .industry-front-2 {
+    width: 250px;
   }
-}
-@media (min-width: 1200px) {
   .industry-container {
-    max-width: 1100px;
+    width: 80%;
+  }
+  .industry-main .industry-container {
+    width: 85%;
+    padding: 0;
   }
 }
 
 .particles-left {
   width: 100px;
-  height: 550px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -288,7 +256,7 @@ html, body {
 }
 .particles-right {
   width: 100px;
-  height: 550px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -341,13 +309,84 @@ html, body {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .particles-left, .particles-right {
+    width: 130px;
+  }
+  .particles-bottom img {
+    height: 250px;
+  }
+}
 @media screen and (max-width: 992px) {
   .particles-bottom {
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .particles-bottom {
+  .particles-bottom img {
     display: none;
   }
+}
+@media screen and (max-width: 576px) {
+  .particles-left, .particles-right {
+    width: 60px;
+  }
+}
+
+/*------------------
+    Logo Slider
+------------------*/
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  padding: 50px 0;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.logo-section .logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.logo-section .brand-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.logo-section .slide {
+  width: 150px;
+}
+.logo-section .owl-stage {
+  display: flex;
+  align-items: center;
+  cursor:grab;
+}
+.logo-section .fade-left {
+  background-image: linear-gradient(to right, white, transparent);
+  position: absolute;
+  z-index: 99;
+  left: 5%;
+  height: 105px;
+  width: 10%;
+}
+.logo-section .fade-right {
+  background-image: linear-gradient(to left, white, transparent);
+  position: absolute;
+  z-index: 99;
+  right: 5%;
+  height: 105px;
+  width: 10%
+}
+.logo-section .slide img {
+  transition: all 0.3s;
+}
+.logo-section .slide img:hover {
+  transform: scale(0.95);
 }

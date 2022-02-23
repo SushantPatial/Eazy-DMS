@@ -23,5 +23,5 @@ function sendmail(){
 
 
 $(function() {
-	$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+	$('.catalogue .case-study #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 });

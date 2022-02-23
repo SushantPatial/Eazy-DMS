@@ -28,8 +28,6 @@ html, body {
   text-transform: uppercase;
 }
 
-
-
 /* --------------------
     Main Resources
 -------------------- */
@@ -335,133 +333,98 @@ html, body {
   margin: 0 auto;
   margin-top: 40px;
 }
-.catalogue .case-studies {
+.catalogue .case-study .da-thumbs {
+	list-style: none;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+.catalogue .case-study .da-thumbs li {
+	float: left;
+	margin: 0.5%;
+  width: 49%;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.catalogue .case-study .da-thumbs li .catalogue-card,
+.catalogue .case-study .da-thumbs li .catalogue-card img {
+	display: block;
+	position: relative;
+  width: 100%;
+}
+.catalogue .case-study .da-thumbs li .catalogue-card .thumb-body {
+  width: 500px;
+  height: 400px;
+}
+.catalogue .case-study .da-thumbs li .catalogue-card {
+	overflow: hidden;
+}
+.catalogue .case-study .da-thumbs li .catalogue-card .thumb-hover {
+	position: absolute;
+	background: rgba(8, 8, 8, 0.7);
+	width: 100%;
+	height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+}
+.catalogue .case-study .da-thumbs li .catalogue-card .thumb-hover span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+.catalogue .case-study .da-thumbs li:nth-child(4) {
+  margin-bottom: 60px;
 }
 
-.catalogue .case-studies .transition { 
-  transition: 0.5s cubic-bezier(.3, 0, 0, 1.3)
+.case-study .form-control {
+  height: 50px;
+  margin: 15px 0;
 }
-
-.catalogue .case-studies .card {
-    background-color: #fff;
-    bottom: 0;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    height: 250px;
-    left: 0;
-    margin: 0 20px;
-    overflow: hidden;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.catalogue .case-studies .card:hover {
-    height: 300px;
-    width: 300px;
-}
-
-.catalogue .case-studies .card_circle {
-  background: url('http://lorempixel.com/400/200') no-repeat center bottom;
+.case-study .modal-header {
   background-color: var(--color-3);
-  background-size: cover;
-  border-radius: 50%;
-  height: 300px;
-  margin-top: -440px;
-  position: absolute;
-  width: 450px;
-}
-.catalogue .case-studies .card:hover .card_circle {
-    background-size: cover;
-    border-radius: 0;
-    margin-top: -330px;
-}
-
-.catalogue .case-studies img {
-  margin-top: -20px;
-  position: absolute;
-  text-align: center;
-  width: 80%;
-  z-index: 9999;
-}
-.catalogue .case-studies .card:hover img {
-  margin-top: -160px;
-}
-
-.catalogue .case-studies p {
-  color: rgba(0,0,0,.6);
-  font-family: 'Poppins', sans-serif;
-  font-size: 100%;
-  font-weight: normal;
-  padding: 0 10px;
-  font-size: 14px;
-  margin-top: 150px;
-  position: absolute;
-  text-align: center;
-  z-index: 9999;
-}
-.catalogue .case-studies .card:hover p { 
-  margin-top: 100px;
-}
-
-.catalogue .case-studies .cta-container {
-  
-  opacity: 0;
-  margin-top: 320px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  z-index: 9999;
-  transition: 0.5s ease;
-}
-.catalogue .case-studies .card:hover .cta-container {
-    margin-top: 220px;
-    opacity: 1;
-}
-
-.catalogue .case-studies .cta {
-  -moz-border-radius: 2px;
-  -moz-transition: 0.2s ease-out;
-  -ms-transition: 0.2s ease-out;
-  -o-transition: 0.2s ease-out;
-  -webkit-border-radius: 2px;
-  -webkit-transition: 0.2s ease-out;
-  background-clip: padding-box;
-  border: 2px solid var(--color-3);
-  border-radius: 2px;
-  color: var(--color-3);
-  background-color: transparent;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  height: 40px;
-  letter-spacing: 0.5px;
-  line-height: 36px;
-  margin-bottom: 15px;
-  padding: 0 2rem;
-  text-decoration: none;
+  color: white;
   text-transform: uppercase;
-  transition: 0.3s ease-out;
 }
-.catalogue .case-studies .cta:hover {
-  background-color: var(--color-3);
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #fff;
-  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.catalogue .case-studies .cta:focus {
+.case-study .modal-header button:focus {
   outline: none;
 }
-
-
+.case-study .modal-footer {
+  display: inline;
+  padding: 0;
+  border-top: 0;
+}
+.case-study .modal-footer button {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border: none;
+  color: #ddd;
+  text-transform: uppercase;
+  background-color: var(--color-3);
+  padding: 0 30px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.case-study .modal-footer .modal-cancel {
+  background-color: #333;
+}
+.case-study .modal-footer .modal-cancel:hover {
+  background-color: #222;
+  color: #fff;
+}
+.case-study .modal-footer .modal-submit:hover {
+  background-color: #1b508d;
+  color: #fff;
+}
 
 .catalogue .company-deck {
   display: flex;
@@ -516,193 +479,4 @@ html, body {
   }
 }
 
-.catalogue-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  width: 100%;
-}
-.catalogue-cards .catalogue-card {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-  width: 36rem;
-  padding: 15px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px rgb(197, 197, 197);
-  border-radius: 7px;
-  transition: 0.5s ease;
-}
-.catalogue-cards img {
-  width: 80px;
-  margin-right: 30px;
-}
-
-.catalogue-cards .catalogue-card .catalogue-body {
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-  width: 100%;
-}
-.catalogue-cards .catalogue-card .catalogue-body h6 {
-  margin-top: 2px;
-}
-.catalogue-cards .catalogue-card a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 2px solid #111;
-  color: #111;
-  font-size: 16px;
-  font-weight: 500;
-  transition: 0.5s ease;
-}
-.catalogue-cards .catalogue-card a:hover {
-  background-color: #111;
-  color: #fff;
-}
-
-.catalogue-cards .catalogue-card:hover {
-  box-shadow: 0 0 10px gray;
-}
-
-@media screen and (max-width: 420px) {
-  .catalogue-cards img {
-    width: 50px;
-    margin-right: 10px;
-  }
-  .catalogue-cards .catalogue-card .catalogue-body h6 {
-    font-size: 14px;
-  }
-  .catalogue-cards .catalogue-card a {
-    padding: 6px 14px;
-    font-size: 14px;
-  }
-}
-
-
-.case-study .form-control {
-  height: 50px;
-  margin: 15px 0;
-}
-.case-study .modal-header {
-  background-color: var(--color-3);
-  color: white;
-  text-transform: uppercase;
-}
-.case-study .modal-footer {
-  display: inline;
-  padding: 0;
-  border-top: 0;
-}
-.case-study .modal-footer button {
-  width: 100%;
-  height: 60px;
-  outline: none;
-  border: none;
-  color: #ddd;
-  text-transform: uppercase;
-  background-color: var(--color-3);
-  padding: 0 30px;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-.case-study .modal-footer .modal-cancel {
-  background-color: #333;
-}
-.case-study .modal-footer .modal-cancel:hover {
-  background-color: #222;
-  color: #fff;
-}
-.case-study .modal-footer .modal-submit:hover {
-  background-color: #1b508d;
-  color: #fff;
-}
-
-
-
-
-
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* General Demo Style */
-.catalogue .container{
-	width: 100%;
-	position: relative;
-	min-height: 750px;
-}
-.da-thumbs {
-	list-style: none;
-	width: 100%;
-	position: relative;
-	margin: 20px auto;
-	padding: 0;
-}
-.da-thumbs li {
-	float: left;
-	margin: 0.5%;
-  width: 49%;
-	position: relative;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-.da-thumbs li a,
-.da-thumbs li a img {
-	display: block;
-	position: relative;
-  width: 100%;
-}
-.da-thumbs li a .thumb-body {
-  width: 500px;
-  height: 400px;
-}
-.da-thumbs li a {
-	overflow: hidden;
-}
-.da-thumbs li a .thumb-hover {
-	position: absolute;
-	background: rgba(8, 8, 8, 0.7);
-	width: 100%;
-	height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.da-thumbs li a .thumb-hover span {
-	display: block;
-	padding: 10px 0;
-	margin: 40px 20px 20px 20px;
-	text-transform: uppercase;
-	font-weight: normal;
-	color: rgba(255,255,255,0.9);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	border-bottom: 1px solid rgba(255,255,255,0.5);
-	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-}
 
