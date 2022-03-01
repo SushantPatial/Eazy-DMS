@@ -170,7 +170,7 @@
     width: 115%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .footer-section .footer-video video {
     width: 220%;
   }

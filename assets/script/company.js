@@ -63,7 +63,6 @@ $('.image-upload-wrap').bind('dragover', function () {
 });
 
 
-
 /* Life @ Eazy */
 $(document).ready(function() {
   let $grid = $('.portfolio-container').imagesLoaded( function() {
@@ -81,6 +80,31 @@ $(document).ready(function() {
     $('#portfolio-flters li').removeClass('filter-active');
     $(this).addClass('filter-active');
   });
+})
+
+$('#portfolio-flters li:nth-child(1)').on('click', function() {
+  $('.filter-awards').addClass('display-block');
+  $('.filter-festive').removeClass('display-block');
+  $('.filter-offsite').removeClass('display-block');
+  $('.filter-training').removeClass('display-block');
+})
+$('#portfolio-flters li:nth-child(2)').on('click', function() {
+  $('.filter-awards').removeClass('display-block');
+  $('.filter-festive').addClass('display-block');
+  $('.filter-offsite').removeClass('display-block');
+  $('.filter-training').removeClass('display-block');
+})
+$('#portfolio-flters li:nth-child(3)').on('click', function() {
+  $('.filter-awards').removeClass('display-block');
+  $('.filter-festive').removeClass('display-block');
+  $('.filter-offsite').addClass('display-block');
+  $('.filter-training').removeClass('display-block');
+})
+$('#portfolio-flters li:nth-child(4)').on('click', function() {
+  $('.filter-awards').removeClass('display-block');
+  $('.filter-festive').removeClass('display-block');
+  $('.filter-offsite').removeClass('display-block');
+  $('.filter-training').addClass('display-block');
 })
 
 /** Initiate portfolio lightbox **/
@@ -120,6 +144,12 @@ const portfolioLightbox11 = GLightbox({
 
 $(window).on('load', function() {
   $('.portfolio-container').isotope('reloadItems').isotope();
+})
+
+$("#life-panel").on('click', function() {
+  setTimeout(function() {
+    $('.portfolio-container').isotope('reloadItems').isotope();
+  }, 500)
 })
 
 $('.toggler').on('click', function() {

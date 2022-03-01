@@ -245,7 +245,7 @@ html, body {
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .contact-section .contact {
     width: 90%;
     height: 100%;
@@ -389,7 +389,7 @@ html, body {
   max-width: 45%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .offices-section .branch-offices .row .col-md-12 {
     max-width: 67.5%;
   }

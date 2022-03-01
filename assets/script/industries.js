@@ -11,7 +11,20 @@ $(document).ready(function() {
     fluidSpeed: true,
     autoplaySpeed: 1000
   })
+
+  $('#testimonial-carousel').owlCarousel({
+    loop: true,
+    center: true,
+    items: 1,
+    margin: 0,
+    autoplay: false,
+    dots: true,
+    nav: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+  });
 })
+
 
 // $(window).on('scroll', function() {
 //   if ($(window).scrollTop() > 100) {

@@ -180,7 +180,7 @@ html, body {
   filter: brightness(85%);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .hybrid-dms-text {
     margin-left: 4%;
     margin-right: 4%;
@@ -352,7 +352,7 @@ html, body {
   margin: 20px 0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .about-benefits-section .benefits .col-lg-7 {
     align-items: center;
     padding: 0;
@@ -379,6 +379,7 @@ html, body {
 /* Models section */
 .models {
   position: relative;
+  padding-top: 60px;
 }
 .models .model {
   margin: 0;
@@ -522,7 +523,7 @@ html, body {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .models .content h2 {
     font-size: 32px;
   }

@@ -324,3 +324,7 @@ html, body {
 .grid-wrapper a img {
   width: 100%;
 }
+
+.display-block {
+  display: block !important;
+}

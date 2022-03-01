@@ -94,7 +94,7 @@ html, body {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .customers .customers-row-1 img {
     width: 110%;
   }
@@ -170,13 +170,13 @@ html, body {
   width: 25%;
   float: left;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
 .col-sm-15 {
     width: 25%;
     float: left;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .col-md-15 {
     width: 20%;
     float: left;
@@ -260,7 +260,7 @@ html, body {
   width: 60px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .industry-peers .slick-slide .youtube {
     margin-left: -8.5%;
     width: 50px;
@@ -551,7 +551,7 @@ html, body {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .testimonials .profile {
     min-height: 270px;
   }

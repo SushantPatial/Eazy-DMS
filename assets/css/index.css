@@ -124,7 +124,7 @@ body {
     width: 700px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .gridLayer:nth-child(1) .gridBlock {
     top: -110px;
     left: -155px;
@@ -810,7 +810,7 @@ body {
   border-top: 5px solid white;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .eazy-dms4 .eazy-dms4-sec1 {
     width: 80%;
     height: 600px;
@@ -1468,7 +1468,7 @@ body {
       margin-top: -5px;
     }
   }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     .testimonials-2 .item {
       margin: 40px;
     }
@@ -1698,7 +1698,7 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .testimonials-2 .modal .swiper-slide iframe {
     height: 270px;
   }
@@ -2142,7 +2142,7 @@ body {
 .particles-section button:focus {
   outline: none;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .particles-section h1 {
     font-size: 46px;
   }
