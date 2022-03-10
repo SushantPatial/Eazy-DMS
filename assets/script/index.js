@@ -8,14 +8,12 @@ $(window).ready(function(){
 
 // Making page scroll after 5s
 $(window).on('load', function() {
-  if ($(window).scrollTop() < 100) {
-    $('html').css('overflow-y', 'hidden');
-    $('.scroll-down-wrapper').css('opacity', '0');
-    setTimeout(function() {
-      $('html').css('overflow-y', 'scroll');
-      $('.scroll-down-wrapper').css('opacity', '1');
-    }, 5000)
-  }
+  $('html').css('overflow-y', 'hidden');
+  $('.scroll-down-wrapper').css('opacity', '0');
+  setTimeout(function() {
+    $('html').css('overflow-y', 'scroll');
+    $('.scroll-down-wrapper').css('opacity', '1');
+  }, 5000)
 })
 
 

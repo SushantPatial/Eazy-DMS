@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -2034,7 +2035,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 1em 2em 0.9em;
   cursor: pointer;
   transition: 0.25s;
@@ -2042,7 +2043,7 @@ body {
   border-color: var(--hover);
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
-.blogs-section .offset:hover, .offset:focus {
+.blogs-section .offset:hover, .blogs-section .offset:focus {
   outline: none;
   color: var(--color);
   border-color: var(--color);
